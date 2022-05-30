@@ -1,0 +1,150 @@
+.select {
+  position: relative;
+  width: 40px;
+}
+
+.select.active .select__body {
+  max-height: 500px;
+  height: auto;
+}
+
+.select.active {
+  .select__icon {
+    transform: scaleY(-1);
+  }
+  .select__body {
+    display: block;
+  }
+
+  .select__header {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.select__header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  min-width: 37px;
+  height: 14px;
+  padding: 0;
+  justify-content: center;
+  grid-gap: 8px;
+}
+
+.select__current {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-a);
+}
+
+.select__icon {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  height: 6px;
+  text-align: center;
+  width: 13px;
+  transition: all .4s;
+}
+
+.select__body {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: calc(100% + 20px);
+  z-index: 5;
+  margin-top: 10px;
+  border-top: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 2px 2px;
+  padding: 0;
+  left: -10px;
+  right: 10px;
+}
+
+.select__item {
+  font-family: var(--font-family);
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-a);
+  opacity: 0.5;
+  transition: all .4s;
+  user-select: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.select__wrapp {
+  background: linear-gradient(180deg, #20C0FF 0%, #FB3FFF 100%), #C4C4C4;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 0 10px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 8px;
+}
+
+.select__item:hover {
+  // background-color: $color--a;
+  color: #fff;
+}
+
+
+
+.header-lang {
+  .select__header {
+    border: none;
+    width: auto;
+    padding: 0;
+  }
+  .select__body {
+    position: absolute;
+    z-index: 10;
+
+    margin-top: 5px;
+    padding: 2px 5px;
+
+    background-color: #ffffff;
+    border: 1px solid #c7d1dd;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .select__current,
+  .select__item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: Rubik;
+    color: #959595;
+    padding: 5px 4px;
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      color: #1d7ef5;
+    }
+  }
+
+
+}
+
+
+
+
+

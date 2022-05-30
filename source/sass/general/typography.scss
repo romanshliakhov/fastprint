@@ -1,0 +1,19 @@
+.general-title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(30px, 3.25vw, 52px);
+  line-height: 106%;
+  color: var(--general-title);
+}
+
+.general-text {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 140%;
+  color: var(--general-text);
+}
+
+
