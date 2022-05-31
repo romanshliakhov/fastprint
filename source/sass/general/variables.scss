@@ -1,7 +1,56 @@
 :root {
     /* -- Fonts --*/
-  --font-family: "Gotham Pro", sans-serif; // var(--font-family);
+  --font-family: "Mulish", sans-serif; // var(--font-family);
   // text color
+
+  // All colors
+
+  // system
+  --system-1: #181818; // var(--system-1);
+  --system-2: #696E72; // var(--system-2);
+  --system-3: #ADB4B8; // var(--system-3);
+  --system-4: #F0F0F0; // var(--system-4);
+  --system-5: #F5F5F5; // var(--system-5);
+  --system-6: #FFFFFF; // var(--system-6);
+
+
+  // blue
+  --blue-1: #EDF4FF; // var(--blue-1);
+  --blue-2: #CBE0FE; // var(--blue-2);
+  --blue-3: #98BEFE; // var(--blue-3);
+  --blue-4: #6599FE; // var(--blue-4);
+  --blue-5: #3F7AFE; // var(--blue-5);
+  --blue-6: #0047FE; // var(--blue-6);
+  --blue-7: #0036DA; // var(--blue-7);
+  --blue-8: #0028B6; // var(--blue-8);
+  --blue-9: #001C93; // var(--blue-9);
+  --blue-10: #001479; // var(--blue-10);
+
+
+  // error
+  --error-1: #FFEDEF; // var(--error-1);
+  --error-2: #D5061A; // var(--error-2);
+  --error-3: #B80427; // var(--error-3);
+  --error-4: #9A022E; // var(--error-4);
+  --error-5: #7C012F; // var(--error-5);
+
+
+  // done
+  --done-1: #23C301; // var(--done-1);
+  --done-2: #12A801; // var(--done-2);
+  --done-3: #038C00; // var(--done-3);
+  --done-4: #007107; // var(--done-4);
+
+
+  // gradient
+  --gradient: linear-gradient(180deg, #3F7AFE 0%, #0047FE 100%); // var(--gradient);
+
+
+  // colors
+  --color-1: #23C301; // var(--color-1);
+  --color-2: #00EFFE; // var(--color-2);
+  --color-3: #DB00FF; // var(--color-3);
+  --color-4: #EBFF00; // var(--color-4);
 
 }
 

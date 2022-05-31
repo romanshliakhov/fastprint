@@ -1,15 +1,45 @@
-// header {
-//   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-//   display: flex;
-//   align-items: center;
-//   position: absolute;
-//   width: 100%;
-//   left: 0;
-//   top: 0;
-//   z-index: 2;
-//   background-color: transparent;
-// }
+header {
+  background-color: var(--system-6);
+  min-height: 98px;
+  box-shadow: 0px 10px 14px rgba(0, 22, 102, 0.05);
+}
 
-// .header {
 
-// }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px clamp(20px, 5.215vw, 40px);
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    li + li {
+      margin-left: 80px;
+    }
+  }
+
+  &__nav-link {
+    display: flex;
+    align-items: center;
+
+
+    svg {
+      margin-left: 14px;
+    }
+  }
+
+  &__basket {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--blue-6);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    svg {
+      fill: transparent;
+    }
+  }
+}

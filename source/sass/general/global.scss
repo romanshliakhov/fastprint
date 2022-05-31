@@ -3,24 +3,11 @@ body {
   padding: 0;
   width: 100%;
   position: relative;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  display: flex;
-  overflow-x: hidden;
-  flex-direction: column;
 }
 
 html {
   box-sizing: border-box;
   width: 100%;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: normal;
-  min-height: 100vh;
-  overflow-x: hidden;
 }
 
 *,
@@ -119,49 +106,20 @@ input[type="number"] {
 
 .container {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1525px;
   margin: 0 auto;
   position: relative;
   padding: 0 10px;
 
   &--header {
     max-width: 1920px;
-    padding: 0 Min(2.604vw, 50px);
   }
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(65, 228, 255, 0.6) rgba(50, 50, 50, 0.1);
-
-  &::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(65, 228, 255, 0.4);
-    transition: all .4s;
-
-    &:hover {
-      background-color: rgba(65, 228, 255, 0.6);
-    }
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: rgba(50, 50, 50, 0.1);
-
-    &:hover {
-      background-color: rgba(50, 50, 50, 0.2);
-    }
-  }
-
-  ::-webkit-scrollbar-button {
-    background-color: transparent;
-    box-shadow: none;
-    display: none;
-  }
+svg {
+  fill: transparent;
 }
+
 
 
 

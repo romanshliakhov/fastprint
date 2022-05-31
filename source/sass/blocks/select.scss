@@ -1,0 +1,38 @@
+.select {
+	position: relative;
+	width: 44px;
+  height: 44px;
+  border: 1px solid var(--blue-6);
+  border-radius: 8px;
+}
+
+.select.is-active .select__body {
+	display: block;
+}
+
+.select__header {
+  padding: 13px 10px;
+  cursor: pointer;
+
+}
+
+.select__current {
+  display: flex;
+  border-radius: 2px;
+}
+
+.select__body {
+	border-top: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+}
+
+.select__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

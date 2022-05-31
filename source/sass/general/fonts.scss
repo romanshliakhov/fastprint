@@ -1,36 +1,53 @@
 @font-face {
   font-style: normal;
-  font-weight: 300;
-  font-family: "Gotham Pro";
-
-  font-display: swap;
-  src: url("../fonts/GothamPro-Light.woff2") format("woff2"), url("../fonts/GothamPro-Light.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
   font-weight: 400;
-  font-family: "Gotham Pro";
+  font-family: "Mulish";
 
   font-display: swap;
-  src: url("../fonts/GothamPro.woff2") format("woff2"), url("../fonts/GothamPro.woff") format("woff");
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 500;
-  font-family: "Gotham Pro";
+  font-family: "Mulish";
 
   font-display: swap;
-  src: url("../fonts/GothamPro-Medium.woff2") format("woff2"), url("../fonts/GothamPro-Medium.woff") format("woff");
+  src: url("../fonts/Mulish-Medium.woff2") format("woff2"), url("../fonts/Mulish-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Mulish";
+
+  font-display: swap;
+  src: url("../fonts/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish-SemiBold.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Gotham Pro";
+  font-family: "Mulish";
 
   font-display: swap;
-  src: url("../fonts/GothamPro-Bold.woff2") format("woff2"), url("../fonts/GothamPro-Bold.woff") format("woff");
+  src: url("../fonts/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Mulish";
+
+  font-display: swap;
+  src: url("../fonts/Mulish-ExtraBold.woff2") format("woff2"), url("../fonts/Mulish-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Mulish";
+
+  font-display: swap;
+  src: url("../fonts/Mulish-Black.woff2") format("woff2"), url("../fonts/Mulish-Black.woff") format("woff");
+}
