@@ -1,11 +1,18 @@
-// footer {
-//   background-color: var(--color-b);
+footer {
+    background-color: var(--system-1);
+    min-height: 526px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 
-//   .container {
-//     max-width: 1920px;
-//     padding: 0 Min(2.604vw, 50px);
-//   }
-// }
+    p {
+        color: #fff;
+    }
+}
+
+.footer {
+    padding: 100px clamp(20px, 5.215vw, 30px) 28px;
+}
+
+
 
 
 

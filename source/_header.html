@@ -4,6 +4,7 @@
         <a class="header__logo" href="#">
           <img src="img/sprite/logo.svg" width='167' height='50' alt="logo">
         </a>
+
         <ul class="header__nav nav">
             <li class="header__nav-item">
                 <a class="header__nav-link menu-text" href="#">Blog</a>
@@ -24,6 +25,7 @@
 
 
         </ul>
+
         <div class="header__lang-select select">
           <div class="select__header">
             <span class="select__current">
@@ -52,12 +54,19 @@
           </div>
         </div>
 
-        <div class="header__basket">
-          <svg width='24' height='24'>
-            <use href='img/sprite/sprite.svg#basket'></use>
-          </svg>
+        <div class="header__btns">
+            <button class="header__btn header__btn--basket">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#basket'></use>
+                </svg>
+            </button>
+            <button class="header__btn header__btn--sign button-1">
+                Sign Up
+            </button>
+            <button class="header__btn header__btn--log button-1">
+                Log In
+            </button>
         </div>
-
     </div>
   </div>
 </header>

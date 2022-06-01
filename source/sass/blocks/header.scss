@@ -9,11 +9,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px clamp(20px, 5.215vw, 40px);
+  padding: 24px clamp(20px, 5.215vw, 30px);
+
+  &__logo {
+    display: flex;
+    flex-grow: 1;
+    min-width: 167px;
+    height: 50px;
+  }
 
   &__nav {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 
     li + li {
       margin-left: 80px;
@@ -23,20 +31,41 @@ header {
   &__nav-link {
     display: flex;
     align-items: center;
-
+    white-space: nowrap;
 
     svg {
       margin-left: 14px;
     }
   }
 
-  &__basket {
-    width: 44px;
-    height: 44px;
+  &__btns {
+    margin-left: 54px;
+    display: flex;
+    align-items: center;
+
+    button + button {
+        margin-left: 16px;
+    }
+  }
+
+  &__btn {
     border: 1px solid var(--blue-6);
-    padding: 10px;
     border-radius: 8px;
-    cursor: pointer;
+    white-space: nowrap;
+
+    &--basket {
+        padding: 10px;
+    }
+
+    &--sign {
+        padding: 10px 31px;
+    }
+
+    &--log {
+        padding: 10px 38px;
+        background-color: var(--blue-6);
+        color: var(--system-6);
+    }
 
     svg {
       fill: transparent;
