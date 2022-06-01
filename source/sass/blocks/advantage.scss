@@ -1,0 +1,29 @@
+.advantage {
+    padding: 184px clamp(20px, 5.215vw, 30px) 0;
+    background-color: var(--system-5);
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        max-width: 460px;
+    }
+
+    &__item-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        padding: 23px;
+    }
+
+    &__item-descr {
+        margin-top: 11px;
+    }
+
+    &__item-info {
+        margin-left: 40px;
+    }
+}
