@@ -29,12 +29,12 @@ select();
 
 
 // Dynamic row
-let slider = new Swiper(".logo-section__slider", {
+let slider = new Swiper(".sale__slider", {
     slidesPerView: "auto",
     spaceBetween: 60,
     loop: true,
     observer: true,
-    speed: 5000,
+    speed: 20000,
     autoplay: {
       delay: 0,
     },
