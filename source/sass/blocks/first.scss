@@ -1,7 +1,8 @@
 .first {
     min-height: 1162px;
     background-color: var(--system-5);
-    padding-top: 140px;
+    position: relative;
+    padding: 140px 40px 0;
 
     &__wrapp {
         display: flex;

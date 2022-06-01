@@ -26,3 +26,16 @@ let select = function () {
 };
 
 select();
+
+
+// Dynamic row
+let slider = new Swiper(".logo-section__slider", {
+    slidesPerView: "auto",
+    spaceBetween: 60,
+    loop: true,
+    observer: true,
+    speed: 5000,
+    autoplay: {
+      delay: 0,
+    },
+  });

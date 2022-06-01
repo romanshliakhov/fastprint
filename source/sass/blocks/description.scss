@@ -1,0 +1,26 @@
+.description {
+    padding-top: 620px;
+    padding-bottom: 240px;
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 80px;
+    }
+
+    &__info {
+        max-width: 605px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        grid-gap: 30px;
+    }
+
+    &__bot {
+        max-width: 1526px;
+        width: 100%;
+        height: 740px;
+    }
+}

@@ -1,0 +1,36 @@
+.sale {
+    background-color: var(--blue-6);
+
+    &__slider {
+        overflow: initial;
+    }
+
+    &__wrapper {
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+    }
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__slide-item {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        color: var(--system-6);
+    }
+
+    &__cirle{
+        margin-left: 60px;
+        width: 10px;
+        height: 10px;
+        background-color: var(--blue-3);
+        border-radius: 3px;
+    }
+}
