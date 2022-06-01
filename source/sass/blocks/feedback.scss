@@ -1,0 +1,37 @@
+.feedback {
+    background: linear-gradient(180deg, #F5F5F5 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 240px clamp(20px, 5.215vw, 30px) 0;
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-top: 40px;
+    }
+
+    &__info {
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__all {
+        padding: 40px 40px 30px;
+        background-color: var(--blue-6);
+        border-radius: 20px;
+        max-width: 586px;
+        width: 100%;
+        height: 703px;
+    }
+
+    &__reviews {
+        max-width: 880px;
+        width: 100%;
+        height: 703px;
+        background-color: red;
+    }
+}
