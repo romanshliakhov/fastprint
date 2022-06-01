@@ -2,11 +2,10 @@ footer {
     background-color: var(--system-1);
     min-height: 526px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 100px clamp(20px, 5.215vw, 30px) 28px;
 }
 
 .footer {
-    padding: 100px clamp(20px, 5.215vw, 30px) 28px;
-
     &__copy {
         color: var(--system-3);
     }
@@ -79,10 +78,13 @@ footer {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        grid-gap: 24px 40px;
     }
 
     &__payments-item {
-        filter: grayscale(1);
+        svg {
+            opacity: 0.6;
+        }
     }
 
     &__bot {
