@@ -1,15 +1,8 @@
 .tutorial {
     padding: 240px clamp(20px, 5.215vw, 30px) 190px;
 
-    &__top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__title {
-        display: flex;
-        align-items: center;
+    &__wrapp {
+        grid-gap: 90px;
     }
 
     &__all {
@@ -21,10 +14,10 @@
     }
 
     &__videos {
-        margin-top: 89px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        grid-gap: 46px;
     }
 
     &__videos-item {

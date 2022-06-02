@@ -2,27 +2,6 @@
     padding: 240px clamp(20px, 5.215vw, 30px) 0;
     background-color: var(--system-5);
 
-    &__wrapp {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 60px;
-    }
-
-    &__top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__title {
-        display: flex;
-        align-items: center;
-    }
-
-    &__title-text {
-        margin-left: 40px;
-    }
-
     &__shipping {
         display: flex;
         align-items: center;

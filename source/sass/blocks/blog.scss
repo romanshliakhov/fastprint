@@ -3,17 +3,10 @@
     background: linear-gradient(180deg, #F0F0F0 0%, #F5F5F5 0.01%, rgba(255, 255, 255, 0) 100%);
 
     &__wrapp {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 85px;
+        grid-gap: 80px;
     }
 
-    &__title {
-        display: flex;
-        align-items: center;
-    }
-
-    &__title-text {
-        margin-left: 40px;
+    &__bot {
+        width: 100%;
     }
 }
