@@ -1,4 +1,6 @@
 .about {
+    padding: 130px 0;
+
     &__wrapp {
         grid-gap: 100px;
     }
@@ -7,10 +9,9 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 60px 175px;
 
-        li + li {
-            margin-left: 175px;
-        }
     }
 
     &__partners-item {

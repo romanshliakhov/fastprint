@@ -1,10 +1,109 @@
 .new {
-    padding: 200px clamp(20px, 5.215vw, 30px) 0;
+    padding: 130px clamp(20px, 5.215vw, 30px);
     background-color: var(--system-5);
 
-    &__bot {
-        height: 760px;
-        width: 100%;
-        // background-color: red;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+
+    &__info-top {
+        display: grid;
+        grid-template-areas:
+        "a b c"
+        "a b d";
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px 22px;
+
+        @media screen and (max-width:767px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+            "a b "
+            "c d ";
+        }
+    }
+
+    &__top-item {
+        background-color: red;
+        min-height: Min(26.042vw, 500px);
+        border-radius: 16px;
+        display: flex;
+        text-align: center;
+        padding: 30px 58px;
+
+        .new__bot-details {
+            margin-top: auto;
+            align-items: center;
+        }
+
+        &:nth-last-child(-n + 2) {
+            min-height: Min(12.5vw, 240px);
+        }
+
+
+        &:nth-child(1){
+            grid-area: a;
+            background-image: url('/img/new/block1.png');
+        }
+
+        &:nth-child(2){
+            grid-area: b;
+            background-image: url('/img/new/block2.png');
+        }
+
+        &:nth-child(3){
+            grid-area: c;
+            background-image: url('/img/new/block3.png');
+        }
+
+        &:nth-child(4){
+            grid-area: d;
+            background-image: url('/img/new/block4.png');
+        }
+
+    }
+
+
+
+    &__info-bot {
+        display: flex;
+        align-items: center;
+        grid-gap: 20px;
+    }
+
+    &__bot-item {
+        display: flex;
+        align-items: center;
+        grid-gap: 102px;
+        height: 240px;
+        padding: 0 60px;
+        background: linear-gradient(180deg, #3DDC84 0%, #168849 100%);
+        border-radius: 16px;
+
+        &:last-of-type {
+            background: #A1A1A1;
+        }
+    }
+
+    &__bot-details {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+
+    &__bot-title {
+        color: var(--system-6);
+    }
+
+    &__retail-title {
+        color: var(--system-6);
+        margin-right: 12px;
+    }
+
+    &__bot-icon {
+        svg {
+            border-radius: 40px;
+        }
     }
 }
