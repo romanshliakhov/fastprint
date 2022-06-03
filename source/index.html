@@ -315,9 +315,9 @@
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blogs">
             <div class="container">
-                <div class="blog__wrapp block">
+                <div class="blogs__wrapp block">
                     <div class="block__between">
                         <div class="block__between-head">
                             <div class="block__icon icon">
@@ -331,18 +331,67 @@
                         </div>
                     </div>
 
-                    <div class="blog__bot">
-                        <ul>
-                            <li></li>
+                    <div class="blogs__bot">
+                        <ul class="blogs__article">
+                            <li class="blogs__article-item">
+                                <a class="blogs__article-preview" href="#">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/blog/blog1.webp'>
+                                      <img class="blogs__article-img" width='260' height='200' src='img/blog/blog1.png' alt='Blog 1'>
+                                    </picture>
+                                </a>
+                                <div class="blogs__article-info">
+                                    <p class="blogs__article-publish text-detail">10.03.2022</p>
+                                    <a class="blogs__article-link title-5" href="#">We have updated our mobile application</a>
+                                    <p class="blogs__article-descr text-body">A lot of innovations have been made in the new version 2.9.1...</p>
+                                </div>
+                            </li>
+                            <li class="blogs__article-item">
+                                <a class="blogs__article-preview" href="#">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/blog/blog2.webp'>
+                                      <img class="blogs__article-img" width='260' height='200' src='img/blog/blog2.png' alt='Blog 2'>
+                                    </picture>
+                                </a>
+                                <div class="blogs__article-info">
+                                    <p class="blogs__article-publish text-detail">22.02.2022</p>
+                                    <a class="blogs__article-link title-5" href="#">Bring a friend - get a bonus</a>
+                                    <p class="blogs__article-descr text-body">We give bonus points that can be spent on free printing</p>
+                                </div>
+                            </li>
+                            <li class="blogs__article-item">
+                                <a class="blogs__article-preview" href="#">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/blog/blog3.webp'>
+                                      <img class="blogs__article-img" width='260' height='200' src='img/blog/blog3.png' alt='Blog 3'>
+                                    </picture>
+                                </a>
+                                <div class="blogs__article-info">
+                                    <p class="blogs__article-publish text-detail">03.02.2022</p>
+                                    <a class="blogs__article-link title-5" href="#">Our server now encrypts the data</a>
+                                    <p class="blogs__article-descr text-body">We keep your files and do not publish them.</p>
+                                </div>
+                            </li>
+                            <li class="blogs__article-item">
+                                <a class="blogs__article-preview" href="#">
+                                    <picture>
+                                      <source type='image/webp' srcset='img/blog/blog4.webp'>
+                                      <img class="blogs__article-img" width='260' height='200' src='img/blog/blog4.png' alt='Blog 4'>
+                                    </picture>
+                                </a>
+                                <div class="blogs__article-info">
+                                    <p class="blogs__article-publish text-detail">19.01.2022</p>
+                                    <a class="blogs__article-link title-5" href="#">Now you can download up to 50 PDFs</a>
+                                    <p class="blogs__article-descr text-body">We are expanding our service and now accept as many as 50 PDF...</p>
+                                </div>
+                            </li>
                         </ul>
-                        <div class="blog__all">
-                            <a href="#">
-                                <svg width='58' height='58'>
-                                    <use href='img/sprite/sprite.svg#blog-link'></use>
-                                </svg>
-                                <span>Go to Blog</span>
-                            </a>
-                        </div>
+                        <a class="blogs__all" href="#">
+                            <svg width='58' height='58'>
+                                <use href='img/sprite/sprite.svg#blog-link'></use>
+                            </svg>
+                            <span class="blogs__all-link title-4">Go to Blog</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -365,9 +414,50 @@
                         </div>
                     </div>
 
-                    <div class="about__bot">
-
-                    </div>
+                    <ul class="about__partners">
+                        <li class="about__partners-item">
+                            <picture>
+                              <source type='image/webp' srcset='img/partners/Nasdaq.webp'>
+                              <img width='250' height='72' src='img/partners/Nasdaq.png' alt='Nasdaq'>
+                            </picture>
+                        </li>
+                        <li class="about__partners-item">
+                            <picture>
+                              <source type='image/webp' srcset='img/partners/Bloomberg.webp'>
+                              <img width='250' height='51' src='img/partners/Bloomberg.png' alt='Nasdaq'>
+                            </picture>
+                        </li>
+                        <li class="about__partners-item">
+                            <picture>
+                              <source type='image/webp' srcset='img/partners/DigitalJournal.webp'>
+                              <img width='250' height='30' src='img/partners/DigitalJournal.png' alt='Nasdaq'>
+                            </picture>
+                        </li>
+                        <li class="about__partners-item">
+                            <picture>
+                              <source type='image/webp' srcset='img/partners/MarketWatch.webp'>
+                              <img width='250' height='36' src='img/partners/MarketWatch.png' alt='Nasdaq'>
+                            </picture>
+                        </li>
+                        <li class="about__partners-item">
+                            <picture>
+                              <source type='image/webp' srcset='img/partners/Streetinsider.webp'>
+                              <img width='250' height='32' src='img/partners/Streetinsider.png' alt='Nasdaq'>
+                            </picture>
+                        </li>
+                        <li class="about__partners-item">
+                            <picture>
+                              <source type='image/webp' srcset='img/partners/Thewhig.webp'>
+                              <img width='250' height='53' src='img/partners/Thewhig.png' alt='Nasdaq'>
+                            </picture>
+                        </li>
+                        <li class="about__partners-item">
+                            <picture>
+                              <source type='image/webp' srcset='img/partners/YahooFinance.webp'>
+                              <img width='250' height='36' src='img/partners/YahooFinance.png' alt='Nasdaq'>
+                            </picture>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -398,19 +488,41 @@
 
         <section class="download">
             <div class="container">
-                <div class="block">
+                <div class="download__block block">
                     <div class="block__head">
-                        <div class="block__center">
+                        <div class="download__center block__center">
                             <div class="block__headline">
-                                <h2 class="block__title  title-2">Download our program to your smartphone</h2>
-                                <p class="block__descr text">Order a print at any time for your smartphone.</span></p>
+                                <h2 class="download__title block__title  title-2">Download our program to your smartphone</h2>
+                                <p class="download__descr block__descr text">Order a print at any time for your smartphone.</span></p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="download__bot">
-
-                    </div>
+                    <ul class="download__links">
+                        <li class="download__links-item">
+                            <a class="download__link" href="#">
+                                <picture>
+                                  <source type='image/webp' srcset='img/google-play.webp'>
+                                  <img width='232' height='68' src='img/google-play.png' alt='google-play'>
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="download__links-item">
+                            <a class="download__link" href="#">
+                                <svg width='80' height='80'>
+                                <use href='img/sprite/sprite.svg#p-logo'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="download__links-item">
+                            <a class="download__link" href="#">
+                                <picture>
+                                  <source type='image/webp' srcset='img/app-store.webp'>
+                                  <img width='232' height='68' src='img/app-store.png' alt='app-store'>
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

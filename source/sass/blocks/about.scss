@@ -2,4 +2,35 @@
     &__wrapp {
         grid-gap: 100px;
     }
+
+    &__partners {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        li + li {
+            margin-left: 175px;
+        }
+    }
+
+    &__partners-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 75px;
+        margin-bottom: 60px;
+        transition: 0.7s all ease-in;
+        transition-duration: 2s;
+
+        img {
+            filter: grayscale(100);
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+            }
+        }
+    }
 }

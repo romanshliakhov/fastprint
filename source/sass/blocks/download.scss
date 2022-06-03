@@ -1,0 +1,29 @@
+.download {
+    min-height: 792px;
+    background-color: var(--system-1);
+
+    &__block {
+        padding-top: 368px;
+    }
+
+    &__center {
+        max-width: 720px;
+    }
+
+    &__title {
+        color: var(--system-6);
+    }
+
+    &__descr {
+        color: var(--system-4);
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+
+        li + li {
+            margin-left: 100px;
+        }
+    }
+}
