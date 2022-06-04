@@ -1,0 +1,59 @@
+.tutorials {
+    background-color: var(--system-5);
+    padding: 80px clamp(20px,5.215vw,30px);
+    position: relative;
+    z-index: 1;
+
+    &__inner {
+        display: flex;
+        grid-gap: 353px;
+    }
+
+    &__videos {
+        max-width: 430px;
+        padding-top: 40px;
+    }
+
+    &__videos-all {
+        margin-bottom: -150px;
+        max-width: 743px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 40px;
+        padding: 40px;
+        background: var(--system-6);
+        border-radius: 8px;
+    }
+
+    &__videos-icon {
+        margin-right: 22px;
+    }
+
+    &__list {
+        border-bottom: 1px solid var(--system-4);
+        padding: 20px;
+    }
+
+    &__video-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding-left: 36px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: var(--video-preview);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 24px;
+            left: 0;
+        }
+    }
+
+
+}

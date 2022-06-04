@@ -21,23 +21,38 @@
     }
 
     &__videos-item {
+        max-width: 480px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
+        grid-gap: 40px;
     }
 
     &__video {
+        display: flex;
         filter: drop-shadow(0px 16px 30px rgba(0, 22, 102, 0.16));
         border-radius: 14px;
     }
 
-    &__video-title {
-        margin-top: 40px;
+    &__video-info {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 12px;
+        text-align: center;
+
+        &--reverse {
+            flex-direction: column-reverse;
+            text-align: left;
+        }
+    }
+
+    &__video-information {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
     }
 
     &__video-duration {
-        margin-top: 12px;
         color: var(--system-3);
     }
 }

@@ -1,5 +1,5 @@
 .contacts {
-    padding: 100px 0 260px;
+    padding: 100px clamp(20px, 5.215vw, 30px) 260px;
 
     &__download {
         padding: 230px 0;
