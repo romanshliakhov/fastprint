@@ -75,6 +75,24 @@
   color: var(--system-1);
 }
 
+.star-text {
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 125%;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--system-1);
+  }
+
+.reviews-text {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--system-1);
+  }
+
 .text {
   font-family: var(--font-family);
   font-size: 20px;

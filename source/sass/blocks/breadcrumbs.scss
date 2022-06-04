@@ -1,0 +1,24 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    grid-gap: 56px;
+
+    &__prev {
+        color: var(--system-3);
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: var(--breadcrumbs-arrow);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 10px;
+            right: -36px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

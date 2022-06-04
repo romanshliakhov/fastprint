@@ -179,3 +179,21 @@ let _slideToggle = (target, duration = 500) => {
 		return _slideUp(target, duration);
 	}
 };
+
+// comments
+const body = document.body;
+const block = document.querySelector('.feedback__comments');
+
+function setHeaderHeight() {
+    let header = document.querySelector('.feedback__all'),
+        headerHeight = header.clientHeight + 'px';
+    block.style.setProperty('--comments-max-height', headerHeight)
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    setHeaderHeight();
+});
+
+window.addEventListener("resize", () => {
+setHeaderHeight();
+});

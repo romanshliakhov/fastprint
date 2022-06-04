@@ -2,6 +2,7 @@
     min-height: 1162px;
     background-color: var(--system-5);
     position: relative;
+    z-index: 1;
     padding: 140px 40px 0;
 
     &__wrapp {
