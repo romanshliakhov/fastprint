@@ -1,0 +1,44 @@
+.contacts {
+    &__download {
+        padding: 230px 0;
+    }
+
+    &__download-wrapp {
+        display: flex;
+        grid-gap: 42px;
+    }
+
+    &__download-image {
+
+    }
+
+    &__download-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__download-fastlink {
+        margin-bottom: 60px;
+    }
+
+    &__download-googlplay {
+        margin-bottom: 34px;
+    }
+
+    &__download-info {
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+
+    &__info-title {
+        color: var(--system-6);
+    }
+
+    &__info-descr {
+        color: var(--system-4);
+    }
+
+
+}
