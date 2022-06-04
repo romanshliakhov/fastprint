@@ -71,10 +71,22 @@ picture {
   display: inline-flex;
 }
 
+fieldset {
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
 input {
   width: 100%;
   outline: none;
   border: none;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    border: none;
 }
 
 label {

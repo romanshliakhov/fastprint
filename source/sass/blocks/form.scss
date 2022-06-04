@@ -1,0 +1,61 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+
+    &__block {
+        max-width: 538px;
+        width: 100%;
+        padding: 40px 23.5px;
+    }
+
+    &__block-head {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        grid-gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        width: 100%;
+        background-color: var(--blue-6);
+    }
+
+    &__button-text {
+        color: var(--system-6);
+    }
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+
+    &__fieldset-title {
+        color: var(--blue-6);
+    }
+
+    &__input {
+        padding: 11px 14px;
+        border: 1px solid var(--system-3);
+        border-radius: 6px;
+
+        &:focus {
+            border: 1px solid var(--blue-6);
+        }
+    }
+
+    &__textarea {
+        height: 100px;
+        resize: none;
+        padding: 11px 14px;
+        border: 1px solid var(--system-3);
+        border-radius: 6px;
+        outline: none;
+
+        &:focus {
+            border: 1px solid var(--blue-6);
+        }
+    }
+}

@@ -1,4 +1,6 @@
 .contacts {
+    padding: 100px 0 260px;
+
     &__download {
         padding: 230px 0;
     }
@@ -6,10 +8,6 @@
     &__download-wrapp {
         display: flex;
         grid-gap: 42px;
-    }
-
-    &__download-image {
-
     }
 
     &__download-details {
@@ -40,5 +38,41 @@
         color: var(--system-4);
     }
 
+    &__info {
+        display: flex;
+        grid-gap: 198px;
+    }
 
+    &__details {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 60px;
+    }
+
+    &__details-item {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 14px;
+    }
+
+    &__details-title {
+        color: var(--system-3);
+    }
+
+    &__adress {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    &__adress-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__adress-worktime {
+        display: flex;
+        grid-gap: 44px;
+    }
 }
