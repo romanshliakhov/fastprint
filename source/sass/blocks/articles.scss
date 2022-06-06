@@ -1,0 +1,39 @@
+.articles {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 18px;
+    padding: 20px 20px 16px;
+    max-width: 430px;
+
+    &__image {
+        min-height: 300px;
+        background: linear-gradient(180deg, #00AEF9 0%, #0047FF 100%);
+        border-radius: 12px;
+
+        img {
+            font-size: 0;
+            border-radius: 12px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+
+    &__info-head {
+        display: flex;
+    }
+
+    &__pubtime {
+        margin-left: 16px;
+        color: var(--blue-6);
+    }
+
+    &__info-details {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 12px;
+    }
+}

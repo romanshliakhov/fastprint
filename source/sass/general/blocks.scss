@@ -10,6 +10,9 @@
 @import "blocks/head.scss";
 @import "blocks/breadcrumbs.scss";
 @import "blocks/form.scss";
+@import "blocks/articles.scss";
+@import "blocks/pagination.scss";
+
 
 // main page
 @import "blocks/first.scss";
@@ -21,10 +24,13 @@
 @import "blocks/feedback.scss";
 @import "blocks/tutorial.scss";
 @import "blocks/new.scss";
-@import "blocks/blog.scss";
+@import "blocks/blogs.scss";
 @import "blocks/about.scss";
 @import "blocks/faq.scss";
 @import "blocks/download.scss";
+
+// tutorials page
+@import "blocks/blog.scss";
 
 // tutorials page
 @import "blocks/tutorials.scss";
