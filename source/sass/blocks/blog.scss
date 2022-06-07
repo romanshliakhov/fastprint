@@ -29,20 +29,22 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        transition: all .3s ease-in;
 
         svg {
             margin-right: 20px;
+            transition: all .3s ease-in;
+            stroke: var(--system-1);
         }
 
         &:hover {
             color: var(--blue-6);
 
             svg {
-                fill: var(--blue-6);
+                stroke: currentColor;
             }
         }
     }
-
 
     &__wrapp-articles {
         min-height: auto;

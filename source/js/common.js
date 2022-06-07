@@ -202,6 +202,4 @@ setHeaderHeight();
 
 lightGallery(document.querySelector('[data-modal="footer-video"]'), {
     controls: 0,
-    showinfo: 0,
-    rel: 0
   });
