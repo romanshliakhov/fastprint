@@ -4,8 +4,27 @@
     grid-gap: 18px;
     padding: 20px 20px 16px;
     max-width: 430px;
+    transition: all 2s ease;
+
+    &:hover {
+        transition: all 2s ease;
+
+        .articles__image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(0, 71, 254, 0.6), rgba(0, 71, 254, 0.6)), linear-gradient(180deg, #731398 0%, #0047FF 100%);
+            z-index: 3;
+            opacity: 0.6;
+            border-radius: 12px;
+        }
+    }
 
     &__image {
+        position: relative;
         min-height: 300px;
         background: linear-gradient(180deg, #00AEF9 0%, #0047FF 100%);
         border-radius: 12px;

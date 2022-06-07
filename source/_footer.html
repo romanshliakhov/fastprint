@@ -2,12 +2,22 @@
   <div class="container">
     <div class="footer">
         <div class="footer__top">
-            <div class="footer__video">
-                <picture>
-                  <source type='image/webp' srcset='img/video.webp'>
-                  <img width='400' height='234' src='img/video.png' alt='video'>
-                </picture>
+            <div class="footer__video video" data-modal="footer-video">
+                <div class="footer__video-image video__image" data-src="https://youtu.be/Rt_Nne_BKZ0">
+
+                    <p class="footer__video-controls video__controls">
+                        <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#play'></use>
+                        </svg>
+                    </p>
+
+                    <picture>
+                        <source type='image/webp' srcset='img/video.webp'>
+                        <img width='400' height='234' src='img/video.png' alt='video'>
+                    </picture>
+                </div>
             </div>
+
             <div class="footer__navigation">
                 <ul class="footer__nav">
                     <li class="footer__nav-title title-5">Company</li>

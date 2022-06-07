@@ -106,6 +106,39 @@ footer {
     &__policy-link {
         color: var(--system-6);
     }
+
+    &__video {
+        max-height: 234px;
+        transition: all 1s ease;
+        cursor: pointer;
+
+        &-controls:hover {
+            background-color: rgba(0, 71, 254, 0.8);
+        }
+    }
+
+    &__video-image {
+        position: relative;
+    }
+
+    &__video-controls {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: rgba(24, 24, 24, 0.5);
+
+        svg {
+            width: 33px;
+            height: 33px;
+        }
+    }
 }
 
 
