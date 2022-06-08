@@ -1,0 +1,30 @@
+.timer {
+    &__count-content {
+        display: flex;
+        align-items: center;
+        grid-gap: 13px;
+    }
+
+    &__count-item {
+        width: 42px;
+        height: 42px;
+        background-color: var(--blue-6);
+        border-radius: 5px;
+        color: var(--system-6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--innactive {
+            background-color: var(--system-3);
+        }
+    }
+
+    &__count-separator {
+        color: var(--blue-6);
+
+        &--innactive {
+            color: var(--system-3);
+        }
+    }
+}

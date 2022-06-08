@@ -10,10 +10,6 @@
         border-radius: 8px;
     }
 
-    &__timer {
-        width: 152px;
-    }
-
     &__shipping-text {
         margin-left: 30px;
         max-width: 300px;
@@ -21,9 +17,34 @@
 
     &__shipping-details {
         margin-left: 10px;
+        position: relative;
+        transition: all 0.7s ease-in-out;
+
+        &:hover {
+            .calculate__details-hover {
+                opacity: 1;
+                overflow: visible;
+                z-index: 5;
+            }
+        }
     }
 
-    &__block {
+    &__details-hover {
+        position: absolute;
+        top: 60px;
+        left: -295px;
+        right: -15px;
+        padding: 10px;
+        background: var(--system-6);
+        box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        z-index: -1;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+    }
+
+    &__box {
         background-color: #fff;
         height: 740px;
         width: 100%;
