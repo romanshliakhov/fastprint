@@ -1,0 +1,50 @@
+.more {
+    padding: 260px clamp(20px,5.215vw,30px);
+
+    &__news {
+        position: relative;
+        width: 100%;
+    }
+
+    &__slider {
+        max-width: Min(73.438vw, 1410px);
+        width: 100%;
+    }
+
+    &__arrow {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        background: var(--system-4);
+        border-radius: 5px;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        transition: all 0.4s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            stroke: var(--system-1);
+            transition: all 0.4s ease;
+        }
+
+        &:hover {
+            background-color: var(--blue-6);
+
+            svg {
+                stroke: var(--system-6);
+            }
+        }
+
+        &--next {
+            right: 0;
+        }
+
+        &--prev {
+            left: 0;
+        }
+    }
+}

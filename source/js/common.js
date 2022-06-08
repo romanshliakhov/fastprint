@@ -29,7 +29,7 @@ select();
 
 
 // Dynamic row
-let slider = new Swiper(".sale__slider", {
+let sliderDynamicRow = new Swiper(".sale__slider", {
     slidesPerView: "auto",
     spaceBetween: 60,
     loop: true,
@@ -37,6 +37,20 @@ let slider = new Swiper(".sale__slider", {
     speed: 20000,
     autoplay: {
       delay: 0,
+    },
+});
+
+
+// Article slider
+let sliderArticle = new Swiper(".more__slider", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    loop: true,
+    // observer: true,
+    navigation: {
+        nextEl: ".more__arrow--prev",
+        prevEl: ".more__arrow--next",
+        clickable: true,
     },
 });
 

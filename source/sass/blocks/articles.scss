@@ -16,7 +16,7 @@
 
     &__image {
         position: relative;
-        min-height: 300px;
+        min-height: Nin(15.625vw, 300px);
         background: linear-gradient(180deg, #00AEF9 0%, #0047FF 100%);
         border-radius: 12px;
 
