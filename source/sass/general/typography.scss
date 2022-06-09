@@ -80,6 +80,11 @@
     font-weight: 700;
     font-style: normal;
     color: var(--system-1);
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 120%;
+    }
 }
 
 .sale-text {
@@ -264,6 +269,11 @@
     font-weight: 600;
     font-style: normal;
     color: var(--system-1);
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 115%;
+    }
 }
 
 .text-calc-btn {
@@ -300,6 +310,11 @@
     font-weight: 600;
     font-style: normal;
     color: var(--system-1);
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 125%;
+    }
 }
 
 
