@@ -13,19 +13,18 @@ footer {
     &__top {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 1240px) {
+
+        }
     }
 
     &__navigation {
         display: flex;
-
-        ul + ul {
-            margin-left: 40px;
-        }
+        grid-gap: clamp(40px, 3.906vw, 75px);
     }
 
     &__nav {
-        width: 200px;
-
         li + li {
             margin-top: 24px;
         }
@@ -41,6 +40,10 @@ footer {
 
     &__nav-link {
         color: var(--system-6);
+    }
+
+    &__info {
+        flex-shrink: 0;
     }
 
     &__info-title {
@@ -62,7 +65,7 @@ footer {
         }
     }
 
-    &__socials-item {
+    &__socials-link {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -70,6 +73,15 @@ footer {
         height: 50px;
         background-color: var(--system-2);
         border-radius: 10px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background-color: var(--blue-6);
+        }
+
+        svg {
+            fill: var(--system-6);
+        }
     }
 
     &__payments {
@@ -108,6 +120,7 @@ footer {
     }
 
     &__video {
+        width: clamp(300px, 20.833vw, 400px);
         max-height: 234px;
         transition: all 1s ease;
         cursor: pointer;
