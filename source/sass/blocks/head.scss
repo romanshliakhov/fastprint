@@ -14,5 +14,9 @@
     &__descr {
         margin-top: 40px;
         max-width: 743px;
+
+        @media (max-width: 1024px) {
+            max-width: 679px;
+        }
     }
 }

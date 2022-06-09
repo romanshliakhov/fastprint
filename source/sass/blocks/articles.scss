@@ -7,11 +7,14 @@
     transition: all 2s ease;
 
     &:hover {
-
         .articles__image::before {
             opacity: 0.6;
         }
+    }
 
+    @media (max-width: 1240px) {
+        max-width: 298px;
+        padding: 16px;
     }
 
     &__image {
@@ -69,7 +72,6 @@
     &__info-sort {
         svg {
             stroke: var(--blue-6);
-            // fill: var(--blue-6);
         }
     }
 

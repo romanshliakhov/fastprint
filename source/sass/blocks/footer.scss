@@ -1,8 +1,7 @@
 footer {
     background-color: var(--system-1);
-    min-height: 526px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 100px clamp(20px, 5.215vw, 30px) 28px;
+    padding: clamp(40px, 5.208vw, 100px) clamp(20px, 5.215vw, 30px) 28px;
 }
 
 .footer {
@@ -151,10 +150,10 @@ footer {
     &__policy {
         display: flex;
         align-items: center;
-        grid-gap: clamp(40px, 5.859vw, 60px);
+        // grid-gap: clamp(40px, 5.859vw, 60px);
 
         @media (max-width: 576px) {
-            justify-content: space-between;
+            justify-content: space-evenly;
             width: 100%;
         }
     }

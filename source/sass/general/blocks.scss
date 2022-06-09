@@ -14,6 +14,7 @@
 @import "blocks/pagination.scss";
 @import "blocks/timer.scss";
 @import "blocks/mobile.scss";
+@import "blocks/lang.scss";
 
 
 // main page
@@ -33,6 +34,7 @@
 
 // blog page
 @import "blocks/blog.scss";
+@import "blocks/filter.scss";
 
 // article page
 @import "blocks/article.scss";

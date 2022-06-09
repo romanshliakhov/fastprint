@@ -25,55 +25,60 @@
                     <aside class="blog__wrapp-categories">
                         <div class="blog__wrapp-title title-4">Categories</div>
 
-                          <div class='select'>
-                            <div class='select__header'>
-                                <span class='select__current blog__categories-name button-filtr'>All notes</span>
-                                <div class='select__icon'>
+                          <div class='blog__filter filter select'>
+                            <div class='filter__header select__header'>
+                                <span class='filter__name filter__name--active select__current  button-filtr'>
                                     <svg width='24' height='24'>
                                         <use href='img/sprite/sprite.svg#categories-all'></use>
+                                    </svg>
+                                    All notes
+                                </span>
+                                <div class='select__icon'>
+                                    <svg width='16' height='7'>
+                                        <use href='img/sprite/sprite.svg#arrow-down'></use>
                                     </svg>
                                 </div>
                             </div>
 
-                            <div class='select__body'>
-                              <ul class='select__wrapp'>
-                                <li class='select__item blog__categories-name button-filtr' data-choice='choosen'>
+                            <div class='filter__body select__body'>
+                              <ul class='filter__wrapp select__wrapp'>
+                                <li class='filter__name filter__name--active button-filtr select__item' data-choice='choosen'>
                                     <svg width='24' height='24'>
                                         <use href='img/sprite/sprite.svg#categories-all'></use>
                                     </svg>
                                     All notes
                                 </li>
-                                <li class="blog__categories-name button-filtr select__item">
+                                <li class="filter__name button-filtr select__item"  data-choice='choosen'>
                                     <svg width='24' height='24'>
                                     <use href='img/sprite/sprite.svg#categories-special'></use>
                                     </svg>
                                     Special information
                                 </li>
-                                <li class="blog__categories-name button-filtr select__item">
+                                <li class="filter__name button-filtr select__item"  data-choice='choosen'>
                                     <svg width='24' height='24'>
                                     <use href='img/sprite/sprite.svg#categories-upgrade'></use>
                                     </svg>
                                     Upgrade and new functional
                                 </li>
-                                <li class="blog__categories-name button-filtr select__item">
+                                <li class="filter__name button-filtr select__item"  data-choice='choosen'>
                                     <svg width='24' height='24'>
                                     <use href='img/sprite/sprite.svg#categories-study'></use>
                                     </svg>
                                     Study our service
                                 </li>
-                                <li class="blog__categories-name button-filtr select__item">
+                                <li class="filter__name button-filtr select__item "  data-choice='choosen'>
                                     <svg width='24' height='24'>
                                     <use href='img/sprite/sprite.svg#categories-chat'></use>
                                     </svg>
                                     Chat with CEO
                                 </li>
-                                <li class="blog__categories-name button-filtr select__item">
+                                <li class="filter__name button-filtr select__item"  data-choice='choosen'>
                                     <svg width='24' height='24'>
                                     <use href='img/sprite/sprite.svg#categories-about'></use>
                                     </svg>
                                     About our print mashine
                                 </li>
-                                <li class="blog__categories-name button-filtr select__item">
+                                <li class="filter__name button-filtr select__item"  data-choice='choosen'>
                                     <svg width='24' height='24'>
                                     <use href='img/sprite/sprite.svg#categories-shipping'></use>
                                     </svg>
@@ -83,7 +88,7 @@
                             </div>
                         </div>
 
-                        <ul class="blog__categories">
+                        <!-- <ul class="blog__categories">
                             <li class="blog__categories-name button-filtr">
                                 <svg width='24' height='24'>
                                 <use href='img/sprite/sprite.svg#categories-all'></use>
@@ -126,7 +131,7 @@
                                 </svg>
                                 Our shipping and rules
                             </li>
-                        </ul>
+                        </ul> -->
                     </aside>
 
                     <div class="blog__wrapp-articles">

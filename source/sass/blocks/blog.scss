@@ -1,14 +1,22 @@
 .blog {
-    padding: 120px clamp(20px, 5.215vw, 30px) 260px;
+    padding: clamp(40px, 5.208vw, 120px) clamp(20px, 5.215vw, 30px) 260px;
 
-    &__head {
-        padding: 40px 0;
+    @media (max-width: 1240px) {
+        padding-bottom: 240px;
+    }
+
+    @media (max-width: 768px) {
+        padding-bottom: 200px;
     }
 
     &__wrapp {
         display: flex;
         grid-gap: 80px;
         position: relative;
+
+        @media (max-width: 1240px) {
+            flex-direction: column;
+        }
     }
 
     &__wrapp-categories {
@@ -18,44 +26,35 @@
         max-width: 370px;
         width: 100%;
         border-right: 1px solid var(--system-1);
+
+        @media (max-width: 1240px) {
+            position: relative;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-width: 100%;
+            border-right: none;
+        }
     }
 
     &__categories {
         padding: 14px 20px;
     }
 
-    &__categories-name {
-        height: 52px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        transition: all .3s ease-in;
-
-        svg {
-            margin-right: 20px;
-            transition: all .3s ease-in;
-            stroke: var(--system-1);
-        }
-
-        &:hover {
-            color: var(--blue-6);
-
-            svg {
-                stroke: currentColor;
-            }
-        }
-    }
-
     &__wrapp-articles {
         min-height: auto;
         max-width: 1370px;
         width: 100%;
+        z-index: 2;
     }
 
     &__articles {
         margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
-        grid-gap: 100px 40px;
+        grid-gap: 100px 30px;
+
+        @media (max-width: 1240px) {
+            grid-gap: 60px 15px;
+        }
     }
 }
