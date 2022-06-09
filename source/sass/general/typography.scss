@@ -1,78 +1,123 @@
 .title-1 {
-  font-family: var(--font-family);
-  font-size: 90px;
-  line-height: 107%;
-  font-weight: 800;
-  letter-spacing: -2px;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 90px;
+    line-height: 107%;
+    font-weight: 800;
+    letter-spacing: -2px;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 1024px) {
+        font-size: 60px;
+        line-height: 117%;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 122%;
+    }
 }
 
 .title-2 {
-  font-family: var(--font-family);
-  font-size: 46px;
-  line-height: 120%;
-  font-weight: 800;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 46px;
+    line-height: 120%;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--system-1);
+    letter-spacing: -1px;
+
+    @media (max-width: 1024px) {
+        font-size: 40px;
+        line-height: 115%;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 119%;
+    }
 }
 
 
 .title-3 {
-  font-family: var(--font-family);
-  font-size: 32px;
-  line-height: 106%;
-  font-weight: 800;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 32px;
+    line-height: 106%;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 1024px) {
+        font-size: 26px;
+        line-height: 119%;
+    }
+
+    @media (max-width: 768px) {
+        color: var(--system-4);
+    }
 }
 
 
 .title-4 {
-  font-family: var(--font-family);
-  font-size: 24px;
-  line-height: 117%;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 24px;
+    line-height: 117%;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 111%;
+    }
 }
 
 
 .title-5 {
-  font-family: var(--font-family);
-  font-size: 18px;
-  line-height: 122%;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 122%;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .sale-text {
-  font-family: var(--font-family);
-  font-size: 26px;
-  line-height: 120%;
-  font-weight: 800;
-  font-style: italic;
-  text-transform: lowercase;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 26px;
+    line-height: 120%;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: lowercase;
+    color: var(--system-1);
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 122%;
+    }
 }
 
 .text-headline {
-  font-family: var(--font-family);
-  font-size: 16px;
-  line-height: 150%;
-  font-weight: 600;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 143%;
+    }
 }
 
 .menu-text {
-  font-family: var(--font-family);
-  font-size: 18px;
-  line-height: 125%;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 125%;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .star-text {
@@ -82,7 +127,7 @@
     font-weight: 600;
     font-style: normal;
     color: var(--system-1);
-  }
+}
 
 .reviews-text {
     font-family: var(--font-family);
@@ -91,24 +136,44 @@
     font-weight: 700;
     font-style: normal;
     color: var(--system-1);
-  }
+}
 
 .text {
-  font-family: var(--font-family);
-  font-size: 20px;
-  line-height: 160%;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 162%;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 171%;
+    }
 }
 
 .text-body {
-  font-family: var(--font-family);
-  font-size: 16px;
-  line-height: 162%;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 162%;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 163%;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+        line-height: 169%;
+    }
 }
 
 .button-1 {
@@ -125,102 +190,107 @@
 }
 
 .button-2 {
-  font-family: var(--font-family);
-  font-size: 14px;
-  line-height: 128%;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 128%;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .button-filtr {
-  font-family: var(--font-family);
-  font-size: 16px;
-  line-height: 125%;
-  font-weight: 500;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .text-detail {
-  font-family: var(--font-family);
-  font-size: 18px;
-  line-height: 123%;
-  font-weight: 500;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 123%;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 125%;
+    }
 }
 
 .text-decor {
-  font-family: var(--font-family);
-  font-size: 13px;
-  line-height: 120%;
-  font-weight: 900;
-  font-style: italic;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 13px;
+    line-height: 120%;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--system-1);
 }
 
 .button-footer {
-  font-family: var(--font-family);
-  font-size: 16px;
-  line-height: 125%;
-  font-weight: 500;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .text-calc-name {
-  font-family: var(--font-family);
-  font-size: 18px;
-  line-height: 125%;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 125%;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .text-calc-descr {
-  font-family: var(--font-family);
-  font-size: 14px;
-  line-height: 143%;
-  font-weight: 500;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .text-calc-other {
-  font-family: var(--font-family);
-  font-size: 36px;
-  line-height: 139%;
-  font-weight: 600;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 36px;
+    line-height: 139%;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .text-calc-btn {
-  font-family: var(--font-family);
-  font-size: 40px;
-  line-height: 120%;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .text-calc-total {
-  font-family: var(--font-family);
-  font-size: 50px;
-  line-height: 100%;
-  font-weight: 600;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 50px;
+    line-height: 100%;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .text-basket {
-  font-family: var(--font-family);
-  font-size: 16px;
-  line-height: 125%;
-  font-weight: 600;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 125%;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--system-1);
 }
 
 .text-town {
@@ -230,6 +300,4 @@
     font-weight: 600;
     font-style: normal;
     color: var(--system-1);
-  }
-
-
+}
