@@ -112,12 +112,16 @@
 }
 
 .button-1 {
-  font-family: var(--font-family);
-  font-size: 18px;
-  line-height: 125%;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--system-1);
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 125%;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .button-2 {

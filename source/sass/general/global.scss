@@ -3,6 +3,7 @@ body {
   padding: 0;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 html {
@@ -130,6 +131,10 @@ input[type="number"] {
 
 svg {
   fill: transparent;
+}
+
+.body-scroll {
+    overflow-y: hidden;
 }
 
 

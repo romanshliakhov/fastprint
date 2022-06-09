@@ -1,3 +1,21 @@
+// burger
+let menuBtnOpen = document.querySelector('.mobile__header-btn--open');
+let menuBtnClose = document.querySelector('.mobile__header-btn--close');
+let menu = document.querySelector('.mobile__menu');
+let disableScroll = document.querySelector('body');
+
+menuBtnOpen.addEventListener('click', function(){
+	menuBtnOpen.classList.add('active');
+	menu.classList.add('active');
+    disableScroll.classList.add('body-scroll');
+});
+
+menuBtnClose.addEventListener('click', function(){
+	menuBtnOpen.classList.remove('active');
+	menu.classList.remove('active');
+    disableScroll.classList.remove('body-scroll');
+});
+
 // Select
 
 let select = function () {
