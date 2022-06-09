@@ -3,7 +3,7 @@
     flex-direction: column;
     grid-gap: 18px;
     padding: 20px 20px 16px;
-    max-width: 430px;
+    max-width: 100%;
     transition: all 2s ease;
 
     &:hover {
@@ -13,7 +13,7 @@
     }
 
     @media (max-width: 1240px) {
-        max-width: 298px;
+        max-width: 100%;
         padding: 16px;
     }
 
