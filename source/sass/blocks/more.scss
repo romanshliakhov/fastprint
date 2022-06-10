@@ -1,14 +1,35 @@
 .more {
     padding: 260px clamp(20px,5.215vw,30px);
 
+    @media (max-width: 1024px) {
+        padding: 240px clamp(20px,5.215vw,30px);
+    }
+
+    @media (max-width: 768px) {
+        padding: 200px clamp(20px,5.215vw,30px);
+    }
+
     &__news {
         position: relative;
         width: 100%;
+
+        @media (max-width: 1024px) {
+            display: grid;
+            grid-gap: 40px;
+            grid-template-areas:
+            "slider slider"
+            "left right";
+        }
     }
 
     &__slider {
         max-width: Min(73.438vw, 1410px);
         width: 100%;
+
+        @media (max-width: 1024px) {
+            max-width: 100%;
+            grid-area: slider;
+        }
     }
 
     &__arrow {
@@ -39,12 +60,27 @@
             }
         }
 
+        @media (max-width: 1024px) {
+            top: initial;
+            position: relative;
+            transform: initial;
+        }
+
         &--next {
             right: 0;
+
+            @media (max-width: 1024px) {
+                grid-area: right;
+            }
         }
 
         &--prev {
             left: 0;
+
+            @media (max-width: 1024px) {
+                margin-left: auto;
+                grid-area: left;
+            }
         }
     }
 }

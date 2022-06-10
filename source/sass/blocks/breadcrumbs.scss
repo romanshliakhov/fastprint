@@ -2,10 +2,17 @@
     display: flex;
     align-items: center;
     grid-gap: 56px;
+    width: 100%;
+    flex-shrink: 0;
+    overflow-x: auto;
+    justify-content: flex-start;
+    user-select: none;
+
 
     &__prev {
         color: var(--system-3);
         position: relative;
+        white-space: nowrap;
 
         &::before {
             content: '';
@@ -20,5 +27,13 @@
             top: 50%;
             transform: translateY(-50%);
         }
+    }
+
+    &__current {
+        white-space: nowrap;
+    }
+
+    @media (max-width: 1024px) {
+        padding-bottom: 15px;
     }
 }

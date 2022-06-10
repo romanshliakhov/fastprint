@@ -76,12 +76,25 @@ let sliderArticle = new Swiper(".more__slider", {
     slidesPerView: 3,
     spaceBetween: 40,
     loop: true,
-    // observer: true,
     navigation: {
         nextEl: ".more__arrow--prev",
         prevEl: ".more__arrow--next",
         clickable: true,
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        }
+    }
 });
 
 
@@ -280,3 +293,15 @@ lightGallery(document.querySelector('[data-modal="footer-video"]'), {
 // 	timeCount();
 // 	setInterval(timeCount, 1000);
 // });
+
+
+// Close banner
+const closeBtn = document.querySelector('.banner__close');
+const bannerItem = document.querySelector('.banner');
+
+const addClassHide = function(button, body) {
+    button.onclick = () => body.classList.add('hide');
+}
+
+addClassHide(closeBtn, bannerItem);
+

@@ -9,6 +9,8 @@
         <section class="article">
             <div class="article__image">
                 <picture>
+                    <source type='image/webp' media='(max-width: 767px)' srcset='img/articles.webp'>
+                  <source media='(max-width: 767px)' srcset='img/articles.png'>
                   <source type='image/webp' srcset='img/article.webp'>
                   <img class="article__img" width='1920' height='638' src='img/article.png' alt='article image'>
                 </picture>
@@ -76,19 +78,26 @@
                         </div>
 
                         <aside class="banner">
+                            <div class="banner__close">
+                                <svg width='45' height='45'>
+                                <use href='img/sprite/sprite.svg#mobile-close'></use>
+                                </svg>
+                            </div>
                             <div class="banner__image">
                                 <picture>
                                   <source type='image/webp' srcset='img/banner.webp'>
                                   <img width='330' height='325' src='img/banner.png' alt='banner'>
                                 </picture>
                             </div>
-                            <p class="banner__text title-4">Print your files online with delivery on the day of the order</p>
-                            <button class="banner__button btn">
-                                <svg width='24' height='24'>
-                                    <use href='img/sprite/sprite.svg#banner'></use>
-                                </svg>
-                                View detail
-                            </button>
+                            <div class="banner__info">
+                                <p class="banner__text title-4">Print your files online with delivery on the day of the order</p>
+                                <button class="banner__button btn">
+                                    <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#banner'></use>
+                                    </svg>
+                                    View detail
+                                </button>
+                            </div>
                         </aside>
                     </div>
                 </div>

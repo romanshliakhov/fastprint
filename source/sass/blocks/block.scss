@@ -19,6 +19,14 @@
         align-items: center;
         text-align: center;
         grid-gap: 30px;
+
+        @media (max-width: 1024px) {
+            text-align: left;
+        }
+
+        @media (max-width: 576px) {
+            text-align: center;
+        }
     }
 
     &__between {
@@ -34,6 +42,16 @@
 
         .block__icon {
             margin-right: 40px;
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            justify-content: center;
+            grid-gap: 40px;
+
+            .block__icon {
+                margin: 0;
+            }
         }
     }
 }
