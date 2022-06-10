@@ -4,14 +4,32 @@
     position: relative;
     z-index: 1;
 
+    @media (max-width: 1024px) {
+        padding-top: 60px;
+    }
+
     &__top {
         display: flex;
-        grid-gap: 353px;
+        justify-content: space-between;
+        grid-gap: 100px;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            grid-gap: 60px;
+            align-items: center;
+        }
     }
 
     &__videos {
         max-width: 430px;
+        width: 100%;
         padding-top: 40px;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            grid-gap: 60px;
+            align-items: center;
+        }
     }
 
     &__videos-all {
@@ -66,7 +84,7 @@
 
     &__block-inner {
         display: flex;
-        grid-gap: 40px;
+        grid-gap: 80px;
         width: 100%;
     }
 

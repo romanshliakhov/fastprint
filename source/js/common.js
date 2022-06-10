@@ -263,6 +263,10 @@ lightGallery(document.querySelector('[data-modal="footer-video"]'), {
     controls: 0,
 });
 
+lightGallery(document.querySelector('[data-modal="tutorial-video"]'), {
+    controls: 0,
+});
+
 // Timer
 // document.addEventListener('DOMContentLoaded', () => {
 // 	const newYear = new Date('mar 01 2022 00:00:00'); // пишем тут дату
@@ -303,5 +307,9 @@ const addClassHide = function(button, body) {
     button.onclick = () => body.classList.add('hide');
 }
 
-addClassHide(closeBtn, bannerItem);
+if (bannerItem) {
+    addClassHide(closeBtn, bannerItem);
+}
+
+
 

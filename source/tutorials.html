@@ -24,12 +24,22 @@
                 <div class="tutorials__top">
                     <div class="tutorials__videos">
                         <div class="tutorials__videos-item tutorial__videos-item">
-                            <div class="tutorial__video">
-                                <picture>
-                                  <source type='image/webp' srcset='img/video.webp'>
-                                  <img width='426' height='242' src='img/video.png' alt=''>
-                                </picture>
+                            <div class="tutorial__video video" data-modal="tutorial-video">
+                                <div class="footer__video-image video__image" data-src="https://www.youtube.com/watch?v=17ul8ev0b6U&ab_channel=mtmwood"  data-modal="tutorial-video">
+
+                                    <p class="footer__video-controls video__controls">
+                                        <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#play'></use>
+                                        </svg>
+                                    </p>
+
+                                    <picture>
+                                        <source type='image/webp' srcset='img/video.webp'>
+                                        <img width='400' height='234' src='img/video.png' alt='video'>
+                                    </picture>
+                                </div>
                             </div>
+
                             <div class="tutorial__video-info tutorial__video-info--reverse">
                                 <div class="tutorial__video-information">
                                     <p class="tutorial__video-title title-4">
