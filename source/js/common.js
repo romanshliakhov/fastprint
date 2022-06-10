@@ -257,15 +257,29 @@ window.addEventListener("resize", () => {
     setHeaderHeight();
 });
 
-// Video
 
-lightGallery(document.querySelector('[data-modal="footer-video"]'), {
-    controls: 0,
-});
 
-lightGallery(document.querySelector('[data-modal="tutorial-video"]'), {
-    controls: 0,
-});
+
+let videoBlock = [...document.querySelectorAll('[data-modal="video"]')]
+
+
+const videoInit = (items) => {
+    for (const item of items) {
+        lightGallery(item), {
+            controls: 0,
+        };
+    }
+}
+
+
+if (videoBlock) {
+    videoInit(videoBlock);
+}
+
+
+
+
+
 
 // Timer
 // document.addEventListener('DOMContentLoaded', () => {
