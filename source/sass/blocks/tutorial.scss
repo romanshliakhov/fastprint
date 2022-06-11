@@ -35,6 +35,20 @@
         border-radius: 14px;
     }
 
+    &__video-image {
+        position: relative;
+    }
+
+    &__video-controls {
+        width: 100px;
+        height: 100px;
+
+        svg {
+            height: 40px;
+            width: 36px;
+        }
+    }
+
     &__video-info {
         display: flex;
         flex-direction: column;

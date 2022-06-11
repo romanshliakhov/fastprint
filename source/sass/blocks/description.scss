@@ -1,7 +1,26 @@
 .description {
-    padding: 380px 0 130px;
+    padding: 620px 120px 130px;
 
     &__wrapp {
         grid-gap: 80px;
     }
+
+    &__video {
+        position: relative;
+        max-width: 1526px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &__video-controls {
+        width: 140px;
+        height: 140px;
+
+        svg {
+            height: 56px;
+            width: 51px;
+        }
+    }
+
+
 }
