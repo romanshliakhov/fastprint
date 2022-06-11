@@ -262,7 +262,6 @@ window.addEventListener("resize", () => {
 
 let videoBlock = [...document.querySelectorAll('[data-modal="video"]')]
 
-
 const videoInit = (items) => {
     for (const item of items) {
         lightGallery(item), {
@@ -275,43 +274,6 @@ const videoInit = (items) => {
 if (videoBlock) {
     videoInit(videoBlock);
 }
-
-
-
-
-
-
-// Timer
-// document.addEventListener('DOMContentLoaded', () => {
-// 	const newYear = new Date('mar 01 2022 00:00:00'); // пишем тут дату
-
-// 	const daysVal = document.querySelector('.timer__count-days .timer__count-val');
-// 	const hoursVal = document.querySelector('.timer__count-hours .timer__count-val');
-// 	const minutesVal = document.querySelector('.timer__count-minutes .timer__count-val');
-
-// 	const timeCount = () => {
-// 		let now = new Date();
-// 		let leftUntil = newYear - now;
-
-// 		let days = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
-// 		let hours = Math.floor(leftUntil / 1000 / 60 / 60) % 24;
-// 		let minutes = Math.floor(leftUntil / 1000 / 60) % 60;
-
-//     if (leftUntil < 0 ) {
-//       days = 0;
-//       hours = 0;
-//       minutes = 0;
-//     } else {
-//       daysVal.textContent = ('0' + days).slice(-2);
-//       hoursVal.textContent = ('0' + hours).slice(-2);
-//       minutesVal.textContent = ('0' + minutes).slice(-2);
-//     }
-// 	};
-
-// 	timeCount();
-// 	setInterval(timeCount, 1000);
-// });
-
 
 // Close banner
 const closeBtn = document.querySelector('.banner__close');

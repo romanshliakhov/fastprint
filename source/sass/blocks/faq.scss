@@ -47,6 +47,13 @@
         &._active::before {
           transform: rotate(-45deg);
         }
+
+        @media (max-width: 576px) {
+            &::before,
+            &::after {
+                top: 8px;
+            }
+        }
     }
 
     &__accordion-text {
