@@ -24,6 +24,12 @@
         padding: 10px;
         background-color: var(--system-6);
         border-radius: 16px;
+
+        @media (max-width: 1440px) {
+            &:last-child {
+                display: none;
+            }
+        }
     }
 
     &__article-preview {
