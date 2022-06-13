@@ -28,8 +28,8 @@
                                 </svg>
                                 <span class="basket-copy">All position</span>
                             </div>
-                            <div class="basket__progressbar"></div>
-                            <div class="basket__step">
+                            <div class="basket__progressbar basket__progressbar--active"></div>
+                            <div class="basket__step basket__step--active">
                                 <svg width='18' height='18'>
                                     <use href='img/sprite/sprite.svg#point'></use>
                                 </svg>
@@ -37,22 +37,43 @@
                             </div>
                         </div>
 
-                        <div class="basket__box basket__box--empty">
-                            <div class="basket__empty">
-                                <div class="basket__empty-info">
-                                    <svg width='80' height='80'>
-                                    <use href='img/sprite/sprite.svg#empty'></use>
-                                    </svg>
-                                    <div class="title-2">Oops, you haven't added anything to your cart yet.</div>
-                                    <p class="text-headline">Go to the calculator and place your order. Or go to your office to choose what to print.</p>
-                                </div>
-                                <button class="basket__empty-btn btn button-1">
-                                    <svg width='24' height='24'>
-                                    <use href='img/sprite/sprite.svg#order'></use>
-                                    </svg>
-                                    <span>Order the print</span>
-                                </button>
-                            </div>
+                        <div class="basket__ordering order">
+                            <ul class="order__info">
+                                <li class="order__info-list">
+
+                                </li>
+                                <li class="order__info-list">
+
+                                </li>
+                                <li class="order__info-list">
+
+                                </li>
+                                <li class="order__info-list">
+
+                                </li>
+                                <li class="order__info-list">
+
+                                </li>
+                            </ul>
+
+                            <ul class="order__btns">
+                                <li class="order__btn-list">
+                                    <button class="order__btn order__btn--save btn button-1">
+                                        <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#save'></use>
+                                        </svg>
+                                        <span>Save to draft</span>
+                                    </button>
+                                </li>
+                                <li class="order__btn-list">
+                                    <button class="order__btn order__btn--delete btn button-1">
+                                        <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#delete'></use>
+                                        </svg>
+                                        <span>Delete Order</span>
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -62,30 +83,30 @@
                         <div class="basket__calculation-head">
                             <ul class="basket__calculation-items">
                                 <li class="basket__calculation-item">
-                                    <span class="basket__calculation-number basket__calculation-number--pages text-town">-</span>
+                                    <span class="basket__calculation-number basket__calculation-number--pages text-town">101</span>
                                     <span class="basket__calculation-subtitle button-footer">total pages</span>
                                 </li>
                                 <li class="basket__calculation-item">
-                                    <span class="basket__calculation-number basket__calculation-number--print text-town">0 €</span>
+                                    <span class="basket__calculation-number basket__calculation-number--print text-town">40 €</span>
                                     <span class="basket__calculation-subtitle button-footer">print price</span>
                                 </li>
                                 <li class="basket__calculation-item">
-                                    <span class="basket__calculation-number basket__calculation-number--shipping text-town">0 €</span>
+                                    <span class="basket__calculation-number basket__calculation-number--shipping text-town">26 €</span>
                                     <span class="basket__calculation-subtitle button-footer">shipping price</span>
                                 </li>
                                 <li class="basket__calculation-item">
-                                    <span class="basket__calculation-number basket__calculation-number--additional text-town">0 €</span>
+                                    <span class="basket__calculation-number basket__calculation-number--additional text-town">2,78 €</span>
                                     <span class="basket__calculation-subtitle button-footer">additional price</span>
                                 </li>
                             </ul>
 
                             <div class="basket__calculation-total">
-                                <span class="basket__calculation-number basket__calculation-number--total text-calc-other">0 €</span>
+                                <span class="basket__calculation-number basket__calculation-number--total text-calc-other">68,78 €</span>
                                 <span class="basket__calculation-subtitle button-footer">total value</span>
                             </div>
                         </div>
 
-                        <button class="basket__btn basket__btn--empty btn button-1">Next Step</button>
+                        <a class="basket__btn btn button-1" href="#">Confirm and Pay</a>
                     </aside>
                 </div>
 

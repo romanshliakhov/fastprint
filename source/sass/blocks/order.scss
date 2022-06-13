@@ -1,0 +1,33 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+
+
+
+
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        grid-gap: 200px;
+    }
+
+    &__btn {
+        &--save {
+            color: var(--blue-6);
+
+            svg {
+                stroke: var(--blue-6);
+            }
+        }
+
+        &--delete {
+            color: var(--error-2);
+
+            svg {
+                stroke: var(--error-2);
+            }
+        }
+    }
+}

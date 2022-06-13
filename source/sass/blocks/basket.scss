@@ -33,22 +33,22 @@
         z-index: 3;
 
         span {
-            color: #696E72;
+            color: var(--system-2);
         }
 
         svg {
-            fill: #696E72;
-            stroke: #ADB4B8;
+            fill: var(--system-2);
+            stroke: var(--system-3);
         }
 
         &--active {
             span {
-                color: #0047FE;
+                color: var(--blue-6);
             }
 
             svg {
-                fill: #0047FE;
-                stroke: #CBE0FE;
+                fill: var(--blue-6);
+                stroke: var(--blue-2);
             }
         }
     }
@@ -60,7 +60,11 @@
         left: 25px;
         right: 35px;
         height: 1px;
-        background: #ADB4B8;
+        background: var(--system-3);
+
+        &--active {
+            background: var(--blue-6);
+        }
     }
 
     &__box {
@@ -68,13 +72,167 @@
         display: flex;
         flex-direction: column;
         grid-gap: 80px;
-        background: #F5F5F5;
+    }
+
+    &__order {
+        background-color: var(--system-5);
         border-radius: 8px;
     }
 
+    &__order-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--blue-6);
+        padding: 10px 40px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
 
+    &__order-total {
+        display: flex;
+        grid-gap: 12px;
+        color: var(--system-6);
+    }
 
+    &__order-cancel {
+        height: 40px;
+        border: 1px solid var(--system-6);
+        border-radius: 6px;
+        padding: 0 14px;
+        color: var(--system-6);
 
+        svg {
+            stroke: var(--system-6);
+            margin-right: 10px;
+        }
+    }
+
+    &__order-details {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 26px;
+        padding: 28px 40px 40px;
+    }
+
+    &__details-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 920px;
+        width: 100%;
+
+        .basket__calculation-items {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            grid-gap: initial;
+        }
+    }
+
+    &__order-list {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        grid-gap: 1px;
+    }
+
+    &__order-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        border-left: 1px solid var(--blue-6);
+        background-color: var(--system-6);
+
+        &:first-child {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+
+    &__order-info {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 16px;
+    }
+
+    &__order-choosed {
+        display: flex;
+        align-items: center;
+        grid-gap: 6px;
+    }
+
+    &__choosed-list {
+        display: flex;
+        align-items: center;
+        grid-gap: 6px;
+        flex-shrink: 0;
+        padding: 4px;
+        background-color: var(--system-5);
+        border-radius: 4px;
+
+        svg {
+            fill: var(--system-2);
+        }
+    }
+
+    &__order-price {
+        display: flex;
+        align-items: center;
+        grid-gap: 60px;
+    }
+
+    &__order-count {
+        display: flex;
+        align-items: center;
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+    }
+
+    &__count-price {
+        color: var(--blue-6);
+    }
+
+    &__count-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        background-color: var(--blue-1);
+        border-radius: 40px;
+        cursor: pointer;
+
+        svg {
+            fill: var(--blue-7);
+        }
+    }
+
+    &__order-settings {
+        display: flex;
+        align-items: center;
+        grid-gap: 30px;
+    }
+
+    &__settings {
+        cursor: pointer;
+
+        svg {
+            stroke: var(--system-1);
+            cursor: pointer;
+        }
+    }
 
     &__empty {
         padding: 170px 0;
@@ -145,8 +303,9 @@
         background-color: var(--blue-6);
         color: var(--system-6);
 
+
         &--empty {
-            background-color: #ADB4B8;
+            background-color: var(--system-3);
         }
     }
 

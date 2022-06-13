@@ -22,7 +22,7 @@
                 <div class="basket__wrapp">
                     <div class="basket__inner">
                         <div class="basket__steps">
-                            <div class="basket__step">
+                            <div class="basket__step basket__step--active">
                                 <svg width='18' height='18'>
                                     <use href='img/sprite/sprite.svg#point'></use>
                                 </svg>
@@ -38,8 +38,662 @@
                         </div>
 
                         <div class="basket__box">
-                            <div class="basket__order"></div>
-                            <div class="basket__order"></div>
+                            <div class="basket__order">
+                                <div class="basket__order-head">
+                                    <div class="basket__order-total title-5">
+                                        <p>Total price:</p>
+                                        <span>36€</span>
+                                    </div>
+                                    <button class="basket__order-cancel btn button-2">
+                                        <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#mobile-close'></use>
+                                        </svg>
+                                        <span>Delete all order</span>
+                                    </button>
+                                </div>
+
+                                <div class="basket__order-details">
+                                    <div class="basket__details-top">
+                                        <ul class="basket__calculation-items">
+                                            <li class="basket__calculation-item">
+                                                <span class="basket__calculation-number basket__calculation-number--files text-town">5</span>
+                                                <span class="basket__calculation-subtitle button-footer">total pages</span>
+                                            </li>
+                                            <li class="basket__calculation-item">
+                                                <span class="basket__calculation-number basket__calculation-number--pages text-town">27</span>
+                                                <span class="basket__calculation-subtitle button-footer">total pages</span>
+                                            </li>
+                                            <li class="basket__calculation-item">
+                                                <span class="basket__calculation-number basket__calculation-number--shipping text-town">14 €</span>
+                                                <span class="basket__calculation-subtitle button-footer">shipping price</span>
+                                            </li>
+                                            <li class="basket__calculation-item">
+                                                <span class="basket__calculation-number basket__calculation-number--additional text-town">0 €</span>
+                                                <span class="basket__calculation-subtitle button-footer">additional price</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <ul class="basket__order-list">
+                                        <li class="basket__order-item">
+                                            <div class="basket__order-info">
+                                                <div class="basket__order-file reviews-text">My file about new program study.pdf</div>
+
+                                                <ul class="basket__order-choosed">
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#color'></use>
+                                                        </svg>
+                                                        <span>BN</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#size'></use>
+                                                        </svg>
+                                                        <span>A4</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#thickness'></use>
+                                                        </svg>
+                                                        <span>80 GR</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                        </svg>
+                                                        <span>Normal</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#orientation'></use>
+                                                        </svg>
+                                                        <span>Automatic</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#quality'></use>
+                                                        </svg>
+                                                        <span>Inkjet</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#binding'></use>
+                                                        </svg>
+                                                        <span>Unfinished</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="basket__order-price">
+                                                <div class="basket__order-count">
+                                                    <span class="basket__count-btn basket__count-btn--minus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-minus'></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="basket__count basket-count">1</span>
+                                                    <span class="basket__count-btn basket__count-btn--plus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-plus'></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="basket__count-price text-town">6,45 €</div>
+                                            </div>
+
+                                            <div class="basket__order-settings">
+                                                <div class="basket__settings basket__settings--edit">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#edit'></use>
+                                                    </svg>
+                                                </div>
+
+                                                <div class="basket__settings basket__settings--delete">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#delete'></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="basket__order-item">
+                                            <div class="basket__order-info">
+                                                <div class="basket__order-file reviews-text">New Meta 1022.pdf</div>
+
+                                                <ul class="basket__order-choosed">
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#color'></use>
+                                                        </svg>
+                                                        <span>Color</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#size'></use>
+                                                        </svg>
+                                                        <span>A3</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#thickness'></use>
+                                                        </svg>
+                                                        <span>80 GR</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                        </svg>
+                                                        <span>Normal</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#orientation'></use>
+                                                        </svg>
+                                                        <span>Automatic</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#quality'></use>
+                                                        </svg>
+                                                        <span>Inkjet</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#binding'></use>
+                                                        </svg>
+                                                        <span>Unfinished</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="basket__order-price">
+                                                <div class="basket__order-count">
+                                                    <span class="basket__count-btn basket__count-btn--minus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-minus'></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="basket__count basket-count">1</span>
+                                                    <span class="basket__count-btn basket__count-btn--plus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-plus'></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="basket__count-price text-town">1,82 €</div>
+                                            </div>
+
+                                            <div class="basket__order-settings">
+                                                <div class="basket__settings basket__settings--edit">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#edit'></use>
+                                                    </svg>
+                                                </div>
+
+                                                <div class="basket__settings basket__settings--delete">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#delete'></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="basket__order-item">
+                                            <div class="basket__order-info">
+                                                <div class="basket__order-file reviews-text">Order to shipping from Californiya to .pdf</div>
+
+                                                <ul class="basket__order-choosed">
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#color'></use>
+                                                        </svg>
+                                                        <span>BN</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#size'></use>
+                                                        </svg>
+                                                        <span>A4</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#thickness'></use>
+                                                        </svg>
+                                                        <span>80 GR</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                        </svg>
+                                                        <span>2 slides</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#orientation'></use>
+                                                        </svg>
+                                                        <span>Automatic</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#quality'></use>
+                                                        </svg>
+                                                        <span>Inkjet</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#binding'></use>
+                                                        </svg>
+                                                        <span>Unfinished</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="basket__order-price">
+                                                <div class="basket__order-count">
+                                                    <span class="basket__count-btn basket__count-btn--minus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-minus'></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="basket__count basket-count">1</span>
+                                                    <span class="basket__count-btn basket__count-btn--plus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-plus'></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="basket__count-price text-town">11,09 €</div>
+                                            </div>
+
+                                            <div class="basket__order-settings">
+                                                <div class="basket__settings basket__settings--edit">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#edit'></use>
+                                                    </svg>
+                                                </div>
+
+                                                <div class="basket__settings basket__settings--delete">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#delete'></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="basket__order-item">
+                                            <div class="basket__order-info">
+                                                <div class="basket__order-file reviews-text">My ideas on 2023.pdf</div>
+
+                                                <ul class="basket__order-choosed">
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#color'></use>
+                                                        </svg>
+                                                        <span>BN</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#size'></use>
+                                                        </svg>
+                                                        <span>A4</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#thickness'></use>
+                                                        </svg>
+                                                        <span>80 GR</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                        </svg>
+                                                        <span>2 slides</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#orientation'></use>
+                                                        </svg>
+                                                        <span>Automatic</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#quality'></use>
+                                                        </svg>
+                                                        <span>Inkjet</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#binding'></use>
+                                                        </svg>
+                                                        <span>Unfinished</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="basket__order-price">
+                                                <div class="basket__order-count">
+                                                    <span class="basket__count-btn basket__count-btn--minus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-minus'></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="basket__count basket-count">1</span>
+                                                    <span class="basket__count-btn basket__count-btn--plus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-plus'></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="basket__count-price text-town">0,51 €</div>
+                                            </div>
+
+                                            <div class="basket__order-settings">
+                                                <div class="basket__settings basket__settings--edit">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#edit'></use>
+                                                    </svg>
+                                                </div>
+
+                                                <div class="basket__settings basket__settings--delete">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#delete'></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="basket__order-item">
+                                            <div class="basket__order-info">
+                                                <div class="basket__order-file reviews-text">Tickets 20052022.pdf</div>
+
+                                                <ul class="basket__order-choosed">
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#color'></use>
+                                                        </svg>
+                                                        <span>BN</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#size'></use>
+                                                        </svg>
+                                                        <span>A4</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#thickness'></use>
+                                                        </svg>
+                                                        <span>80 GR</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                        </svg>
+                                                        <span>Normal</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#orientation'></use>
+                                                        </svg>
+                                                        <span>Automatic</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#quality'></use>
+                                                        </svg>
+                                                        <span>Inkjet</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#binding'></use>
+                                                        </svg>
+                                                        <span>Unfinished</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="basket__order-price">
+                                                <div class="basket__order-count">
+                                                    <span class="basket__count-btn basket__count-btn--minus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-minus'></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="basket__count basket-count">1</span>
+                                                    <span class="basket__count-btn basket__count-btn--plus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-plus'></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="basket__count-price text-town">8,48 €</div>
+                                            </div>
+
+                                            <div class="basket__order-settings">
+                                                <div class="basket__settings basket__settings--edit">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#edit'></use>
+                                                    </svg>
+                                                </div>
+
+                                                <div class="basket__settings basket__settings--delete">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#delete'></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="basket__order">
+                                <div class="basket__order-head">
+                                    <div class="basket__order-total title-5">
+                                        <p>Total price:</p>
+                                        <span>32,78€</span>
+                                    </div>
+                                    <button class="basket__order-cancel btn button-2">
+                                        <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#mobile-close'></use>
+                                        </svg>
+                                        <span>Delete all order</span>
+                                    </button>
+                                </div>
+
+                                <div class="basket__order-details">
+                                    <div class="basket__details-top">
+                                        <ul class="basket__calculation-items">
+                                            <li class="basket__calculation-item">
+                                                <span class="basket__calculation-number basket__calculation-number--files text-town">5</span>
+                                                <span class="basket__calculation-subtitle button-footer">total pages</span>
+                                            </li>
+                                            <li class="basket__calculation-item">
+                                                <span class="basket__calculation-number basket__calculation-number--pages text-town">27</span>
+                                                <span class="basket__calculation-subtitle button-footer">total pages</span>
+                                            </li>
+                                            <li class="basket__calculation-item">
+                                                <span class="basket__calculation-number basket__calculation-number--shipping text-town">14 €</span>
+                                                <span class="basket__calculation-subtitle button-footer">shipping price</span>
+                                            </li>
+                                            <li class="basket__calculation-item">
+                                                <span class="basket__calculation-number basket__calculation-number--additional text-town">0 €</span>
+                                                <span class="basket__calculation-subtitle button-footer">additional price</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <ul class="basket__order-list">
+                                        <li class="basket__order-item">
+                                            <div class="basket__order-info">
+                                                <div class="basket__order-file reviews-text">Flayers.pdf</div>
+
+                                                <ul class="basket__order-choosed">
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#color'></use>
+                                                        </svg>
+                                                        <span>BN</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#size'></use>
+                                                        </svg>
+                                                        <span>A4</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#thickness'></use>
+                                                        </svg>
+                                                        <span>80 GR</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                        </svg>
+                                                        <span>Normal</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#orientation'></use>
+                                                        </svg>
+                                                        <span>Automatic</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#quality'></use>
+                                                        </svg>
+                                                        <span>Inkjet</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#binding'></use>
+                                                        </svg>
+                                                        <span>Unfinished</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="basket__order-price">
+                                                <div class="basket__order-count">
+                                                    <span class="basket__count-btn basket__count-btn--minus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-minus'></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="basket__count basket-count">1</span>
+                                                    <span class="basket__count-btn basket__count-btn--plus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-plus'></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="basket__count-price text-town">30,33 €</div>
+                                            </div>
+
+                                            <div class="basket__order-settings">
+                                                <div class="basket__settings basket__settings--edit">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#edit'></use>
+                                                    </svg>
+                                                </div>
+
+                                                <div class="basket__settings basket__settings--delete">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#delete'></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="basket__order-item">
+                                            <div class="basket__order-info">
+                                                <div class="basket__order-file reviews-text">Order 12.pdf</div>
+
+                                                <ul class="basket__order-choosed">
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#color'></use>
+                                                        </svg>
+                                                        <span>Color</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#size'></use>
+                                                        </svg>
+                                                        <span>A3</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#thickness'></use>
+                                                        </svg>
+                                                        <span>180 GR</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                        </svg>
+                                                        <span>2 slides</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#orientation'></use>
+                                                        </svg>
+                                                        <span>Automatic</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#quality'></use>
+                                                        </svg>
+                                                        <span>Inkjet</span>
+                                                    </li>
+                                                    <li class="basket__choosed-list basket-choosed">
+                                                        <svg width='14' height='14'>
+                                                        <use href='img/sprite/sprite.svg#binding'></use>
+                                                        </svg>
+                                                        <span>Unfinished</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="basket__order-price">
+                                                <div class="basket__order-count">
+                                                    <span class="basket__count-btn basket__count-btn--minus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-minus'></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="basket__count basket-count">1</span>
+                                                    <span class="basket__count-btn basket__count-btn--plus">
+                                                        <svg width='9' height='9'>
+                                                            <use href='img/sprite/sprite.svg#basket-plus'></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="basket__count-price text-town">2,45 €</div>
+                                            </div>
+
+                                            <div class="basket__order-settings">
+                                                <div class="basket__settings basket__settings--edit">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#edit'></use>
+                                                    </svg>
+                                                </div>
+
+                                                <div class="basket__settings basket__settings--delete">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#delete'></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
@@ -72,9 +726,7 @@
                             </div>
                         </div>
 
-
-
-                        <button class="basket__btn btn button-1">Next Step</button>
+                        <a class="basket__btn btn button-1" href="./order.html">Next Step</a>
                     </aside>
                 </div>
 
