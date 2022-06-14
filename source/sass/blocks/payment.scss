@@ -1,0 +1,87 @@
+.payment {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    padding: 20px clamp(10px, 1.563vw, 30px);
+    background-color: var(--system-6);
+    border-radius: 6px;
+
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+
+    &__tabs-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        grid-gap: clamp(15px, 1.563vw, 30px);
+    }
+
+    &__item {
+        height: 78px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--system-5);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &.active {
+            background-color: var(--blue-6);
+
+            .payment__btn {
+                color: var(--system-6);
+
+                svg {
+                    stroke: currentColor;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: var(--blue-6);
+
+            .payment__btn {
+                color: var(--system-6);
+
+                svg {
+                    stroke: currentColor;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(10px, 1.042vw, 20px);
+        pointer-events: none;
+        white-space: nowrap;
+        transition: all 0.5s ease-in-out;
+
+        svg {
+            height: auto;
+            width: clamp(20px, 1.979vw, 38px);
+            stroke: var(--blue-6);
+        }
+    }
+
+    &__content-head {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+        background: var(--blue-1);
+        border-radius: 8px;
+    }
+
+    &__content-alert {
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+    }
+}

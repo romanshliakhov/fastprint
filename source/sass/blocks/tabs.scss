@@ -1,0 +1,14 @@
+.tabs {
+	position: relative;
+}
+
+.tabcontent {
+    display: none;
+
+    &.active {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+}
+

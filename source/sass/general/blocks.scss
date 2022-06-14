@@ -15,6 +15,8 @@
 @import "blocks/timer.scss";
 @import "blocks/mobile.scss";
 @import "blocks/lang.scss";
+@import "blocks/tabs.scss";
+@import "blocks/printing.scss";
 
 
 // main page
@@ -54,3 +56,7 @@
 
 // order page
 @import "blocks/order.scss";
+@import "blocks/dropdown.scss";
+@import "blocks/payment.scss";
+@import "blocks/shipping.scss";
+

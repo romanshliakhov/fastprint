@@ -7,4 +7,13 @@
     border-radius: 20px;
     transform: translateY(50%);
 
+    &__printing {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+
 }
+
+

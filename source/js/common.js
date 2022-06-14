@@ -258,8 +258,6 @@ window.addEventListener("resize", () => {
 });
 
 
-
-
 let videoBlock = [...document.querySelectorAll('[data-modal="video"]')]
 
 const videoInit = (items) => {
@@ -286,6 +284,85 @@ const addClassHide = function(button, body) {
 if (bannerItem) {
     addClassHide(closeBtn, bannerItem);
 }
+
+// dropdown
+document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
+    const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
+    const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
+    const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
+    const dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden');
+
+    dropDownBtn.addEventListener('click', function (e) {
+      dropDownList.classList.toggle('dropdown__list--visible');
+      this.classList.add('dropdown__button--active');
+    });
+
+    dropDownListItems.forEach(function (listItem) {
+      listItem.addEventListener('click', function (e) {
+        e.stopPropagation();
+        dropDownBtn.innerHTML = this.innerHTML;
+        dropDownBtn.focus();
+        dropDownInput.value = this.dataset.value;
+        dropDownList.classList.remove('dropdown__list--visible');
+        this.classList.remove('dropdown__button--active');
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!dropDownBtn.contains(e.target)) {
+        dropDownBtn.classList.remove('dropdown__button--active');
+        dropDownList.classList.remove('dropdown__list--visible');
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Tab' || e.key === 'Escape') {
+        dropDownBtn.classList.remove('dropdown__button--active');
+        dropDownList.classList.remove('dropdown__list--visible');
+      }
+    });
+});
+
+// tabs
+const tabsParr = document.querySelector('.tabs');
+
+if (tabsParr) {
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabsBtn = tabsParr.querySelectorAll('.tablinks');
+    const tabsContent = tabsParr.querySelectorAll('.tabcontent');
+
+    tabsParr.addEventListener('click', (e) => {
+        if (e.target.classList.contains('tablinks')) {
+            const tabsPath = e.target.getAttribute('tabs-btn');
+            tabsBtn.forEach(el => {el.classList.remove('active')});
+            tabsParr.querySelector(`[tabs-btn="${tabsPath}"]`).classList.add('active');
+            tabsHandler(tabsPath);
+        }
+    });
+
+    const tabsHandler = (path) => {
+      tabsContent.forEach(el => {el.classList.remove('active')});
+      tabsParr.querySelector(`[tabs-content="${path}"]`).classList.add('active');
+    };
+  });
+}
+
+// function itemTabs(evt) {
+//     const navName = evt.target.dataset.tabContentId;
+
+//     const tabsContainer = evt.target.closest('.tabs');
+//     const tabsButton = evt.currentTarget;
+//     const tabContent = document.getElementById(navName);
+
+//     const currentTabContent = [...tabsContainer.getElementsByClassName("tabcontent")];
+//     currentTabContent.forEach(tabContent => tabContent.classList.remove('active'));
+
+//     const currentTabLinks = [...tabsContainer.getElementsByClassName("tablinks")];
+//     currentTabLinks.forEach(tabLink => tabLink.classList.remove("active"));
+
+//     tabContent.classList.add('active');
+//     tabsButton.classList.add('active');
+// }
 
 
 

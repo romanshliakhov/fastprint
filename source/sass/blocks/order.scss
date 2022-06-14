@@ -1,16 +1,183 @@
 .order {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     grid-gap: 40px;
 
+    &__info {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 40px;
+    }
+
+    &__info-list {
+        background-color: var(--system-5);
+        border-radius: 8px;
+    }
+
+    &__accordion {
+        max-width: 1290px;
+        width: 100%;
+    }
+
+    &__accordion-item {
+        padding: 30px 40px;
+    }
+
+    &__accordion-title {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        grid-gap: 16px;
+        color: var(--blue-6);
+
+        svg {
+            stroke: var(--blue-6);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2Z' stroke='%23181818' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.5303 13.3599L12.0003 9.83986L8.47027 13.3599' stroke='%23181818' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 24px;
+            right: 0;
+            transition: transform 0.3s ease 0s;
+        }
+
+        &._active::before {
+            transform: rotate(-180deg);
+          }
+    }
+
+    &__accordion-wrapp  {
+        margin-top: 40px;
+    }
+
+    &__shipping {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__shipping-item {
+        max-width: 590px;
+        width: 100%;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+        background-color: var(--system-6);
+        border-radius: 6px;
+    }
+
+    &__shipping-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__adress-add {
+        svg {
+            stroke: var(--system-1);
+        }
+    }
+
+    &__shipping-input {
+        border: 1px solid #ADB4B8;
+        padding: 14px 20px;
+        border-radius: 6px;
+    }
 
 
 
+
+
+
+
+
+
+
+    &__coupon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 30px;
+    }
+
+    &__coupon-label {
+        width: 100%;
+    }
+
+    &__coupon-input {
+        width: 100%;
+        border: 1px solid var(--system-3);
+        border-radius: 6px;
+        padding: 11px 14px;
+    }
+
+    &__coupon-btn {
+        max-width: 390px;
+        width: 100%;
+        height: 55px;
+        color: var(--system-6);
+        background-color: var(--blue-6);
+    }
+
+    &__comment {
+        padding: 12px 20px;
+        width: 100%;
+        height: 80px;
+        resize: none;
+        background-color: var(--system-6);
+        border: 1px solid var(--system-4);
+        border-radius: 6px;
+        color: var(--system-1);
+
+        &::placeholder {
+            color: var(--system-2);
+        }
+    }
+
+    &__agreements {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+
+    &__agreements-item {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+
+    &__agreements-title {
+        display: flex;
+        align-items: center;
+        grid-gap: 16px;
+    }
+
+    &__agreements-info {
+        height: 160px;
+        padding: 12px 20px;
+        background-color: var(--system-6);
+        border-right: 1px solid var(--system-4);
+        border-radius: 6px;
+    }
+
+    &__agreements-text {
+        height: 136px;
+        overflow-y: auto;
+    }
 
     &__btns {
         display: flex;
         align-items: center;
         grid-gap: 200px;
+        padding-left: 40px;
     }
 
     &__btn {

@@ -41,19 +41,267 @@
                         <div class="basket__ordering order">
                             <ul class="order__info">
                                 <li class="order__info-list">
+                                    <ul class="order__accordion accordion" data-spollers data-two-spoller>
+                                        <li class="order__accordion-item accordion__item">
+                                            <button tabindex="-1" type="button" data-spoller class="order__accordion-title title-4">
+                                                <svg width='30' height='30'>
+                                                <use href='img/sprite/sprite.svg#categories-shipping'></use>
+                                                </svg>
+                                                <span>Shipping</span>
+                                            </button>
+                                            <div class="order__accordion-wrapp text-body">
+                                                <div class="order__shipping">
+                                                    <div class="order__shipping-item">
+                                                        <div class="order__shipping-head order__shipping-head--adress">
+                                                            <div class="order__shipping-title title-5">
+                                                                Adress
+                                                            </div>
+                                                            <button class="order__adress-add">
+                                                                <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#add'></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
 
+                                                        <div class="dropdown">
+                                                            <div class="dropdown__head">
+                                                              <div class="dropdown__button">
+                                                                <div class="dropdown__list-card dropdown__list-card--active">5469 .... .... 0030</div>
+                                                                <div class="dropdown__list-rename">
+                                                                  <svg  width='20px' height='20px'>
+                                                                  <use href='img/sprite/sprite.svg#rename'></use>
+                                                                  </svg>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <ul class="dropdown__list">
+                                                              <li class="dropdown__list-item" data-value="my">
+                                                                <div class="dropdown__list-card">5469 1234 5678 0030</div>
+                                                                <div class="dropdown__list-name">(Сбер личная)</div>
+                                                                <div class="dropdown__list-rename">
+                                                                  <svg  width='20px' height='20px'>
+                                                                    <use href='img/sprite/sprite.svg#rename'></use>
+                                                                  </svg>
+                                                                </div>
+                                                              </li>
+                                                            </ul>
+                                                            <input type="text" value="" class="dropdown__input-hidden">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="order__shipping-item">
+                                                        <div class="order__shipping-title title-5">
+                                                            <div class="order__shipping-head order__shipping-head--invoice">
+                                                                <div class="order__shipping-title title-5">
+                                                                    Invoice
+                                                                </div>
+                                                                <button class="order__adress-add">
+                                                                    <svg width='24' height='24'>
+                                                                    <use href='img/sprite/sprite.svg#add'></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="order__info-list">
+                                    <ul class="order__accordion accordion" data-spollers data-two-spoller>
+                                        <li class="order__accordion-item accordion__item">
+                                            <button tabindex="-1" type="button" data-spoller class="order__accordion-title title-4">
+                                                <svg width='30' height='30'>
+                                                <use href='img/sprite/sprite.svg#payment'></use>
+                                                </svg>
+                                                <span>Payment</span>
+                                            </button>
+                                            <div class="order__accordion-wrapp text-body">
+                                                <div class="payment">
+                                                    <div class="order__shipping-title title-5">
+                                                        Select Type Payment
+                                                    </div>
 
+                                                    <div class="payment__tabs tabs">
+                                                        <ul class="payment__tabs-list">
+                                                            <li class="payment__item tablinks" tabs-btn="shipping">
+                                                                <button class="payment__btn tabs__btn reviews-text" >
+                                                                    <svg width='38' height='38'>
+                                                                    <use href='img/sprite/sprite.svg#shipping'></use>
+                                                                    </svg>
+                                                                    <span>On Shipping</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="payment__item tablinks" tabs-btn="card-play">
+                                                                <button class="payment__btn tabs__btn  reviews-text" >
+                                                                    <svg width='38' height='38'>
+                                                                        <use href='img/sprite/sprite.svg#card-pay'></use>
+                                                                    </svg>
+                                                                    <span>Card Pay</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="payment__item tablinks" tabs-btn="crypto">
+                                                                <button class="payment__btn tabs__btn  reviews-text" >
+                                                                    <svg width='38' height='38'>
+                                                                        <use href='img/sprite/sprite.svg#crypto'></use>
+                                                                    </svg>
+                                                                    <span>Crypto</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="payment__item tablinks" tabs-btn="wallet">
+                                                                <button class="payment__btn tabs__btn reviews-text" >
+                                                                    <svg width='38' height='38'>
+                                                                        <use href='img/sprite/sprite.svg#wallet'></use>
+                                                                    </svg>
+                                                                    <span>My Wallet</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="payment__content tabcontent" tabs-content="shipping">
+                                                            <div class="payment__content-head">
+                                                                <div class="payment__content-alert basket-tabs-content">
+                                                                    <svg width='20' height='20'>
+                                                                    <use href='img/sprite/sprite.svg#alert'></use>
+                                                                    </svg>
+                                                                    <span>Prepare your money before pleace</span>
+                                                                </div>
+                                                                <p class="text-calc-descr">It is advisable to prepare the full amount without the rest, or warn the courier in advance about the rest.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="payment__content tabcontent" tabs-content="card-play">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, placeat?</p>
+
+                                                        </div>
+
+                                                        <div class="payment__content tabcontent" tabs-content="crypto">
+                                                            <div class="payment__content-head">
+                                                                <div class="payment__content-alert basket-tabs-content">
+                                                                    <svg width='20' height='20'>
+                                                                    <use href='img/sprite/sprite.svg#alert'></use>
+                                                                    </svg>
+                                                                    <span>Prepare your money before pleace</span>
+                                                                </div>
+                                                                <p class="text-calc-descr">It is advisable to prepare the full amount without the rest, or warn the courier in advance about the rest.</p>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="payment__content tabcontent" tabs-content="wallet">
+                                                            <div class="payment__content-head">
+                                                                <div class="payment__content-alert basket-tabs-content">
+                                                                    <svg width='20' height='20'>
+                                                                    <use href='img/sprite/sprite.svg#alert'></use>
+                                                                    </svg>
+                                                                    <span>Text about wallet</span>
+                                                                </div>
+                                                                <p class="text-calc-descr">You can add money on your personal account</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="order__info-list">
-
+                                    <ul class="order__accordion accordion" data-spollers data-two-spoller>
+                                        <li class="order__accordion-item accordion__item">
+                                            <button tabindex="-1" type="button" data-spoller class="order__accordion-title title-4">
+                                                <svg width='30' height='30'>
+                                                <use href='img/sprite/sprite.svg#coupon'></use>
+                                                </svg>
+                                                <span>Enter Coupon</span>
+                                            </button>
+                                            <div class="order__accordion-wrapp text-body">
+                                                <div class="order__coupon">
+                                                    <label class="order__coupon-label">
+                                                        <input class="order__coupon-input text-body" type="text" placeholder="Enter code coupon, e.g. XXX-XXX-XXX">
+                                                    </label>
+                                                    <button class="order__coupon-btn btn">Add Coupon</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="order__info-list">
-
+                                    <ul class="order__accordion accordion" data-spollers data-two-spoller>
+                                        <li class="order__accordion-item accordion__item">
+                                            <button tabindex="-1" type="button" data-spoller class="order__accordion-title title-4">
+                                                <svg width='30' height='30'>
+                                                <use href='img/sprite/sprite.svg#comments'></use>
+                                                </svg>
+                                                <span>Add Comment</span>
+                                            </button>
+                                            <div class="order__accordion-wrapp text-body">
+                                                <textarea class="order__comment text-body" name="order-comment" placeholder="Enter your text and wishies about shipping"></textarea>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="order__info-list">
-
+                                    <ul class="order__accordion accordion" data-spollers data-two-spoller>
+                                        <li class="order__accordion-item accordion__item">
+                                            <button tabindex="-1" type="button" data-spoller class="order__accordion-title title-4">
+                                                <svg width='30' height='30'>
+                                                <use href='img/sprite/sprite.svg#agreement'></use>
+                                                </svg>
+                                                <span>User agreement</span>
+                                            </button>
+                                            <div class="order__accordion-wrapp text-body">
+                                                <ul class="order__agreements">
+                                                    <li class="order__agreements-item">
+                                                        <div class="order__agreements-title title-4">
+                                                            <span>MESAFELİ TİCARİ SATIŞ SÖZLEŞMESİ</span>
+                                                            <svg width='24' height='24'>
+                                                            <use href='img/sprite/sprite.svg#agreement-details'></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="order__agreements-info">
+                                                            <div class="order__agreements-text agreements-text">
+                                                                <p>1. TARAFLAR</p>
+                                                                <p>1.1. (SATICI) buradanbastir.com: Ünvanı : Gizem Sevilmiş (buradanbastir.com)
+                                                                    İşbu Sözleşme’de açıkça zikredilen hak ve yükümlülüklerin mahiyeti ve/veya atıf yapılan mevzuat hükümleri Tüketici mevzuatına dahil olsa dahi taraflar, tacir olduklarından bahisle bu hususların işbu sözleşme tahtında uygulanmayacağı iddiasında bulunamaz. Bu hususlar dışında taraflar, ticari alım satımlarda geçerli olan Türk Ticaret Kanunu, Borçlar Kanunu ve burada sayılmayan genel hükümlere tabi olup, tüketicinin korunması hakkındaki kanun taraflar tacir ve esnaf olduklarından, Tüketicinin Korunması Hakkındaki Kanun ve ilgili yönetmelikleri uygulanmaz.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="order__agreements-item">
+                                                        <div class="order__agreements-title title-4">
+                                                            <span>Teslimat ve İade</span>
+                                                            <svg width='24' height='24'>
+                                                            <use href='img/sprite/sprite.svg#agreement-details'></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="order__agreements-info">
+                                                            <div class="order__agreements-text agreements-text">
+                                                                <p>1. TARAFLAR</p>
+                                                                <p>1.1. (SATICI) buradanbastir.com: Ünvanı : Gizem Sevilmiş (buradanbastir.com)
+                                                                    İşbu Sözleşme’de açıkça zikredilen hak ve yükümlülüklerin mahiyeti ve/veya atıf yapılan mevzuat hükümleri Tüketici mevzuatına dahil olsa dahi taraflar, tacir olduklarından bahisle bu hususların işbu sözleşme tahtında uygulanmayacağı iddiasında bulunamaz. Bu hususlar dışında taraflar, ticari alım satımlarda geçerli olan Türk Ticaret Kanunu, Borçlar Kanunu ve burada sayılmayan genel hükümlere tabi olup, tüketicinin korunması hakkındaki kanun taraflar tacir ve esnaf olduklarından, Tüketicinin Korunması Hakkındaki Kanun ve ilgili yönetmelikleri uygulanmaz.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="order__agreements-item">
+                                                        <div class="order__agreements-title title-4">
+                                                            <span>Ön Bilgilendirme Formu</span>
+                                                            <svg width='24' height='24'>
+                                                            <use href='img/sprite/sprite.svg#agreement-details'></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="order__agreements-info">
+                                                            <div class="order__agreements-text agreements-text">
+                                                                <p>1. TARAFLAR</p>
+                                                                <p>1.1. (SATICI) buradanbastir.com: Ünvanı : Gizem Sevilmiş (buradanbastir.com)
+                                                                    İşbu Sözleşme’de açıkça zikredilen hak ve yükümlülüklerin mahiyeti ve/veya atıf yapılan mevzuat hükümleri Tüketici mevzuatına dahil olsa dahi taraflar, tacir olduklarından bahisle bu hususların işbu sözleşme tahtında uygulanmayacağı iddiasında bulunamaz. Bu hususlar dışında taraflar, ticari alım satımlarda geçerli olan Türk Ticaret Kanunu, Borçlar Kanunu ve burada sayılmayan genel hükümlere tabi olup, tüketicinin korunması hakkındaki kanun taraflar tacir ve esnaf olduklarından, Tüketicinin Korunması Hakkındaki Kanun ve ilgili yönetmelikleri uygulanmaz.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
 

@@ -2,9 +2,10 @@
     &__wrapp {
         padding: 0 clamp(20px, 5.215vw, 30px);
         position: relative;
-        display: flex;
+        display: grid;
         align-items: flex-start;
-        grid-gap: 80px;
+        grid-template-columns: 1fr clamp(380px, 24.479vw, 470px);
+        grid-gap: Min(4.167vw, 80px);
     }
 
     &__inner {
