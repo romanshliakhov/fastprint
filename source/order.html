@@ -173,8 +173,58 @@
                                                         </div>
 
                                                         <div class="payment__content tabcontent" tabs-content="card-play">
-                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, placeat?</p>
+                                                            <div class="payment__cardpay">
+                                                                <form class="payment__card-form form">
+                                                                    <fieldset class="payment__card-fieldset form__fieldset">
+                                                                        <div class="form__fieldset-title text-calc-name">Holder</div>
+                                                                        <label class="form__label">
+                                                                            <input class="form__input text-body" type="text" placeholder="Card Name">
+                                                                        </label>
+                                                                    </fieldset>
 
+                                                                    <fieldset class="payment__card-fieldset form__fieldset">
+                                                                        <div class="form__fieldset-title text-calc-name">Credit or debit card</div>
+                                                                        <div class="payment__card-labels">
+                                                                            <label class="form__label">
+                                                                                <input class="form__input text-body" type="text" placeholder="Card Name">
+                                                                            </label>
+                                                                            <label class="form__label">
+                                                                                <input class="form__input text-body" type="text" placeholder="MM / YY">
+                                                                            </label>
+                                                                            <label class="form__label">
+                                                                                <input class="form__input text-body" type="text" placeholder="CVC">
+                                                                            </label>
+                                                                        </div>
+                                                                    </fieldset>
+                                                                </form>
+
+                                                                <div class="payment__cardpay-info">
+                                                                    <div class="payment__cardpay-head">
+                                                                        <div class="payment__content-alert basket-tabs-content">
+                                                                            <svg width='20' height='20'>
+                                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                                            </svg>
+                                                                            <span>Text about wallet</span>
+                                                                        </div>
+                                                                        <p class="text-calc-descr">You can add money on your <span>personal account</span></p>
+                                                                    </div>
+
+                                                                    <div class="payment__cardpay-price">
+                                                                        <span class="payment__price-total text-calc-other">68,78 €</span>
+                                                                        <span class="payment__price-balance text-calc-descr">Your current balance</span>
+                                                                    </div>
+
+                                                                    <div class="payment__pay">
+                                                                        <label class="payment__toggle" for="toggle">
+                                                                            <input class="payment__toggle-checkbox" type="checkbox" name="toggle" id="toggle">
+                                                                            <span class="payment__toggle-btn payment__toggle-btn--on button-2">Yes</span>
+                                                                            <span class="payment__toggle-btn payment__toggle-btn--off button-2">No</span>
+                                                                        </label>
+
+                                                                        <span class="button-footer">Pay from wallet</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
 
                                                         <div class="payment__content tabcontent" tabs-content="crypto">
@@ -198,7 +248,58 @@
                                                                     </svg>
                                                                     <span>Text about wallet</span>
                                                                 </div>
-                                                                <p class="text-calc-descr">You can add money on your personal account</p>
+                                                                <p class="text-calc-descr">You can add money on your <span>personal account</span></p>
+                                                            </div>
+
+                                                            <div class="payment__wallet">
+                                                                <div class="payment__wallet-head">
+                                                                    <div class="payment__wallet-balance payment__wallet-balance--plus ">
+                                                                        <div class="payment__cardpay-price">
+                                                                            <span class="payment__cardpay-total text-calc-other">68,78€</span>
+                                                                            <span class="payment__cardpay-balance text-calc-descr">Your current balance</span>
+                                                                        </div>
+                                                                        <svg width='30' height='14'>
+                                                                            <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                                                        </svg>
+                                                                        <div class="payment__cardpay-price">
+                                                                            <span class="payment__cardpay-total text-calc-other">24,32€</span>
+                                                                            <span class="payment__cardpay-balance text-calc-descr">Your current balance</span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- <div class="payment__wallet-balance payment__wallet-balance--minus">
+                                                                        <div class="payment__cardpay-price">
+                                                                            <span class="payment__cardpay-total text-calc-other">68,78€</span>
+                                                                            <span class="payment__cardpay-balance text-calc-descr">Your current balance</span>
+                                                                        </div>
+                                                                        <svg width='30' height='14'>
+                                                                            <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                                                        </svg>
+                                                                        <div class="payment__cardpay-price">
+                                                                            <span class="payment__cardpay-total payment__cardpay-total--minus text-calc-other">-4,93€</span>
+                                                                            <span class="payment__cardpay-balance text-calc-descr">Your current balance</span>
+                                                                        </div>
+                                                                    </div> -->
+                                                                </div>
+
+                                                                <!-- <div class="payment__wallet-bot">
+                                                                    <div class="payment__content-head payment__content-head--red">
+                                                                        <div class="payment__content-alert payment__content-alert--red basket-tabs-content">
+                                                                            <svg width='20' height='20'>
+                                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                                            </svg>
+                                                                            <span>Your balance to low</span>
+                                                                        </div>
+                                                                        <p class="text-calc-descr">Add money or choose any method pay</p>
+                                                                    </div>
+
+                                                                    <button class="payment__wallet-add btn button-2">
+                                                                        <svg width='22' height='22'>
+                                                                        <use href='img/sprite/sprite.svg#add'></use>
+                                                                        </svg>
+                                                                        <span>Add Balance</span>
+                                                                    </button>
+                                                                </div> -->
                                                             </div>
                                                         </div>
                                                     </div>

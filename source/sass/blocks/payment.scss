@@ -77,11 +77,162 @@
         padding: 12px;
         background: var(--blue-1);
         border-radius: 8px;
+
+        &--red {
+            background-color: #FFEDEF;
+        }
     }
 
     &__content-alert {
         display: flex;
         align-items: center;
         grid-gap: 10px;
+
+        svg {
+            fill: #0047FE;
+        }
+
+        &--red {
+            color: #D5061A;
+
+            svg {
+                fill: #D5061A;
+            }
+        }
+    }
+
+    &__cardpay {
+        padding: 40px 30px;
+        display: flex;
+        grid-gap: 60px;
+    }
+
+    &__cardpay-info {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        grid-gap: 24px;
+        padding: 20px;
+        background-color: var(--blue-1);
+    }
+
+    &__cardpay-head {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    &__card-form {
+        grid-gap: 30px;
+    }
+
+    &__card-labels {
+        display: flex;
+        align-items: center;
+        grid-gap: 16px;
+    }
+
+    &__cardpay-price {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 5px;
+    }
+
+    &__pay {
+        display: flex;
+        align-items: center;
+        grid-gap: 24px;
+    }
+
+    &__wallet {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+        margin: 0 auto;
+    }
+
+    &__wallet-bot {
+        display: flex;
+        align-items: center;
+        grid-gap: 30px;
+    }
+
+    &__wallet-balance {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 50px;
+    }
+
+    &__cardpay-total--minus {
+        color: #D5061A;
+    }
+
+    &__wallet-add {
+        padding: 8px 10px;
+        color: #0047FE;
+        border: 1px solid #0047FE;
+        border-radius: 8px;
+
+        svg {
+            margin-right: 10px;
+            stroke: #0047FE;
+        }
+    }
+
+    &__toggle {
+        position: relative;
+        display: flex;
+    }
+
+    &__toggle-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #FFF;
+
+        &--on {
+            left: 16px;
+        }
+
+        &--off {
+            right: 16px;
+        }
+    }
+
+    &__toggle-checkbox {
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background-color: #D5061A;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:checked {
+            background-color: #23C301;
+            transition: all 0.5s;
+
+            &::before {
+                left: 44px;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2px;
+            width: 14px;
+            height: 26px;
+            background: #F5F5F5;
+            border-radius: 3px;
+            transition: all 0.5s;
+
+        }
+
     }
 }
