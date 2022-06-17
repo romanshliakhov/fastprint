@@ -362,6 +362,12 @@
         grid-gap: 8px;
     }
 
+    &__calculation-btns {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+    }
+
     &__btn {
         background-color: var(--blue-6);
         color: var(--system-6);
@@ -379,6 +385,14 @@
             background-color: var(--system-3);
         }
     }
+
+    &__btn-confirm {
+        padding: 14px;
+        border: 1px solid #0047FE;
+        border-radius: 6px;
+    }
+
+
 
     &__copy {
         padding: 80px clamp(20px, 5.215vw, 30px) 24px;
