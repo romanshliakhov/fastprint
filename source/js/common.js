@@ -347,22 +347,40 @@ if (tabsParr) {
   });
 }
 
-// function itemTabs(evt) {
-//     const navName = evt.target.dataset.tabContentId;
+// Calculate Steps
+function stepForm () {
+    const steps = document.querySelectorAll('.calculate__steps-pressed');
+    const prevBtn = document.querySelector('.calculate__steps-btn--back');
+    const nextBtn = document.querySelector('.calculate__types-item');
+    const form = document.querySelector('.calculate__form');
 
-//     const tabsContainer = evt.target.closest('.tabs');
-//     const tabsButton = evt.currentTarget;
-//     const tabContent = document.getElementById(navName);
 
-//     const currentTabContent = [...tabsContainer.getElementsByClassName("tabcontent")];
-//     currentTabContent.forEach(tabContent => tabContent.classList.remove('active'));
 
-//     const currentTabLinks = [...tabsContainer.getElementsByClassName("tablinks")];
-//     currentTabLinks.forEach(tabLink => tabLink.classList.remove("active"));
+    form.addEventListener('submit', (e) => e.preventDefault());
 
-//     tabContent.classList.add('active');
-//     tabsButton.classList.add('active');
-// }
+    let formStep = 0;
 
+    prevBtn.addEventListener('click', () => {
+        formStep--;
+        updateFormSteps();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        formStep++;
+        updateFormSteps();
+    });
+
+    function updateFormSteps() {
+        steps.forEach(step => {
+            step.classList.contains('active') && step.classList.remove('active');
+        });
+
+        // steps[formStep].classList.add('active');
+    }
+
+    updateFormSteps();
+}
+
+stepForm();
 
 
