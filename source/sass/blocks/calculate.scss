@@ -52,6 +52,7 @@
     }
 
     &__box {
+        position: relative;
         display: flex;
         flex-direction: column;
         padding: 30px 30px 20px;
@@ -72,8 +73,13 @@
         }
 
         &--mid {
-            max-width: 840px;
             width: 100%;
+            border-bottom: 2px solid #fff;
+
+            &:hover {
+                border-bottom: 2px solid #0047FE;
+                border-radius: 0px 0px 6px 6px;
+            }
         }
 
         &--right {
@@ -81,6 +87,11 @@
             width: 100%;
             grid-gap: 30px;
         }
+    }
+
+    &__form {
+        height: 100%;
+        position: relative;
     }
 
     &__btn {
@@ -106,7 +117,25 @@
     &__steps {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__steps-all {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 20;
+        transform: translateX(-100%);
+        transition: all .4s;
+        opacity: 0;
+        &.show {
+            background-color: #fff;
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
 
     &__steps-head {
@@ -123,6 +152,8 @@
     }
 
     &__steps-btn {
+        cursor: pointer;
+
         span {
             color: #0047FE;
         }
@@ -142,20 +173,57 @@
                 stroke: #0047FE;
             }
         }
-    }
 
-    &__steps-pressed {
-        display: none;
+        &--delete {
+            span {
+                color: red;
+            }
 
-        &.active {
-            display: block;
+            svg {
+                stroke: red;
+            }
+        }
+
+        &--add {
+            background-color: #0047FE;
+            width: 226px;
+            transition: all 0.5s ease;
+
+            span {
+                color: #fff;
+            }
+
+            svg {
+                fill: #fff;
+            }
         }
     }
 
 
+    &__steps-pressed {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+
+        &.active {
+            display: flex;
+
+        }
+    }
+
+    &__upload-add {
+        position: relative;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        &:hover {
+            filter: drop-shadow(0px 0px 32px rgba(0, 71, 254, 0.3));
+        }
+    }
 
     &__steps-choosed {
-        padding-top: 20px;
         display: flex;
         flex-direction: column;
         grid-gap: 26px;
@@ -246,6 +314,48 @@
         svg {
             fill: #0047FE;
         }
+
+        &--size {
+            width: 130px;
+        }
+
+        &--disabled {
+            pointer-events: none;
+            background-color: #F0F0F0;
+
+            span {
+                color: #696E72;
+            }
+        }
+
+        &--row {
+            flex-direction: row;
+            grid-gap: 12px;
+            text-align: left;
+            padding: 7px 8px 7px 12px;
+
+            svg {
+                fill: #fff;
+                stroke: #0047FE;
+            }
+        }
+    }
+
+    &__form-btn {
+        background-color: #0047FE;
+
+        span {
+            color: #fff;
+        }
+
+        svg {
+            stroke: #fff;
+        }
+    }
+
+    &__choosed-description {
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -259,9 +369,14 @@
 
 
     &__steps-inner {
-        max-height: 740px;
+        max-height: 550px;
         flex-grow: 2;
         overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
     }
 
 
@@ -278,12 +393,13 @@
 
     &__types-item {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         grid-gap: 7px;
         background-color: rgba(240, 240, 240, 0.5);
         border-radius: 6px;
         transition: all 0.4s ease;
+        cursor: pointer;
 
         &:hover {
             background-color: #0047FE;
@@ -358,6 +474,12 @@
 
 
     &__upload {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__upload-form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -371,6 +493,7 @@
     }
 
     &__upload-label {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -378,14 +501,30 @@
         height: 180px;
         background-color: #EDF4FF;
         border-radius: 24px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover,
+        &:active {
+            background-color: #0047FE;
+
+            svg {
+                fill: #fff;
+            }
+        }
 
         svg {
+            transition: all 0.5s ease;
             fill: #0047FE;
         }
     }
 
     &__upload-file {
-        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
     }
 
     &__upload-details {
@@ -398,5 +537,16 @@
         display: flex;
         flex-direction: column;
         grid-gap: 15px;
+    }
+
+    &__upload-btns {
+        // display: none;
+        display: flex;
+        // opacity: 0;
+
+        &.active {
+            // opacity: 1;
+            display: flex;
+        }
     }
 }

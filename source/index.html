@@ -222,7 +222,7 @@
 
                                     <div class="calculate__steps-inner">
                                         <ul class="calculate__types">
-                                            <li class="calculate__types-item">
+                                            <li class="calculate__types-item" data-choose="1">
                                                 <div class="calculate__types-info">
                                                     <p class="calculate__types-name text-calc-btn">Standart</p>
                                                     <p class="calculate__types-descr text-calc-descr">(A2, A3, A4, A5 and all formats)</p>
@@ -236,7 +236,7 @@
                                                 </div>
                                             </li>
 
-                                            <li class="calculate__types-item">
+                                            <li class="calculate__types-item" data-choose="2">
                                                 <div class="calculate__types-info">
                                                     <p class="calculate__types-name text-calc-btn">Technical</p>
                                                     <p class="calculate__types-descr text-calc-descr">Printing documents and complex graphic objects (business cards, flyers, books).</p>
@@ -250,7 +250,7 @@
                                                 </div>
                                             </li>
 
-                                            <li class="calculate__types-item">
+                                            <li class="calculate__types-item" data-choose="3">
                                                 <div class="calculate__types-info">
                                                     <p class="calculate__types-name text-calc-btn">Posters</p>
                                                     <p class="calculate__types-descr text-calc-descr">Large formats ready for walls</p>
@@ -264,7 +264,7 @@
                                                 </div>
                                             </li>
 
-                                            <li class="calculate__types-item">
+                                            <li class="calculate__types-item" data-choose="4">
                                                 <div class="calculate__types-info">
                                                     <p class="calculate__types-name text-calc-btn">Stickers</p>
                                                     <p class="calculate__types-descr text-calc-descr">Printed materials with adhesive side</p>
@@ -290,7 +290,7 @@
                                 </div>
 
                                 <div class="calculate__steps-all">
-                                    <div class="calculate__steps-pressed">
+                                    <div class="calculate__steps-pressed" data-form="1">
                                         <div class="calculate__steps-head">
                                             <p class="text-detail">Standart</p>
 
@@ -366,7 +366,7 @@
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
                                                                 <input class="calculate__choosed-input" type="radio" name="size">
-                                                                <span class="calculate__choosed-info">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
                                                                     <span class="text-calc-name">A0</span>
                                                                     <span class="text-calc-descr">841 х 1189 mm</span>
                                                                 </span>
@@ -374,8 +374,8 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="size">
-                                                                <span class="calculate__choosed-info">
+                                                                <input class="calculate__choosed-input" type="radio" name="size" disabled>
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size calculate__choosed-info--disabled">
                                                                     <span class="text-calc-name">A0+</span>
                                                                     <span class="text-calc-descr">841 х 1189 mm</span>
                                                                 </span>
@@ -384,7 +384,7 @@
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
                                                                 <input class="calculate__choosed-input" type="radio" name="size">
-                                                                <span class="calculate__choosed-info">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
                                                                     <span class="text-calc-name">A1</span>
                                                                     <span class="text-calc-descr">594 х 841 mm</span>
                                                                 </span>
@@ -393,7 +393,7 @@
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
                                                                 <input class="calculate__choosed-input" type="radio" name="size">
-                                                                <span class="calculate__choosed-info">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
                                                                     <span class="text-calc-name">A2</span>
                                                                     <span class="text-calc-descr">420 х 594 mm</span>
                                                                 </span>
@@ -402,7 +402,7 @@
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
                                                                 <input class="calculate__choosed-input" type="radio" name="size">
-                                                                <span class="calculate__choosed-info">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
                                                                     <span class="text-calc-name">A3</span>
                                                                     <span class="text-calc-descr">420 x 297 mm</span>
                                                                 </span>
@@ -411,7 +411,7 @@
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
                                                                 <input class="calculate__choosed-input" type="radio" name="size">
-                                                                <span class="calculate__choosed-info">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
                                                                     <span class="text-calc-name">A4</span>
                                                                     <span class="text-calc-descr">297 x 210 mm</span>
                                                                 </span>
@@ -420,7 +420,7 @@
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
                                                                 <input class="calculate__choosed-input" type="radio" name="size">
-                                                                <span class="calculate__choosed-info">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
                                                                     <span class="text-calc-name">A5</span>
                                                                     <span class="text-calc-descr">210 x 148 mm</span>
                                                                 </span>
@@ -473,6 +473,339 @@
                                                         </li>
                                                     </ul>
                                                 </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#print-form'></use>
+                                                            </svg>
+                                                            <span>Print Form</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">One Side</span>
+                                                                    <span class="text-calc-descr">On one side on paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Double Face</span>
+                                                                    <span class="text-calc-descr">On both sides on paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                            </svg>
+                                                            <span>Print Per Side</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-normal'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Normal</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-pages'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 pages</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-2lides'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 slides</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-4lides'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4 slides</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#orientation'></use>
+                                                            </svg>
+                                                            <span>Orientation</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Automatic</span>
+                                                                    <span class="text-calc-descr">Automatic adjustment</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Vertical</span>
+                                                                    <span class="text-calc-descr">From the settings</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Horizontal</span>
+                                                                    <span class="text-calc-descr">From the settings</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#quality'></use>
+                                                            </svg>
+                                                            <span>Quality</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Inkjet</span>
+                                                                    <span class="text-calc-descr">Inkjet printing</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness" disabled>
+                                                                <span class="calculate__choosed-info calculate__choosed-info--disabled">
+                                                                    <span class="text-calc-name">Laser</span>
+                                                                    <span class="text-calc-descr">Standart printing</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#binding'></use>
+                                                            </svg>
+                                                            <span>Binding</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-unfinished'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Unfinished</span>
+                                                                        <span class="text-calc-descr">Print only</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-stapling'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Stapling</span>
+                                                                        <span class="text-calc-descr">Corner stapling</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-stapling2'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Stapling 2</span>
+                                                                        <span class="text-calc-descr">Binding</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-4'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4:1</span>
+                                                                        <span class="text-calc-descr">Binding</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-3'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">3:1</span>
+                                                                        <span class="text-calc-descr">Corner stapling</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-2holes'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 Holes</span>
+                                                                        <span class="text-calc-descr">2 Holes punched</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-4holes'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4 Holes</span>
+                                                                        <span class="text-calc-descr">4 Holes punched</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#comment'></use>
+                                                            </svg>
+                                                            <span>Comment</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <label class="form__label" for="#">
+                                                        <textarea class="form__textarea text-body" name="question" placeholder="Print according to the configuration you have indicated"></textarea>
+                                                    </label>
+                                                </div>
+
+                                                <button class="calculate__form-btn btn button-1">
+                                                    <svg width='24' height='24'>
+                                                    <use href='img/sprite/sprite.svg#save'></use>
+                                                    </svg>
+                                                    <span>Save settings</span>
+                                                </button>
                                             </div>
                                         </div>
 
@@ -485,38 +818,1639 @@
                                         </div>
                                     </div>
 
+                                    <div class="calculate__steps-pressed" data-form="2">
+                                        <div class="calculate__steps-head">
+                                            <p class="text-detail">Standart</p>
 
+                                            <div class="calculate__steps-btns">
+                                                <button class="calculate__steps-btn calculate__steps-btn--back btn button-1">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#back'></use>
+                                                    </svg>
+                                                    <span>Back</span>
+                                                </button>
+                                                <button class="calculate__steps-btn calculate__steps-btn--save btn button-1">
+                                                    <svg width='24' height='24'>
+                                                    <use href='img/sprite/sprite.svg#confirm'></use>
+                                                    </svg>
+                                                    <span>Save</span>
+                                                </button>
+                                            </div>
+                                        </div>
 
+                                        <div class="calculate__steps-inner">
+                                            <div class="calculate__steps-choosed">
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#color'></use>
+                                                            </svg>
+                                                            <span>Color</span>
+                                                        </div>
 
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="color">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">BN</span>
+                                                                    <span class="text-calc-descr">Black and white</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="color">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Color</span>
+                                                                    <span class="text-calc-descr">CMYK color</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#size'></use>
+                                                            </svg>
+                                                            <span>Size</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A0</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size" disabled>
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size calculate__choosed-info--disabled">
+                                                                    <span class="text-calc-name">A0+</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A1</span>
+                                                                    <span class="text-calc-descr">594 х 841 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A2</span>
+                                                                    <span class="text-calc-descr">420 х 594 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A3</span>
+                                                                    <span class="text-calc-descr">420 x 297 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A4</span>
+                                                                    <span class="text-calc-descr">297 x 210 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A5</span>
+                                                                    <span class="text-calc-descr">210 x 148 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#thickness'></use>
+                                                            </svg>
+                                                            <span>Paper Thickness</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">A0</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">80 GR</span>
+                                                                    <span class="text-calc-descr">Copies paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">160 GR</span>
+                                                                    <span class="text-calc-descr">Tall thick</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#print-form'></use>
+                                                            </svg>
+                                                            <span>Print Form</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">One Side</span>
+                                                                    <span class="text-calc-descr">On one side on paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Double Face</span>
+                                                                    <span class="text-calc-descr">On both sides on paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                            </svg>
+                                                            <span>Print Per Side</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-normal'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Normal</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-pages'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 pages</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-2lides'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 slides</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-4lides'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4 slides</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#orientation'></use>
+                                                            </svg>
+                                                            <span>Orientation</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Automatic</span>
+                                                                    <span class="text-calc-descr">Automatic adjustment</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Vertical</span>
+                                                                    <span class="text-calc-descr">From the settings</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Horizontal</span>
+                                                                    <span class="text-calc-descr">From the settings</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#quality'></use>
+                                                            </svg>
+                                                            <span>Quality</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Inkjet</span>
+                                                                    <span class="text-calc-descr">Inkjet printing</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness" disabled>
+                                                                <span class="calculate__choosed-info calculate__choosed-info--disabled">
+                                                                    <span class="text-calc-name">Laser</span>
+                                                                    <span class="text-calc-descr">Standart printing</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#binding'></use>
+                                                            </svg>
+                                                            <span>Binding</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-unfinished'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Unfinished</span>
+                                                                        <span class="text-calc-descr">Print only</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-stapling'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Stapling</span>
+                                                                        <span class="text-calc-descr">Corner stapling</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-stapling2'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Stapling 2</span>
+                                                                        <span class="text-calc-descr">Binding</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-4'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4:1</span>
+                                                                        <span class="text-calc-descr">Binding</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-3'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">3:1</span>
+                                                                        <span class="text-calc-descr">Corner stapling</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-2holes'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 Holes</span>
+                                                                        <span class="text-calc-descr">2 Holes punched</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-4holes'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4 Holes</span>
+                                                                        <span class="text-calc-descr">4 Holes punched</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#comment'></use>
+                                                            </svg>
+                                                            <span>Comment</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <label class="form__label" for="#">
+                                                        <textarea class="form__textarea text-body" name="question" placeholder="Print according to the configuration you have indicated"></textarea>
+                                                    </label>
+                                                </div>
+
+                                                <button class="calculate__form-btn btn button-1">
+                                                    <svg width='24' height='24'>
+                                                    <use href='img/sprite/sprite.svg#save'></use>
+                                                    </svg>
+                                                    <span>Save settings</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="calculate__breadcrumbs">
+                                            <span class="calculate__breadcrumbs-item text-detail">1. Type</span>
+                                            <svg width='16' height='11.5'>
+                                            <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                            </svg>
+                                            <span class="calculate__breadcrumbs-item calculate__breadcrumbs-item--active text-detail">2. Settings</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="calculate__steps-pressed" data-form="3">
+                                        <div class="calculate__steps-head">
+                                            <p class="text-detail">Standart</p>
+
+                                            <div class="calculate__steps-btns">
+                                                <button class="calculate__steps-btn calculate__steps-btn--back btn button-1">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#back'></use>
+                                                    </svg>
+                                                    <span>Back</span>
+                                                </button>
+                                                <button class="calculate__steps-btn calculate__steps-btn--save btn button-1">
+                                                    <svg width='24' height='24'>
+                                                    <use href='img/sprite/sprite.svg#confirm'></use>
+                                                    </svg>
+                                                    <span>Save</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="calculate__steps-inner">
+                                            <div class="calculate__steps-choosed">
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#color'></use>
+                                                            </svg>
+                                                            <span>Color</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="color">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">BN</span>
+                                                                    <span class="text-calc-descr">Black and white</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="color">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Color</span>
+                                                                    <span class="text-calc-descr">CMYK color</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#size'></use>
+                                                            </svg>
+                                                            <span>Size</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A0</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size" disabled>
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size calculate__choosed-info--disabled">
+                                                                    <span class="text-calc-name">A0+</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A1</span>
+                                                                    <span class="text-calc-descr">594 х 841 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A2</span>
+                                                                    <span class="text-calc-descr">420 х 594 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A3</span>
+                                                                    <span class="text-calc-descr">420 x 297 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A4</span>
+                                                                    <span class="text-calc-descr">297 x 210 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A5</span>
+                                                                    <span class="text-calc-descr">210 x 148 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#thickness'></use>
+                                                            </svg>
+                                                            <span>Paper Thickness</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">A0</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">80 GR</span>
+                                                                    <span class="text-calc-descr">Copies paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">160 GR</span>
+                                                                    <span class="text-calc-descr">Tall thick</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#print-form'></use>
+                                                            </svg>
+                                                            <span>Print Form</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">One Side</span>
+                                                                    <span class="text-calc-descr">On one side on paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Double Face</span>
+                                                                    <span class="text-calc-descr">On both sides on paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                            </svg>
+                                                            <span>Print Per Side</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-normal'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Normal</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-pages'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 pages</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-2lides'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 slides</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-4lides'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4 slides</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#orientation'></use>
+                                                            </svg>
+                                                            <span>Orientation</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Automatic</span>
+                                                                    <span class="text-calc-descr">Automatic adjustment</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Vertical</span>
+                                                                    <span class="text-calc-descr">From the settings</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Horizontal</span>
+                                                                    <span class="text-calc-descr">From the settings</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#quality'></use>
+                                                            </svg>
+                                                            <span>Quality</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Inkjet</span>
+                                                                    <span class="text-calc-descr">Inkjet printing</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness" disabled>
+                                                                <span class="calculate__choosed-info calculate__choosed-info--disabled">
+                                                                    <span class="text-calc-name">Laser</span>
+                                                                    <span class="text-calc-descr">Standart printing</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#binding'></use>
+                                                            </svg>
+                                                            <span>Binding</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-unfinished'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Unfinished</span>
+                                                                        <span class="text-calc-descr">Print only</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-stapling'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Stapling</span>
+                                                                        <span class="text-calc-descr">Corner stapling</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-stapling2'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Stapling 2</span>
+                                                                        <span class="text-calc-descr">Binding</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-4'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4:1</span>
+                                                                        <span class="text-calc-descr">Binding</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-3'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">3:1</span>
+                                                                        <span class="text-calc-descr">Corner stapling</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-2holes'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 Holes</span>
+                                                                        <span class="text-calc-descr">2 Holes punched</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-4holes'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4 Holes</span>
+                                                                        <span class="text-calc-descr">4 Holes punched</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#comment'></use>
+                                                            </svg>
+                                                            <span>Comment</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <label class="form__label" for="#">
+                                                        <textarea class="form__textarea text-body" name="question" placeholder="Print according to the configuration you have indicated"></textarea>
+                                                    </label>
+                                                </div>
+
+                                                <button class="calculate__form-btn btn button-1">
+                                                    <svg width='24' height='24'>
+                                                    <use href='img/sprite/sprite.svg#save'></use>
+                                                    </svg>
+                                                    <span>Save settings</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="calculate__breadcrumbs">
+                                            <span class="calculate__breadcrumbs-item text-detail">1. Type</span>
+                                            <svg width='16' height='11.5'>
+                                            <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                            </svg>
+                                            <span class="calculate__breadcrumbs-item calculate__breadcrumbs-item--active text-detail">2. Settings</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="calculate__steps-pressed" data-form="4">
+                                        <div class="calculate__steps-head">
+                                            <p class="text-detail">Standart</p>
+
+                                            <div class="calculate__steps-btns">
+                                                <button class="calculate__steps-btn calculate__steps-btn--back btn button-1">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#back'></use>
+                                                    </svg>
+                                                    <span>Back</span>
+                                                </button>
+                                                <button class="calculate__steps-btn calculate__steps-btn--save btn button-1">
+                                                    <svg width='24' height='24'>
+                                                    <use href='img/sprite/sprite.svg#confirm'></use>
+                                                    </svg>
+                                                    <span>Save</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="calculate__steps-inner">
+                                            <div class="calculate__steps-choosed">
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#color'></use>
+                                                            </svg>
+                                                            <span>Color</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="color">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">BN</span>
+                                                                    <span class="text-calc-descr">Black and white</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="color">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Color</span>
+                                                                    <span class="text-calc-descr">CMYK color</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#size'></use>
+                                                            </svg>
+                                                            <span>Size</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A0</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size" disabled>
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size calculate__choosed-info--disabled">
+                                                                    <span class="text-calc-name">A0+</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A1</span>
+                                                                    <span class="text-calc-descr">594 х 841 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A2</span>
+                                                                    <span class="text-calc-descr">420 х 594 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A3</span>
+                                                                    <span class="text-calc-descr">420 x 297 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A4</span>
+                                                                    <span class="text-calc-descr">297 x 210 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="size">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--size">
+                                                                    <span class="text-calc-name">A5</span>
+                                                                    <span class="text-calc-descr">210 x 148 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#thickness'></use>
+                                                            </svg>
+                                                            <span>Paper Thickness</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">A0</span>
+                                                                    <span class="text-calc-descr">841 х 1189 mm</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">80 GR</span>
+                                                                    <span class="text-calc-descr">Copies paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">160 GR</span>
+                                                                    <span class="text-calc-descr">Tall thick</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#print-form'></use>
+                                                            </svg>
+                                                            <span>Print Form</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">One Side</span>
+                                                                    <span class="text-calc-descr">On one side on paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Double Face</span>
+                                                                    <span class="text-calc-descr">On both sides on paper</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#per-slide'></use>
+                                                            </svg>
+                                                            <span>Print Per Side</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-normal'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Normal</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-pages'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 pages</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-2lides'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 slides</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#per-slide-4lides'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4 slides</span>
+                                                                        <span class="text-calc-descr">Detail info</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#orientation'></use>
+                                                            </svg>
+                                                            <span>Orientation</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Automatic</span>
+                                                                    <span class="text-calc-descr">Automatic adjustment</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Vertical</span>
+                                                                    <span class="text-calc-descr">From the settings</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Horizontal</span>
+                                                                    <span class="text-calc-descr">From the settings</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#quality'></use>
+                                                            </svg>
+                                                            <span>Quality</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info">
+                                                                    <span class="text-calc-name">Inkjet</span>
+                                                                    <span class="text-calc-descr">Inkjet printing</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness" disabled>
+                                                                <span class="calculate__choosed-info calculate__choosed-info--disabled">
+                                                                    <span class="text-calc-name">Laser</span>
+                                                                    <span class="text-calc-descr">Standart printing</span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#binding'></use>
+                                                            </svg>
+                                                            <span>Binding</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <ul class="calculate__choosed-list">
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-unfinished'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Unfinished</span>
+                                                                        <span class="text-calc-descr">Print only</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-stapling'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Stapling</span>
+                                                                        <span class="text-calc-descr">Corner stapling</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-stapling2'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">Stapling 2</span>
+                                                                        <span class="text-calc-descr">Binding</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-4'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4:1</span>
+                                                                        <span class="text-calc-descr">Binding</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-3'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">3:1</span>
+                                                                        <span class="text-calc-descr">Corner stapling</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-2holes'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">2 Holes</span>
+                                                                        <span class="text-calc-descr">2 Holes punched</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="calculate__choosed-item">
+                                                            <label class="calculate__choosed-label">
+                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <span class="calculate__choosed-info calculate__choosed-info--row">
+                                                                    <svg width='28' height='36'>
+                                                                        <use href='img/sprite/sprite.svg#binding-4holes'></use>
+                                                                    </svg>
+                                                                    <span class="calculate__choosed-description">
+                                                                        <span class="text-calc-name">4 Holes</span>
+                                                                        <span class="text-calc-descr">4 Holes punched</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="calculate__choosed-block">
+                                                    <div class="calculate__choosed-head">
+                                                        <div class="calculate__choosed-title">
+                                                            <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#comment'></use>
+                                                            </svg>
+                                                            <span>Comment</span>
+                                                        </div>
+
+                                                        <svg class="calculate__choosed-alert" width='20' height='20'>
+                                                            <use href='img/sprite/sprite.svg#alert'></use>
+                                                        </svg>
+                                                    </div>
+
+                                                    <label class="form__label" for="#">
+                                                        <textarea class="form__textarea text-body" name="question" placeholder="Print according to the configuration you have indicated"></textarea>
+                                                    </label>
+                                                </div>
+
+                                                <button class="calculate__form-btn btn button-1">
+                                                    <svg width='24' height='24'>
+                                                    <use href='img/sprite/sprite.svg#save'></use>
+                                                    </svg>
+                                                    <span>Save settings</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="calculate__breadcrumbs">
+                                            <span class="calculate__breadcrumbs-item text-detail">1. Type</span>
+                                            <svg width='16' height='11.5'>
+                                            <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                            </svg>
+                                            <span class="calculate__breadcrumbs-item calculate__breadcrumbs-item--active text-detail">2. Settings</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
-
-
                         </div>
 
                         <div class="calculate__box calculate__box--mid">
-                            <p class="text-detail">Your Files</p>
+                            <div class="calculate__steps-head">
+                                <p class="text-detail">Your Files</p>
+
+                                <div class="calculate__upload-btns calculate__steps-btns">
+                                    <button class="calculate__steps-btn calculate__steps-btn--delete btn button-1">
+                                        <svg width='24' height='24'>
+                                            <use href='img/sprite/sprite.svg#delete'></use>
+                                        </svg>
+                                        <span>Delete all</span>
+                                    </button>
+
+                                    <label class="calculate__upload-add">
+                                        <input class="calculate__upload-file" type="file" accept=".pdf" multiple>
+                                        <span class="calculate__steps-btn calculate__steps-btn--add btn button-1">
+                                            <svg width='24' height='24'>
+                                                <use href='img/sprite/sprite.svg#upload'></use>
+                                                </svg>
+                                            <span>Add new file</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
 
                             <div class="calculate__upload">
-                                <label class="calculate__upload-label">
-                                    <svg width='100' height='100'>
-                                    <use href='img/sprite/sprite.svg#upload'></use>
-                                    </svg>
-                                    <input class="calculate__upload-file" type="file" multiple>
-                                </label>
+                                <form class="calculate__upload-form" action="#">
+                                    <label class="calculate__upload-label">
+                                        <svg width='100' height='100'>
+                                        <use href='img/sprite/sprite.svg#upload'></use>
+                                        </svg>
+                                        <input class="calculate__upload-file" type="file" multiple accept=".pdf">
+                                    </label>
 
-                                <div class="calculate__upload-details">
-                                    <p class="title-3">Upload new files</p>
+                                    <span class="calculate__upload-details">
+                                        <p class="title-3">Upload new files</p>
 
-                                    <div class="calculate__upload-descr">
-                                        <p class="calculate__upload-text text-calc-descr">You can upload a maximum of 50 PDF files each weighing up to 10 MB.</p>
-                                        <p class="calculate__upload-text text-calc-descr">If you're having trouble downloading, please check your internet connection or file integrity. It must be PDF only.</p>
-                                    </div>
+                                        <span class="calculate__upload-descr">
+                                            <p class="calculate__upload-text text-calc-descr">You can upload a maximum of 50 PDF files each weighing up to 10 MB.</p>
+                                            <p class="calculate__upload-text text-calc-descr">If you're having trouble downloading, please check your internet connection or file integrity. It must be PDF only.</p>
+                                        </span>
+                                    </span>
+                                </form>
+
+                                <div class="calculate__upload-area">
+
                                 </div>
-
-
-
-                                <p></p>
                             </div>
                         </div>
 
