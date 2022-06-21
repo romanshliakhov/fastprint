@@ -1,5 +1,12 @@
 .blog {
     padding: clamp(40px, 5.208vw, 120px) clamp(20px, 5.215vw, 30px) 260px;
+    overflow: hidden;
+
+    &.line::before {
+        top: initial;
+        bottom: -5%;
+        transform: scaleY(-1);
+    }
 
     @media (max-width: 1240px) {
         padding-bottom: 240px;

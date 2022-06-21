@@ -73,6 +73,9 @@ header {
     display: flex;
     align-items: center;
     white-space: nowrap;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 0;
 
     &--shop {
         color: var(--blue-6);
@@ -80,6 +83,14 @@ header {
 
     svg {
       margin-left: 14px;
+    }
+
+    &:hover {
+        color: var(--blue-6);
+    }
+
+    &--active {
+        color: var(--blue-6);
     }
   }
 

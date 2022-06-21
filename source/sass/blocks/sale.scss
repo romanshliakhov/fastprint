@@ -1,6 +1,11 @@
 .sale {
     padding-top: 130px;
 
+    &.line:before {
+        background-image: var(--line-center);
+        background-position: center;
+    }
+
     &__slider {
         background-color: var(--blue-6);
         overflow: hidden;

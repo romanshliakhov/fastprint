@@ -1,36 +1,3 @@
-// .burger-menu {
-//     flex-direction: column;
-//     width: 18px;
-//     z-index: 10;
-//     position: relative;
-
-//     span {
-//       background: var(--system-1);
-//       width: 18px;
-//       height: 1.5px;
-//       display: block;
-//       transition: all .4s;
-//     }
-
-//     span + span {
-//       margin-top: 5px;
-//     }
-// }
-
-// .burger-menu.active {
-//     span:nth-child(1) {
-//         transform: rotate(45deg) translate(5px, 5px);
-//     }
-
-//     span:nth-child(2) {
-//         opacity: 0;
-//     }
-
-//     span:nth-child(3) {
-//         transform: rotate(-45deg) translate(5px, -4px);
-//     }
-// }
-
 .mobile {
     display: none;
 

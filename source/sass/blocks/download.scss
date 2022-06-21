@@ -1,6 +1,11 @@
 .download {
     padding: 368px 0 108px;
     background-color: var(--system-1);
+    overflow: hidden;
+
+    &.line::before {
+        top: -10%;
+    }
 
     &__center {
         max-width: 720px;

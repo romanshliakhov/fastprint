@@ -1,5 +1,10 @@
 .contacts {
     padding: 100px clamp(20px, 5.215vw, 30px) 260px;
+    overflow: hidden;
+
+    &.line::before {
+        top: -10%;
+    }
 
     @media (max-width: 1240px) {
         padding-top: 80px;

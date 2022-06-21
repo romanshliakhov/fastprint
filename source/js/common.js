@@ -42,26 +42,6 @@ stepsBtns.map(function(stepsBtn) {
     });
 })
 
-
-
-
-// upload
-function upload() {
-    const input = document.querySelector('.calculate__upload-file');
-
-    const changeHandler = event => {
-        console.log(event);
-    }
-
-    input.addEventListener('change', changeHandler);
-
-}
-
-
-
-
-
-
 // burger
 let menuBtnOpen = document.querySelector('.mobile__header-btn--open');
 let menuBtnClose = document.querySelector('.mobile__header-btn--close');
@@ -412,4 +392,15 @@ if (tabsParr) {
 }
 
 
+// upload
+function upload() {
+    const input = document.querySelector('.calculate__upload-file');
+
+    const changeHandler = event => {
+        console.log(event);
+    }
+
+    input.addEventListener('change', changeHandler);
+
+}
 

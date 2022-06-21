@@ -103,6 +103,7 @@
 
     &__bottom {
         padding: 260px clamp(20px,5.215vw,30px);
+        overflow: hidden;
 
         @media (max-width: 1024px) {
             padding: 240px clamp(20px,5.215vw,30px);
@@ -110,6 +111,12 @@
 
         @media (max-width: 768px) {
             padding: 200px clamp(20px,5.215vw,30px);
+        }
+
+        &.line::before {
+            top: initial;
+            bottom: -5%;
+            transform: scaleY(-1);
         }
     }
 
