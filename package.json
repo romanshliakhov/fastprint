@@ -60,7 +60,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "114.x "
+    "node": "14.x"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.2",
