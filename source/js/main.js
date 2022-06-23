@@ -5,8 +5,6 @@ import './_components';
 import Swiper from './vendor/swiper.js';
 
 
-
-
 // Select
 let headerLang = document.querySelectorAll('.header__lang');
 let filter = document.querySelectorAll('.filter');

@@ -1,3 +1,3 @@
-// import './components/gallery.js';
+import './components/upload.js';
 
 console.log('components');
