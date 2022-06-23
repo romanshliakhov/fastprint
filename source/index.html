@@ -2406,52 +2406,76 @@
                         </div>
 
                         <div class="calculate__box calculate__box--mid">
-                            <div class="calculate__steps-head">
-                                <p class="text-detail">Your Files</p>
+                            <div class="calculate__upload-wrapper">
+                                <div class="calculate__steps-head">
+                                    <p class="text-detail">Your Files</p>
+                                </div>
 
-                                <div class="calculate__upload-btns calculate__steps-btns">
-                                    <button class="calculate__steps-btn calculate__steps-btn--delete btn button-1">
-                                        <svg width='24' height='24'>
-                                            <use href='img/sprite/sprite.svg#delete'></use>
-                                        </svg>
-                                        <span>Delete all</span>
-                                    </button>
-
-                                    <label class="calculate__upload-add">
-                                        <input class="calculate__upload-file" type="file" accept=".pdf" multiple>
-                                        <span class="calculate__steps-btn calculate__steps-btn--add btn button-1">
-                                            <svg width='24' height='24'>
+                                <div class="calculate__upload">
+                                    <form class="calculate__upload-form" action="#">
+                                        <div class="calculate__upload-first">
+                                            <label class="calculate__upload-label">
+                                                <svg width='100' height='100'>
                                                 <use href='img/sprite/sprite.svg#upload'></use>
                                                 </svg>
-                                            <span>Add new file</span>
-                                        </span>
-                                    </label>
+                                                <input class="calculate__upload-file" type="file" multiple accept=".pdf" id="file">
+                                                <!-- <span class="hidden-text">Add new file</span> -->
+                                            </label>
+
+                                            <span class="calculate__upload-details">
+                                                <p class="title-3">Upload new files</p>
+
+                                                <span class="calculate__upload-descr">
+                                                    <p class="calculate__upload-text text-calc-descr">You can upload a maximum of 50 PDF files each weighing up to 10 MB.</p>
+                                                    <p class="calculate__upload-text text-calc-descr">If you're having trouble downloading, please check your internet connection or file integrity. It must be PDF only.</p>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <!-- <div class="test"></div> -->
+
+                                        <!-- <div class="custom-file-container" data-upload-id="myUploader">
+                                            <label>Upload File <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                            <label class="custom-file-container__custom-file" >
+                                                <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+                                                <input type="file" class="custom-file-container__custom-file__custom-file-input" accept="*">
+                                                <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                            </label>
+                                            <div class="custom-file-container__image-preview"></div>
+                                          </div> -->
+
+
+                                    </form>
                                 </div>
                             </div>
 
-                            <div class="calculate__upload">
-                                <form class="calculate__upload-form" action="#">
-                                    <label class="calculate__upload-label">
-                                        <svg width='100' height='100'>
-                                        <use href='img/sprite/sprite.svg#upload'></use>
-                                        </svg>
-                                        <input class="calculate__upload-file" type="file" multiple accept=".pdf">
-                                    </label>
+                            <div class="calculate__upload-inner">
+                                <div class="calculate__steps-head">
+                                    <p class="text-detail">Your Files</p>
 
-                                    <span class="calculate__upload-details">
-                                        <p class="title-3">Upload new files</p>
+                                    <div class="calculate__upload-btns calculate__steps-btns">
+                                        <button class="calculate__steps-btn calculate__steps-btn--delete btn button-1">
+                                            <svg width='24' height='24'>
+                                                <use href='img/sprite/sprite.svg#delete'></use>
+                                            </svg>
+                                            <span>Delete all</span>
+                                        </button>
 
-                                        <span class="calculate__upload-descr">
-                                            <p class="calculate__upload-text text-calc-descr">You can upload a maximum of 50 PDF files each weighing up to 10 MB.</p>
-                                            <p class="calculate__upload-text text-calc-descr">If you're having trouble downloading, please check your internet connection or file integrity. It must be PDF only.</p>
-                                        </span>
-                                    </span>
-                                </form>
-
-                                <div class="calculate__upload-area">
-
+                                        <label class="calculate__upload-add">
+                                            <input class="calculate__upload-file" type="file" accept=".pdf" multiple>
+                                            <span class="calculate__steps-btn calculate__steps-btn--add btn button-1">
+                                                <svg width='24' height='24'>
+                                                    <use href='img/sprite/sprite.svg#upload'></use>
+                                                    </svg>
+                                                <span>Add new file</span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
+
+
                             </div>
+
                         </div>
 
                         <div class="calculate__box calculate__box--right">
@@ -3203,6 +3227,7 @@
 
     @@include('_footer.html',{})
 
+    <script type="text/javascript" src="js/upload.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/lg-video.min.js"></script>

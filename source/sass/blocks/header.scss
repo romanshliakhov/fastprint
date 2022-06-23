@@ -51,9 +51,9 @@ header {
 
     grid-gap: clamp(60px, 4.167vw, 80px);
 
-       @media (max-width: 1440px) {
-            grid-gap: clamp(20px, 4.167vw, 60px);
-        }
+    @media (max-width: 1440px) {
+        grid-gap: clamp(20px, 4.167vw, 60px);
+    }
 
 
     @media (max-width: 1300px) {
@@ -87,6 +87,40 @@ header {
 
     &:hover {
         color: var(--blue-6);
+
+        &::before {
+            background-color: var(--blue-1);
+
+            @media (max-width: 1620px) {
+                left: -20px;
+                right: -20px;
+            }
+
+            @media (max-width: 1300px) {
+                left: -40px;
+                right: -40px;
+                top: -28px;
+            }
+
+            @media (max-width: 768px) {
+                left: -40px;
+                right: -40px;
+                top: -18px;
+                bottom: -18px;
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -40px;
+        right: -40px;
+        top: -38px;
+        bottom: -37px;
+        background-color: transparent;
+        z-index: -1;
+        transition: all 0.4s;
     }
 
     &--active {
@@ -220,6 +254,8 @@ header {
             display: none;
         }
     }
+
+
 
     svg {
       fill: transparent;

@@ -12,14 +12,17 @@ const webp = require("gulp-webp");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
-const fileinclude = require("gulp-file-include");
+// const fileinclude = require("gulp-file-include");
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
 const del = require("del");
-// const uglify = require('gulp-uglify-es').default;
 const htmlmin = require("gulp-htmlmin");
-// const purgecss = require('gulp-purgecss')
 const px2rem = require('gulp-px-to-rem');
+let fileinclude = require("gulp-file-include");
+// const { src, dest, watch, series, parallel } = require("gulp");
+// const babel = require("gulp-babel");
+// const concat = require("gulp-concat");
+// var browserify = require('browserify');
 
 gulp.task("css", () => {
   return gulp.src("source/sass/style.scss")
@@ -38,9 +41,12 @@ gulp.task("css", () => {
 
 });
 
+
 gulp.task("js", () => {
   return gulp.src("source/js/**/*.js")
     // .pipe(plumber())
+    .pipe(fileinclude())
+    // .pipe(browserify())
     .pipe(sourcemap.init())
     // .pipe(uglify())
     .pipe(gulp.dest("build/js"))
@@ -50,6 +56,7 @@ gulp.task("js", () => {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"))
 });
+
 
 gulp.task("server", () => {
   server.init({

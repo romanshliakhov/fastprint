@@ -393,14 +393,5 @@ if (tabsParr) {
 
 
 // upload
-function upload() {
-    const input = document.querySelector('.calculate__upload-file');
 
-    const changeHandler = event => {
-        console.log(event);
-    }
-
-    input.addEventListener('change', changeHandler);
-
-}
 
