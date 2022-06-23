@@ -25,12 +25,12 @@
                         </svg>
                         Order the print
                     </button>
-                    <button class="first__wrapp-watch btn button-1">
+                    <a href="./tutorials.html" class="first__wrapp-watch btn button-1">
                         <svg width='24' height='24'>
                             <use href='img/sprite/sprite.svg#watch'></use>
                         </svg>
                         Watch video lessons
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -222,7 +222,7 @@
 
                                     <div class="calculate__steps-inner">
                                         <ul class="calculate__types">
-                                            <li class="calculate__types-item" data-choose="1">
+                                            <li class="calculate__types-item" data-choose="standart">
                                                 <div class="calculate__types-info">
                                                     <p class="calculate__types-name text-calc-btn">Standart</p>
                                                     <p class="calculate__types-descr text-calc-descr">(A2, A3, A4, A5 and all formats)</p>
@@ -236,7 +236,7 @@
                                                 </div>
                                             </li>
 
-                                            <li class="calculate__types-item" data-choose="2">
+                                            <li class="calculate__types-item" data-choose="technical">
                                                 <div class="calculate__types-info">
                                                     <p class="calculate__types-name text-calc-btn">Technical</p>
                                                     <p class="calculate__types-descr text-calc-descr">Printing documents and complex graphic objects (business cards, flyers, books).</p>
@@ -250,7 +250,7 @@
                                                 </div>
                                             </li>
 
-                                            <li class="calculate__types-item" data-choose="3">
+                                            <li class="calculate__types-item" data-choose="posters">
                                                 <div class="calculate__types-info">
                                                     <p class="calculate__types-name text-calc-btn">Posters</p>
                                                     <p class="calculate__types-descr text-calc-descr">Large formats ready for walls</p>
@@ -264,7 +264,7 @@
                                                 </div>
                                             </li>
 
-                                            <li class="calculate__types-item" data-choose="4">
+                                            <li class="calculate__types-item" data-choose="stickers">
                                                 <div class="calculate__types-info">
                                                     <p class="calculate__types-name text-calc-btn">Stickers</p>
                                                     <p class="calculate__types-descr text-calc-descr">Printed materials with adhesive side</p>
@@ -290,7 +290,7 @@
                                 </div>
 
                                 <div class="calculate__steps-all">
-                                    <div class="calculate__steps-pressed" data-form="1">
+                                    <div class="calculate__steps-pressed" data-form="standart">
                                         <div class="calculate__steps-head">
                                             <p class="text-detail">Standart</p>
 
@@ -491,7 +491,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="form">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">One Side</span>
                                                                     <span class="text-calc-descr">On one side on paper</span>
@@ -500,7 +500,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="form">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Double Face</span>
                                                                     <span class="text-calc-descr">On both sides on paper</span>
@@ -527,7 +527,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-normal'></use>
@@ -541,7 +541,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-pages'></use>
@@ -555,7 +555,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-2lides'></use>
@@ -569,7 +569,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-4lides'></use>
@@ -601,7 +601,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Automatic</span>
                                                                     <span class="text-calc-descr">Automatic adjustment</span>
@@ -610,7 +610,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Vertical</span>
                                                                     <span class="text-calc-descr">From the settings</span>
@@ -619,7 +619,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Horizontal</span>
                                                                     <span class="text-calc-descr">From the settings</span>
@@ -646,7 +646,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="quality">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Inkjet</span>
                                                                     <span class="text-calc-descr">Inkjet printing</span>
@@ -655,7 +655,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness" disabled>
+                                                                <input class="calculate__choosed-input" type="radio" name="quality" disabled>
                                                                 <span class="calculate__choosed-info calculate__choosed-info--disabled">
                                                                     <span class="text-calc-name">Laser</span>
                                                                     <span class="text-calc-descr">Standart printing</span>
@@ -682,7 +682,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-unfinished'></use>
@@ -696,7 +696,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-stapling'></use>
@@ -710,7 +710,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-stapling2'></use>
@@ -724,7 +724,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-4'></use>
@@ -738,7 +738,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-3'></use>
@@ -752,7 +752,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-2holes'></use>
@@ -766,7 +766,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-4holes'></use>
@@ -818,9 +818,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="calculate__steps-pressed" data-form="2">
+                                    <div class="calculate__steps-pressed" data-form="technical">
                                         <div class="calculate__steps-head">
-                                            <p class="text-detail">Standart</p>
+                                            <p class="text-detail">Technical</p>
 
                                             <div class="calculate__steps-btns">
                                                 <button class="calculate__steps-btn calculate__steps-btn--back btn button-1">
@@ -1019,7 +1019,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="form">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">One Side</span>
                                                                     <span class="text-calc-descr">On one side on paper</span>
@@ -1028,7 +1028,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="form">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Double Face</span>
                                                                     <span class="text-calc-descr">On both sides on paper</span>
@@ -1055,7 +1055,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-normal'></use>
@@ -1069,7 +1069,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-pages'></use>
@@ -1083,7 +1083,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-2lides'></use>
@@ -1097,7 +1097,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-4lides'></use>
@@ -1129,7 +1129,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Automatic</span>
                                                                     <span class="text-calc-descr">Automatic adjustment</span>
@@ -1138,7 +1138,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Vertical</span>
                                                                     <span class="text-calc-descr">From the settings</span>
@@ -1147,7 +1147,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Horizontal</span>
                                                                     <span class="text-calc-descr">From the settings</span>
@@ -1174,7 +1174,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="quality">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Inkjet</span>
                                                                     <span class="text-calc-descr">Inkjet printing</span>
@@ -1183,7 +1183,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness" disabled>
+                                                                <input class="calculate__choosed-input" type="radio" name="quality" disabled>
                                                                 <span class="calculate__choosed-info calculate__choosed-info--disabled">
                                                                     <span class="text-calc-name">Laser</span>
                                                                     <span class="text-calc-descr">Standart printing</span>
@@ -1210,7 +1210,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-unfinished'></use>
@@ -1224,7 +1224,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-stapling'></use>
@@ -1238,7 +1238,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-stapling2'></use>
@@ -1252,7 +1252,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-4'></use>
@@ -1266,7 +1266,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-3'></use>
@@ -1280,7 +1280,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-2holes'></use>
@@ -1294,7 +1294,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-4holes'></use>
@@ -1346,9 +1346,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="calculate__steps-pressed" data-form="3">
+                                    <div class="calculate__steps-pressed" data-form="posters">
                                         <div class="calculate__steps-head">
-                                            <p class="text-detail">Standart</p>
+                                            <p class="text-detail">Posters</p>
 
                                             <div class="calculate__steps-btns">
                                                 <button class="calculate__steps-btn calculate__steps-btn--back btn button-1">
@@ -1547,7 +1547,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="form">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">One Side</span>
                                                                     <span class="text-calc-descr">On one side on paper</span>
@@ -1556,7 +1556,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="form">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Double Face</span>
                                                                     <span class="text-calc-descr">On both sides on paper</span>
@@ -1583,7 +1583,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-normal'></use>
@@ -1597,7 +1597,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-pages'></use>
@@ -1611,7 +1611,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-2lides'></use>
@@ -1625,7 +1625,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-4lides'></use>
@@ -1657,7 +1657,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Automatic</span>
                                                                     <span class="text-calc-descr">Automatic adjustment</span>
@@ -1666,7 +1666,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Vertical</span>
                                                                     <span class="text-calc-descr">From the settings</span>
@@ -1675,7 +1675,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Horizontal</span>
                                                                     <span class="text-calc-descr">From the settings</span>
@@ -1702,7 +1702,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="quality">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Inkjet</span>
                                                                     <span class="text-calc-descr">Inkjet printing</span>
@@ -1711,7 +1711,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness" disabled>
+                                                                <input class="calculate__choosed-input" type="radio" name="quality" disabled>
                                                                 <span class="calculate__choosed-info calculate__choosed-info--disabled">
                                                                     <span class="text-calc-name">Laser</span>
                                                                     <span class="text-calc-descr">Standart printing</span>
@@ -1738,7 +1738,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-unfinished'></use>
@@ -1752,7 +1752,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-stapling'></use>
@@ -1766,7 +1766,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-stapling2'></use>
@@ -1780,7 +1780,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-4'></use>
@@ -1794,7 +1794,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-3'></use>
@@ -1808,7 +1808,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-2holes'></use>
@@ -1822,7 +1822,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-4holes'></use>
@@ -1874,9 +1874,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="calculate__steps-pressed" data-form="4">
+                                    <div class="calculate__steps-pressed" data-form="stickers">
                                         <div class="calculate__steps-head">
-                                            <p class="text-detail">Standart</p>
+                                            <p class="text-detail">Stickers</p>
 
                                             <div class="calculate__steps-btns">
                                                 <button class="calculate__steps-btn calculate__steps-btn--back btn button-1">
@@ -2075,7 +2075,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="form">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">One Side</span>
                                                                     <span class="text-calc-descr">On one side on paper</span>
@@ -2084,7 +2084,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="form">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Double Face</span>
                                                                     <span class="text-calc-descr">On both sides on paper</span>
@@ -2111,7 +2111,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-normal'></use>
@@ -2125,7 +2125,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-pages'></use>
@@ -2139,7 +2139,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-2lides'></use>
@@ -2153,7 +2153,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="slide">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#per-slide-4lides'></use>
@@ -2185,7 +2185,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Automatic</span>
                                                                     <span class="text-calc-descr">Automatic adjustment</span>
@@ -2194,7 +2194,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Vertical</span>
                                                                     <span class="text-calc-descr">From the settings</span>
@@ -2203,7 +2203,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="orientation">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Horizontal</span>
                                                                     <span class="text-calc-descr">From the settings</span>
@@ -2230,7 +2230,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="quality">
                                                                 <span class="calculate__choosed-info">
                                                                     <span class="text-calc-name">Inkjet</span>
                                                                     <span class="text-calc-descr">Inkjet printing</span>
@@ -2239,7 +2239,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness" disabled>
+                                                                <input class="calculate__choosed-input" type="radio" name="quality" disabled>
                                                                 <span class="calculate__choosed-info calculate__choosed-info--disabled">
                                                                     <span class="text-calc-name">Laser</span>
                                                                     <span class="text-calc-descr">Standart printing</span>
@@ -2266,7 +2266,7 @@
                                                     <ul class="calculate__choosed-list">
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-unfinished'></use>
@@ -2280,7 +2280,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-stapling'></use>
@@ -2294,7 +2294,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-stapling2'></use>
@@ -2308,7 +2308,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-4'></use>
@@ -2322,7 +2322,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-3'></use>
@@ -2336,7 +2336,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-2holes'></use>
@@ -2350,7 +2350,7 @@
                                                         </li>
                                                         <li class="calculate__choosed-item">
                                                             <label class="calculate__choosed-label">
-                                                                <input class="calculate__choosed-input" type="radio" name="thickness">
+                                                                <input class="calculate__choosed-input" type="radio" name="binding">
                                                                 <span class="calculate__choosed-info calculate__choosed-info--row">
                                                                     <svg width='28' height='36'>
                                                                         <use href='img/sprite/sprite.svg#binding-4holes'></use>
