@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="En">
-@@include('_head.html',{})
+@include('partials/head.html',{})
 
 <body>
-    @@include('_header.html',{})
+    @include('partials/header.html',{})
 
     <main>
         <section class="blog__head head">
@@ -66,42 +66,42 @@
                                                         <div class="dropdown">
                                                             <div class="dropdown__head">
                                                               <div class="dropdown__button">
-                                                                <div class="dropdown__list-card dropdown__list-card--active">5469 .... .... 0030</div>
-                                                                <div class="dropdown__list-rename">
-                                                                  <svg  width='20px' height='20px'>
-                                                                  <use href='img/sprite/sprite.svg#rename'></use>
-                                                                  </svg>
-                                                                </div>
+                                                                <div class="dropdown__list-card dropdown__list-card--active text-body">Choose you shippin adress</div>
                                                               </div>
                                                             </div>
                                                             <ul class="dropdown__list">
                                                               <li class="dropdown__list-item" data-value="my">
-                                                                <div class="dropdown__list-card">5469 1234 5678 0030</div>
-                                                                <div class="dropdown__list-name">(Сбер личная)</div>
-                                                                <div class="dropdown__list-rename">
-                                                                  <svg  width='20px' height='20px'>
-                                                                    <use href='img/sprite/sprite.svg#rename'></use>
-                                                                  </svg>
-                                                                </div>
+                                                                <div class="dropdown__list-card text-body">Ukraine, Mariupol, Heroiv Mariupolya Street, Putin Hu*lo </div>
                                                               </li>
                                                             </ul>
                                                             <input type="text" value="" class="dropdown__input-hidden">
                                                         </div>
-
                                                     </div>
 
                                                     <div class="order__shipping-item">
-                                                        <div class="order__shipping-title title-5">
-                                                            <div class="order__shipping-head order__shipping-head--invoice">
-                                                                <div class="order__shipping-title title-5">
-                                                                    Invoice
-                                                                </div>
-                                                                <button class="order__adress-add">
-                                                                    <svg width='24' height='24'>
-                                                                    <use href='img/sprite/sprite.svg#add'></use>
-                                                                    </svg>
-                                                                </button>
+                                                        <div class="order__shipping-head order__shipping-head--adress">
+                                                            <div class="order__shipping-title title-5">
+                                                                Invoice
                                                             </div>
+                                                            <button class="order__adress-add">
+                                                                <svg width='24' height='24'>
+                                                                <use href='img/sprite/sprite.svg#add'></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="dropdown">
+                                                            <div class="dropdown__head">
+                                                              <div class="dropdown__button">
+                                                                <div class="dropdown__list-card dropdown__list-card--active">Choose you shippin adress</div>
+                                                              </div>
+                                                            </div>
+                                                            <ul class="dropdown__list">
+                                                              <li class="dropdown__list-item" data-value="my">
+                                                                <div class="dropdown__list-card">Ukraine, Mariupol, Heroiv Mariupolya Street, Putin Hu*lo </div>
+                                                              </li>
+                                                            </ul>
+                                                            <input type="text" value="" class="dropdown__input-hidden">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -586,10 +586,7 @@
         </section>
     </main>
 
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-    <script type="text/javascript" src="js/lg-video.min.js"></script>
-    <script type="text/javascript" src="js/common.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

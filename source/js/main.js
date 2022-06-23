@@ -1,3 +1,54 @@
+import './_vendor';
+import vars from './_vars';
+import './_functions';
+import './_components';
+import Swiper from './vendor/swiper.js';
+
+
+
+
+// Select
+let headerLang = document.querySelectorAll('.header__lang');
+let filter = document.querySelectorAll('.filter');
+const breakpoint = 576;
+
+let selectScript = function (select) {
+    select.forEach((item) => {
+        const selectCurrent = item.querySelector(".select__current");
+        item.addEventListener("click", (event) => {
+            const el = event.target.dataset.choice;
+            const text = event.target.innerHTML;
+            if (el === "choosen" && selectCurrent.innerHTML !== text) {
+                selectCurrent.innerHTML = text;
+            }
+            item.classList.toggle("is-active");
+        });
+        document.addEventListener("click", function (event) {
+            if (!item.contains(event.target)) {
+                item.classList.remove("is-active");
+            }
+        });
+    });
+}
+
+selectScript(headerLang);
+
+const mobileSelectInit = () => {
+    let containerWidth = document.documentElement.clientWidth;
+
+    if (containerWidth <= breakpoint) {
+        selectScript(filter);
+    }
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+    mobileSelectInit();
+});
+
+window.addEventListener("resize", () => {
+    mobileSelectInit();
+});
+
 // Steps
 const stepsBtns = [...document.querySelectorAll('.calculate__types-item')];
 const stepsWrapper = document.querySelector('.calculate__steps-all');
@@ -60,49 +111,9 @@ menuBtnClose.addEventListener('click', function () {
     disableScroll.classList.remove('body-scroll');
 });
 
-// Select
-let headerLang = document.querySelectorAll('.header__lang');
-let filter = document.querySelectorAll('.filter');
-const breakpoint = 576;
 
-let selectScript = function (select) {
-    select.forEach((item) => {
-        const selectCurrent = item.querySelector(".select__current");
-        item.addEventListener("click", (event) => {
-            const el = event.target.dataset.choice;
-            const text = event.target.innerHTML;
-            if (el === "choosen" && selectCurrent.innerHTML !== text) {
-                selectCurrent.innerHTML = text;
-            }
-            item.classList.toggle("is-active");
-        });
-        document.addEventListener("click", function (event) {
-            if (!item.contains(event.target)) {
-                item.classList.remove("is-active");
-            }
-        });
-    });
-}
 
-selectScript(headerLang);
-
-const mobileSelectInit = () => {
-    let containerWidth = document.documentElement.clientWidth;
-
-    if (containerWidth <= breakpoint) {
-        selectScript(filter);
-    }
-};
-
-window.addEventListener("DOMContentLoaded", () => {
-    mobileSelectInit();
-});
-
-window.addEventListener("resize", () => {
-    mobileSelectInit();
-});
-
-// Dynamic row
+// // Dynamic row
 let sliderDynamicRow = new Swiper(".sale__slider", {
     slidesPerView: "auto",
     spaceBetween: 60,
@@ -115,7 +126,7 @@ let sliderDynamicRow = new Swiper(".sale__slider", {
 });
 
 
-// Article slider
+// // Article slider
 let sliderArticle = new Swiper(".more__slider", {
     slidesPerView: 3,
     spaceBetween: 40,
@@ -302,20 +313,7 @@ window.addEventListener("resize", () => {
 });
 
 
-let videoBlock = [...document.querySelectorAll('[data-modal="video"]')]
 
-const videoInit = (items) => {
-    for (const item of items) {
-        lightGallery(item), {
-            controls: 0,
-        };
-    }
-}
-
-
-if (videoBlock) {
-    videoInit(videoBlock);
-}
 
 // Close banner
 const closeBtn = document.querySelector('.banner__close');
@@ -391,7 +389,22 @@ if (tabsParr) {
   });
 }
 
+// lightgallery
+let videoBlock = [...document.querySelectorAll('[data-modal="video"]')]
 
-// upload
+const videoInit = (items) => {
+    for (const item of items) {
+        lightGallery(item), {
+
+            controls: 0,
+        };
+    }
+}
+
+
+if (videoBlock) {
+    videoInit(videoBlock);
+}
+
 
 

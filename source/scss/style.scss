@@ -1,18 +1,23 @@
 // ------------------------------- first level
 @import "general/normalize";
-@import "general/swiper";
-@import "general/lightbox";
 // ------------------------------- second level
 @import "general/fonts";
 @import "general/mixins";
 @import "general/variables";
 
 // ------------------------------- third level
-@import "general/icons";
+
+
+@import "general/swiper";
+@import "general/lightbox";
+@import "general/select";
+@import "general/npm-styles";
 
 
 // -----------------------------
 @import "general/global";
+@import "general/custom-icon";
 @import "general/typography";
 @import "general/blocks";
+
 

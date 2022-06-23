@@ -1,5 +1,6 @@
 .sale {
     padding-top: 130px;
+    pointer-events: none;
 
     &.line:before {
         background-image: var(--line-center);
@@ -31,6 +32,7 @@
 
     &__text {
         color: var(--system-6);
+        white-space: nowrap;
     }
 
     &__cirle{
