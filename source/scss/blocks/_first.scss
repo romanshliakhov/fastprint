@@ -1,62 +1,82 @@
 .first {
-    background-color: var(--system-5);
-    position: relative;
-    z-index: 1;
-    padding: 140px 120px 0;
+		background-color: var(--system-5);
+		position: relative;
+		z-index: 1;
+		padding: 140px 120px 0;
 
-    &__wrapp {
-        position: relative;
-        display: flex;
+		@media (max-width: 1240px) {
+				padding: 140px 40px 0;
+		}
+
+		&__wrapp {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				max-width: 900px;
+				margin: 0 auto;
+				text-align: center;
+				grid-gap: 70px;
+		}
+
+		&__wrapp-top {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				grid-gap: 34px;
+		}
+
+		&__headline {
+				display: flex;
+				align-items: center;
+
+				svg {
+						margin-right: 16px;
+				}
+		}
+
+		&__descr {
+				max-width: 585px;
+		}
+
+		&__wrapp-order {
+				width: 246px;
+				background-color: var(--blue-6);
+				color: var(--system-6);
+				transition: all 0.4s ease-out;
+
+				&:hover {
+						filter: drop-shadow(0px 0px 32px rgba(0, 71, 254, 0.3));
+				}
+
+				&:active {
+						background-color: var(--blue-8);
+				}
+
+		}
+
+		&__wrapp-watch {
+				width: 246px;
+				transition: all 0.4s ease-out;
+
+				&:hover {
+						color: var(--blue-6);
+				}
+		}
+
+		&__wrapp-bot {
+      @media (max-width: 575px) {
         flex-direction: column;
-        align-items: center;
-        max-width: 900px;
-        margin: 0 auto;
-        text-align: center;
-        grid-gap: 70px;
-    }
+				grid-gap: 10px;
+        width: 100%;
+      }
 
-    &__wrapp-top {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        grid-gap: 34px;
-    }
+		}
 
-    &__headline {
-        display: flex;
-        align-items: center;
-
-        svg {
-            margin-right: 16px;
-        }
-    }
-
-    &__descr {
-        max-width: 585px;
-    }
-
-    &__wrapp-order {
-        width: 246px;
-        background-color: var(--blue-6);
-        color: var(--system-6);
-        transition: all 0.4s ease-out;
-
-        &:hover {
-            filter: drop-shadow(0px 0px 32px rgba(0, 71, 254, 0.3));
-        }
-
-        &:active {
-            background-color: var(--blue-8);
-        }
-
-    }
-
-    &__wrapp-watch {
-        width: 246px;
-        transition: all 0.4s ease-out;
-
-        &:hover {
-            color: var(--blue-6);
-        }
-    }
+		&__wrapp-order,
+		&__wrapp-order {
+				@media (max-width: 575px) {
+					width: 100%;
+			}
+		}
 }

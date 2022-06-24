@@ -34,11 +34,11 @@ export function upload(selector, options = {}) {
   // upload.style.display = 'none'
 
   if (options.multi) {
-    input.setAttribute('multiple', true)
+      input.setAttribute('multiple', true)
   }
 
   if (options.accept && Array.isArray(options.accept)) {
-    input.setAttribute('accept', options.accept.join(','))
+      input.setAttribute('accept', options.accept.join(','))
   }
 
   previewContainer.insertAdjacentElement('beforeend', preview)
@@ -123,26 +123,26 @@ export function upload(selector, options = {}) {
 
 
 
-upload('#file', {
-  multi: true,
-  accept: ['.pdf'],
-  onUpload(files, blocks) {
-    files.forEach((file, index) => {
-      const ref = storage.ref(`images/${file.name}`)
-      const task = ref.put(file)
+// upload('#file', {
+//   multi: true,
+//   accept: ['.pdf'],
+//   onUpload(files, blocks) {
+//     files.forEach((file, index) => {
+//       const ref = storage.ref(`images/${file.name}`)
+//       const task = ref.put(file)
 
-      task.on('state_changed', snapshot => {
-        const percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0) + '%'
-        const block = blocks[index].querySelector('.preview-info-progress')
-        block.textContent = percentage
-        block.style.width = percentage
-      }, error => {
-        console.log(error)
-      }, () => {
-        task.snapshot.ref.getDownloadURL().then(url => {
-          console.log('Download URL', url)
-        })
-      })
-    })
-  }
-})
+//       task.on('state_changed', snapshot => {
+//         const percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0) + '%'
+//         const block = blocks[index].querySelector('.preview-info-progress')
+//         block.textContent = percentage
+//         block.style.width = percentage
+//       }, error => {
+//         console.log(error)
+//       }, () => {
+//         task.snapshot.ref.getDownloadURL().then(url => {
+//           console.log('Download URL', url)
+//         })
+//       })
+//     })
+//   }
+// })
