@@ -4,6 +4,10 @@
 
     &__image {
         position: relative;
+
+        img {
+          border-radius: 14px;
+        }
     }
 
     &__controls {

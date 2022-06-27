@@ -1,65 +1,162 @@
 .blogs {
-    padding: 130px clamp(20px, 5.215vw, 30px);
-    background: linear-gradient(180deg, #F0F0F0 0%, #F5F5F5 0.01%, rgba(255, 255, 255, 0) 100%);
+  padding: 130px clamp(20px, 5.215vw, 30px);
+  background: linear-gradient(180deg, #F0F0F0 0%, #F5F5F5 0.01%, rgba(255, 255, 255, 0) 100%);
 
-    &__wrapp {
-        grid-gap: 80px;
+  &__wrapp {
+    grid-gap: 80px;
+
+    @media all and (max-width: 1440px) {
+      grid-gap: 60px;
     }
 
-    &__bot {
-        display: flex;
-        grid-gap: 32px;
+    @media all and (max-width: 575px) {
+      grid-gap: 40px;
+    }
+  }
+
+  &__bot {
+    width: 100%;
+  }
+
+  &__article {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: stretch;
+    grid-gap: 31px;
+
+    @media all and (max-width: 1440px) {
+      grid-template-columns: repeat(4, 1fr);
     }
 
-    &__article {
-        display: flex;
-        grid-gap: 32px;
+    @media all and (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    &__article-item {
-        display: flex;
-        flex-direction: column;
-        max-width: 281px;
-        grid-gap: 18px;
-        padding: 10px;
-        background-color: var(--system-6);
-        border-radius: 16px;
-
-        @media (max-width: 1440px) {
-            &:last-child {
-                display: none;
-            }
-        }
+    @media all and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    &__article-preview {
-        width: 260px;
-        height: 200px;
+    @media all and (max-width: 575px) {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__article-link {
+    &:nth-child( n + 4) {
+      @media all and (max-width: 1440px) {
+        display: none;
+      }
     }
 
-    &__article-info {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 16px;
+    &:nth-child( n + 3) {
+      @media all and (max-width: 1024px) {
+        display: none;
+      }
     }
 
-    &__article-publish {
-        color: var(--system-3);
+    &:nth-child( n + 4) {
+      @media all and (max-width: 768px) {
+        display: block;
+      }
     }
 
-    &__all {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-gap: 20px;
-        padding: 128px 80px;
-        border: 2px solid #0047FE;
-        border-radius: 16px;
+    &:nth-child(n + 2) {
+      @media all and (max-width: 575px) {
+        display: none;
+      }
+    }
+  }
+
+  &__article-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 281px;
+    width: 100%;
+    grid-gap: 18px;
+    padding: 10px;
+    background-color: var(--system-6);
+    border-radius: 16px;
+
+    @media all and (max-width: 1440px) {
+      max-width: 320px;
+      padding: 10px 30px;
     }
 
-    &__all-link {
-        color: var(--blue-6);
-        white-space: nowrap;
+    @media all and (max-width: 1024px) {
+      max-width: 281px;
+      padding: 10px;
     }
+
+    @media all and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  &__article-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__article-info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+  }
+
+  &__article-publish {
+    color: var(--system-3);
+  }
+
+  &__all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    max-height: 360px;
+    height: 100%;
+    border: 2px solid #0047FE;
+    border-radius: 16px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+
+    &:hover,
+    &:active {
+      background-color: #0047FE;
+
+      span {
+        color: #fff;
+      }
+
+      svg {
+        stroke: #fff;
+      }
+    }
+
+    span {
+      color: var(--blue-6);
+      white-space: nowrap;
+    }
+
+    svg {
+      stroke: #0047FE;
+    }
+
+    @media all and (max-width: 768px) {
+      min-height: 49.089vw;
+    }
+
+    @media all and (max-width: 575px) {
+      min-height: 23px;
+      grid-gap: 12px;
+      flex-direction: row-reverse;
+      border: none;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 }

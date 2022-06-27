@@ -162,15 +162,20 @@
 
     &__agreements-info {
         height: 160px;
-        padding: 12px 20px;
+        padding: 12px 2px 12px 20px;
         background-color: var(--system-6);
         border-right: 1px solid var(--system-4);
         border-radius: 6px;
     }
 
     &__agreements-text {
+        padding-right: 30px;
         height: 136px;
         overflow-y: auto;
+
+        p + p {
+          margin-top: 10px;
+        }
     }
 
     &__btns {

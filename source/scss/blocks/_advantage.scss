@@ -1,29 +1,35 @@
 .advantage {
-    padding: 130px clamp(20px, 5.215vw, 30px);
-    background-color: var(--system-5);
+  padding: 130px clamp(20px, 5.215vw, 30px);
+  background-color: var(--system-5);
 
-    &__info {
-        display: flex;
-        justify-content: space-between;
-    }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: clamp(30px, 5.729vw, 110px);
 
-    &__item {
-        display: flex;
-        max-width: 460px;
+    @media all and (max-width: 768px) {
+      grid-template-columns: 100%;
+      grid-gap: clamp(60pxpx, 10.417vw, 80px);
     }
+  }
 
-    &__item-icon {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        padding: 23px;
-    }
+  &__item {
+    display: flex;
+    grid-gap: clamp(20px, 2.083vw, 40px);
 
-    &__item-descr {
-        margin-top: 11px;
+    @media all and (max-width: 1440px) {
+      flex-direction: column;
     }
+  }
 
-    &__item-info {
-        margin-left: 40px;
-    }
+  &__item-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 23px;
+  }
+
+  &__item-descr {
+    margin-top: 11px;
+  }
 }

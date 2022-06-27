@@ -55,7 +55,7 @@ export function upload(selector, options = {}) {
 
     files = Array.from(event.target.files)
     preview.innerHTML = ''
-    // upload.style.display = 'inline'
+    upload.style.display = 'inline'
 
     files.forEach(file => {
       if (!file.type.match('pdf')) {
@@ -75,7 +75,8 @@ export function upload(selector, options = {}) {
               ${bytesToSize(file.size)}
             </div>
           </div>
-        `)
+        `);
+        document.querySelector('.calculate__upload-first').classList.add('active');
       }
 
       reader.readAsDataURL(file)
@@ -123,26 +124,26 @@ export function upload(selector, options = {}) {
 
 
 
-// upload('#file', {
-//   multi: true,
-//   accept: ['.pdf'],
-//   onUpload(files, blocks) {
-//     files.forEach((file, index) => {
-//       const ref = storage.ref(`images/${file.name}`)
-//       const task = ref.put(file)
+upload('#file', {
+  multi: true,
+  accept: ['.pdf', '.png'],
+  onUpload(files, blocks) {
+    files.forEach((file, index) => {
+      const ref = storage.ref(`images/${file.name}`)
+      const task = ref.put(file)
 
-//       task.on('state_changed', snapshot => {
-//         const percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0) + '%'
-//         const block = blocks[index].querySelector('.preview-info-progress')
-//         block.textContent = percentage
-//         block.style.width = percentage
-//       }, error => {
-//         console.log(error)
-//       }, () => {
-//         task.snapshot.ref.getDownloadURL().then(url => {
-//           console.log('Download URL', url)
-//         })
-//       })
-//     })
-//   }
-// })
+      task.on('state_changed', snapshot => {
+        const percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0) + '%'
+        const block = blocks[index].querySelector('.preview-info-progress')
+        block.textContent = percentage
+        block.style.width = percentage
+      }, error => {
+        console.log(error)
+      }, () => {
+        task.snapshot.ref.getDownloadURL().then(url => {
+          console.log('Download URL', url)
+        })
+      })
+    })
+  }
+})

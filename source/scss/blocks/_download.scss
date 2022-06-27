@@ -1,30 +1,60 @@
 .download {
-    padding: 368px 0 108px;
-    background-color: var(--system-1);
-    overflow: hidden;
+  padding: 368px clamp(20px, 5.215vw, 30px) 100x;
+  background-color: var(--system-1);
+  overflow: hidden;
 
-    &.line::before {
-        top: -10%;
+  &.line::before {
+    top: -10%;
+  }
+
+  @media screen and (max-width: 1440px) {
+    padding: 325px clamp(20px, 5.215vw, 30px) 100px;
+  }
+
+  &__center {
+    max-width: 720px;
+  }
+
+  &__title {
+    color: var(--system-6);
+  }
+
+  &__descr {
+    color: var(--system-4);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(20px, 9.766vw, 100px);
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
     }
+  }
 
-    &__center {
-        max-width: 720px;
+  &__links-item {
+    order: 1;
+
+    &:nth-child(2) {
+      @media screen and (max-width: 575px) {
+        order: 0;
+      }
     }
+  }
 
-    &__title {
-        color: var(--system-6);
+  &__link {
+    // border: 2px solid transparent;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+
+    &:hover,
+    &:active {
+      // border: 2px solid #0047FE;
+      filter: drop-shadow(0px 0px 32px rgba(0, 71, 254, 0.3));
     }
-
-    &__descr {
-        color: var(--system-4);
-    }
-
-    &__links {
-        display: flex;
-        align-items: center;
-
-        li + li {
-            margin-left: 100px;
-        }
-    }
+  }
 }
+
+
+

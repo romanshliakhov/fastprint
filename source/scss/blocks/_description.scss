@@ -1,26 +1,40 @@
 .description {
-    padding: 620px 120px 130px;
+  padding: 620px 120px 130px;
 
-    &__wrapp {
-        grid-gap: 80px;
+  @media all and (max-width: 1440px) {
+    padding-top: 450px;
+  }
+
+  @media all and (max-width: 1024px) {
+    padding: 360px 30px 130px;
+  }
+
+  @media all and (max-width: 768px) {
+    padding: 320px 9px 100px;
+  }
+
+  &__wrapp {
+    grid-gap: clamp(60px, 4.167vw, 80px);
+  }
+
+  &__headline {
+    text-align: center;
+  }
+
+  &__video {
+    position: relative;
+    max-width: 1526px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__video-controls {
+    width: 140px;
+    height: 140px;
+
+    svg {
+      height: 56px;
+      width: 51px;
     }
-
-    &__video {
-        position: relative;
-        max-width: 1526px;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    &__video-controls {
-        width: 140px;
-        height: 140px;
-
-        svg {
-            height: 56px;
-            width: 51px;
-        }
-    }
-
-
+  }
 }

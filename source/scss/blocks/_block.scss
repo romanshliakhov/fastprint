@@ -11,6 +11,10 @@
         align-items: center;
         text-align: center;
         grid-gap: 40px;
+
+        @media all and (max-width: 1024px) {
+          max-width: 680px;
+        }
     }
 
     &__headline {
@@ -20,13 +24,17 @@
         text-align: center;
         grid-gap: 30px;
 
-        @media (max-width: 1024px) {
-            text-align: left;
-        }
+        // @media (max-width: 1024px) {
+        //     text-align: left;
+        // }
 
-        @media (max-width: 576px) {
-            text-align: center;
-        }
+        // @media (max-width: 768px) {
+        //   text-align: center;
+        // }
+
+        // @media (max-width: 576px) {
+        //     text-align: center;
+        // }
     }
 
     &__between {
