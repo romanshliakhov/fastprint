@@ -1,3 +1,8 @@
+
+
+const formParrent = document.querySelector('.calculate__box--mid');
+const previewParrent = document.querySelector('.calculate__upload-files');
+
 function bytesToSize(bytes) {
   const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']
   if (!bytes) {
@@ -42,9 +47,6 @@ export function upload(selector, options = {}) {
   }
 
   previewContainer.insertAdjacentElement('beforeend', preview)
-  // input.insertAdjacentElement('afterend', preview)
-  // input.insertAdjacentElement('afterend', upload)
-  // input.insertAdjacentElement('afterend', open)
 
   const triggerInput = () => input.click()
 
@@ -54,11 +56,11 @@ export function upload(selector, options = {}) {
     }
 
     files = Array.from(event.target.files)
-    preview.innerHTML = ''
-    upload.style.display = 'inline'
+    preview.innerHTML = '';
 
-    files.forEach(file => {
-      if (!file.type.match('pdf')) {
+
+    for ( let i = 0; i < files.length; i++) {
+      if (!files[i].type.match('pdf')) {
         return
       }
 
@@ -66,21 +68,51 @@ export function upload(selector, options = {}) {
 
       reader.onload = ev => {
         const src = ev.target.result
+
         preview.insertAdjacentHTML('afterbegin', `
           <div class="preview-image">
-            <div class="preview-remove" data-name="${file.name}">&times;</div>
-            <img src="${src}" alt="${file.name}" />
+            <div class="preview-remove" data-name="${files[i].name}">&times;</div>
+            <img src="${src}" alt="${files[i].name}" />
             <div class="preview-info">
-              <span>${file.name}</span>
-              ${bytesToSize(file.size)}
+              <span>${files[i].name}</span>
+              ${bytesToSize(files[i].size)}
             </div>
           </div>
         `);
-        document.querySelector('.calculate__upload-first').classList.add('active');
+        formParrent.classList.add('has-file');
+        previewParrent.classList.add('active');
       }
 
-      reader.readAsDataURL(file)
-    })
+      reader.readAsDataURL(files[i])
+    }
+
+
+
+    // files.forEach(file => {
+    //   if (!file.type.match('pdf')) {
+    //     return
+    //   }
+
+    //   const reader = new FileReader()
+
+    //   reader.onload = ev => {
+    //     const src = ev.target.result
+    //     preview.insertAdjacentHTML('afterbegin', `
+    //       <div class="preview-image">
+    //         <div class="preview-remove" data-name="${file.name}">&times;</div>
+    //         <img src="${src}" alt="${file.name}" />
+    //         <div class="preview-info">
+    //           <span>${file.name}</span>
+    //           ${bytesToSize(file.size)}
+    //         </div>
+    //       </div>
+    //     `);
+    //     formParrent.classList.add('has-file');
+    //     previewParrent.classList.add('active');
+    //   }
+
+    //   reader.readAsDataURL(file)
+    // })
   }
 
   const removeHandler = event => {
@@ -109,16 +141,19 @@ export function upload(selector, options = {}) {
   }
 
   const uploadHandler = () => {
-    preview.querySelectorAll('.preview-remove').forEach(e => e.remove())
+    preview.querySelectorAll('.preview-remove').forEach(function(e){
+      e.remove()
+      console.log(e)
+    } )
     const previewInfo = preview.querySelectorAll('.preview-info')
     previewInfo.forEach(clearPreview)
     onUpload(files, previewInfo)
   }
 
-  // open.addEventListener('click', triggerInput)
+
   input.addEventListener('change', changeHandler)
   preview.addEventListener('click', removeHandler)
-  // upload.addEventListener('click', uploadHandler)
+
 }
 
 
@@ -126,7 +161,7 @@ export function upload(selector, options = {}) {
 
 upload('#file', {
   multi: true,
-  accept: ['.pdf', '.png'],
+  accept: ['.pdf'],
   onUpload(files, blocks) {
     files.forEach((file, index) => {
       const ref = storage.ref(`images/${file.name}`)

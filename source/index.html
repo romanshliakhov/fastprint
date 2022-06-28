@@ -155,8 +155,8 @@
 
         <section class="calculate">
             <div class="container container--fluid">
-                <div class="block">
-                    <div class="block__between">
+                <div class="calculate__block block">
+                    <div class="calculate__between block__between">
                         <div class="block__between-head">
                             <div class="block__icon icon">
                                 <svg width='38' height='38'>
@@ -2412,15 +2412,18 @@
                                 </div>
 
                                 <div class="calculate__upload">
-                                    <form class="calculate__upload-form" action="#">
-                                        <div class="calculate__upload-first">
+                                    <form class="calculate__upload-form " action="#">
+                                        <div class="calculate__upload-first ">
                                             <label class="calculate__upload-label">
+
                                                 <svg width='100' height='100'>
                                                 <use href='img/sprite/sprite.svg#upload'></use>
                                                 </svg>
                                                 <!-- <input class="calculate__upload-file" type="file" multiple accept=".pdf" id="file"> -->
                                                 <!-- <span class="hidden-text">Add new file</span> -->
                                                 <input type="file" id="file">
+
+                                                <span class="hiden-text">Add new file</span>
                                             </label>
 
                                             <span class="calculate__upload-details">
@@ -2431,6 +2434,13 @@
                                                     <p class="calculate__upload-text text-calc-descr">If you're having trouble downloading, please check your internet connection or file integrity. It must be PDF only.</p>
                                                 </span>
                                             </span>
+
+                                            <button class="has-file__delete btn button-1">
+                                              <svg width='24' height='24'>
+                                                  <use href='img/sprite/sprite.svg#delete'></use>
+                                              </svg>
+                                              <span>Delete all</span>
+                                          </button>
                                         </div>
 
                                       </form>
@@ -2438,28 +2448,7 @@
                             </div>
 
                             <div class="calculate__upload-files">
-                                <div class="calculate__steps-head">
-                                    <p class="text-detail">Your Files</p>
 
-                                    <div class="calculate__upload-btns calculate__steps-btns">
-                                        <button class="calculate__steps-btn calculate__steps-btn--delete btn button-1">
-                                            <svg width='24' height='24'>
-                                                <use href='img/sprite/sprite.svg#delete'></use>
-                                            </svg>
-                                            <span>Delete all</span>
-                                        </button>
-
-                                        <label class="calculate__upload-add">
-                                            <input class="calculate__upload-file" type="file" accept=".pdf" multiple>
-                                            <span class="calculate__steps-btn calculate__steps-btn--add btn button-1">
-                                                <svg width='24' height='24'>
-                                                    <use href='img/sprite/sprite.svg#upload'></use>
-                                                    </svg>
-                                                <span>Add new file</span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
                             </div>
 
                         </div>
@@ -2467,24 +2456,24 @@
                         <div class="calculate__box calculate__box--right">
                             <div class="text-detail">Final printing miscalculation</div>
 
-                            <div class="basket__calculation-head">
-                                <ul class="basket__calculation-items">
-                                    <li class="basket__calculation-item">
-                                        <span class="basket__calculation-number basket__calculation-number--print text-calc-other">0 €</span>
-                                        <span class="basket__calculation-subtitle text-detail">print price</span>
+                            <div class="calculate__box-head basket__calculation-head">
+                                <ul class="calculate__box-items basket__calculation-items">
+                                    <li class="calculate__box-item basket__calculation-item">
+                                        <span class="text-calc-other">0 €</span>
+                                        <span class="text-detail">print price</span>
                                     </li>
-                                    <li class="basket__calculation-item">
-                                        <span class="basket__calculation-number basket__calculation-number--shipping text-calc-other">0 €</span>
-                                        <span class="basket__calculation-subtitle text-detail">shipping price</span>
+                                    <li class="calculate__box-item basket__calculation-item">
+                                        <span class="text-calc-other">0 €</span>
+                                        <span class="text-detail">shipping price</span>
                                     </li>
-                                    <li class="basket__calculation-item">
-                                        <span class="basket__calculation-number basket__calculation-number--additional text-calc-other">0 €</span>
-                                        <span class="basket__calculation-subtitle text-detail">additional price</span>
+                                    <li class="calculate__box-item basket__calculation-item">
+                                        <span class="text-calc-other">0 €</span>
+                                        <span class="text-detail">additional price</span>
                                     </li>
                                 </ul>
 
                                 <div class="calculate__files">
-                                    <div class="payment__content-head">
+                                    <div class="calculate__files-head payment__content-head">
                                         <div class="payment__content-alert">
                                             <svg width='20' height='20'>
                                             <use href='img/sprite/sprite.svg#alert'></use>
@@ -2495,9 +2484,9 @@
                                     </div>
                                 </div>
 
-                                <div class="basket__calculation-total">
-                                    <span class="basket__calculation-number basket__calculation-number--total text-calc-total">0 €</span>
-                                    <span class="basket__calculation-subtitle text-detail">total value</span>
+                                <div class="calculate__box-total basket__calculation-total">
+                                    <span class="calculate__total text-calc-total">0 €</span>
+                                    <span class="text-detail">total value</span>
                                 </div>
                             </div>
 
