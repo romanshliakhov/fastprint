@@ -4,7 +4,6 @@ import './_functions';
 import './_components';
 
 
-
 // Select
 let headerLang = document.querySelectorAll('.header__lang');
 let filter = document.querySelectorAll('.filter');

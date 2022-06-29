@@ -595,6 +595,18 @@
       max-width: 1080px;
     }
   }
+
+  &__confirm {
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(20px, 2.604vw, 50px);
+
+
+    @media (max-width: 786px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 }
 
 

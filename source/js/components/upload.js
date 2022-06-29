@@ -1,5 +1,3 @@
-
-
 const formParrent = document.querySelector('.calculate__box--mid');
 const previewParrent = document.querySelector('.calculate__upload-files');
 
@@ -26,17 +24,19 @@ const element = (tag, classes = [], content) => {
   return node
 }
 
-function noop() {}
-
 export function upload(selector, options = {}) {
   let files = []
-  const onUpload = options.onUpload ?? noop
   const input = document.querySelector(selector)
+  if (!input) {
+    return
+  }
+
   const previewContainer = document.querySelector('.calculate__upload-files');
   const preview = element('div', ['preview'])
 
   if (options.multi) {
       input.setAttribute('multiple', true)
+
   }
 
   if (options.accept && Array.isArray(options.accept)) {
@@ -45,14 +45,12 @@ export function upload(selector, options = {}) {
 
   previewContainer.insertAdjacentElement('beforeend', preview)
 
-  const triggerInput = () => input.click()
-
   const changeHandler = event => {
     if (!event.target.files.length) {
       return
     }
 
-    files = Array.from(event.target.files)
+    files = [...files, ...Array.from(event.target.files)]
     preview.innerHTML = '';
 
 
@@ -91,10 +89,6 @@ export function upload(selector, options = {}) {
     const {name} = event.target.dataset
     files = files.filter(file => file.name !== name)
 
-    // if (!files.length) {
-    //   upload.style.display = 'none'
-    // }
-
     const block = preview
       .querySelector(`[data-name="${name}"]`)
       .closest('.preview-image')
@@ -106,47 +100,21 @@ export function upload(selector, options = {}) {
   const clearPreview = el => {
     el.style.bottom = '4px'
     el.innerHTML = '<div class="preview-info-progress"></div>'
-  }
 
-  const uploadHandler = () => {
     preview.querySelectorAll('.preview-remove').forEach(function(e){
       e.remove()
       console.log(e)
     } )
     const previewInfo = preview.querySelectorAll('.preview-info')
     previewInfo.forEach(clearPreview)
-    onUpload(files, previewInfo)
   }
-
 
   input.addEventListener('change', changeHandler)
   preview.addEventListener('click', removeHandler)
-
 }
 
 
-
-
-// upload('#file', {
-//   multi: true,
-//   accept: ['.pdf'],
-//   onUpload(files, blocks) {
-//     files.forEach((file, index) => {
-//       const ref = storage.ref(`images/${file.name}`)
-//       const task = ref.put(file)
-
-//       task.on('state_changed', snapshot => {
-//         const percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0) + '%'
-//         const block = blocks[index].querySelector('.preview-info-progress')
-//         block.textContent = percentage
-//         block.style.width = percentage
-//       }, error => {
-//         console.log(error)
-//       }, () => {
-//         task.snapshot.ref.getDownloadURL().then(url => {
-//           console.log('Download URL', url)
-//         })
-//       })
-//     })
-//   }
-// })
+upload('#file', {
+  multi: true,
+  accept: ['.pdf']
+})
