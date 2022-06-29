@@ -34,9 +34,6 @@ export function upload(selector, options = {}) {
   const input = document.querySelector(selector)
   const previewContainer = document.querySelector('.calculate__upload-files');
   const preview = element('div', ['preview'])
-  // const open = element('button', ['btn'], 'Открыть')
-  // const upload = element('button', ['btn', 'primary'], 'Загрузить')
-  // upload.style.display = 'none'
 
   if (options.multi) {
       input.setAttribute('multiple', true)

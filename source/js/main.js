@@ -322,28 +322,37 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 });
 
 // tabs
-const tabsParr = document.querySelector('.tabs');
 
-if (tabsParr) {
-  document.addEventListener('DOMContentLoaded', () => {
-    const tabsBtn = tabsParr.querySelectorAll('.tablinks');
-    const tabsContent = tabsParr.querySelectorAll('.tabcontent');
+function tabsInit() {
+  const tabsParrents = [...document.querySelectorAll('.tabs')];
 
-    tabsParr.addEventListener('click', (e) => {
-        if (e.target.classList.contains('tablinks')) {
-            const tabsPath = e.target.getAttribute('tabs-btn');
-            tabsBtn.forEach(el => {el.classList.remove('active')});
-            tabsParr.querySelector(`[tabs-btn="${tabsPath}"]`).classList.add('active');
-            tabsHandler(tabsPath);
-        }
-    });
+  tabsParrents.map(function(tabsParr) {
+    if (tabsParr) {
+      document.addEventListener('DOMContentLoaded', () => {
+        const tabsBtn = tabsParr.querySelectorAll('.tablinks');
+        const tabsContent = tabsParr.querySelectorAll('.tabcontent');
 
-    const tabsHandler = (path) => {
-      tabsContent.forEach(el => {el.classList.remove('active')});
-      tabsParr.querySelector(`[tabs-content="${path}"]`).classList.add('active');
-    };
-  });
+        tabsParr.addEventListener('click', (e) => {
+            if (e.target.classList.contains('tablinks')) {
+                const tabsPath = e.target.getAttribute('tabs-btn');
+                tabsBtn.forEach(el => {el.classList.remove('active')});
+                tabsParr.querySelector(`[tabs-btn="${tabsPath}"]`).classList.add('active');
+                tabsHandler(tabsPath);
+            }
+        });
+
+        const tabsHandler = (path) => {
+          tabsContent.forEach(el => {el.classList.remove('active')});
+          tabsParr.querySelector(`[tabs-content="${path}"]`).classList.add('active');
+        };
+      });
+    }}
+  );
 }
+
+tabsInit();
+
+
 
 // lightgallery
 let videoBlock = [...document.querySelectorAll('[data-modal="video"]')]
@@ -398,6 +407,9 @@ class Modal {
                   if (this.isOpen) {
                     this.close();
                   }
+                  tabsInit();
+
+
                   let target = clickedElement.dataset.path;
                   let animation = clickedElement.dataset.animation;
                   let speed = clickedElement.dataset.speed;
