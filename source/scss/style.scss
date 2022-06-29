@@ -9,7 +9,7 @@
 
 
 @import "general/swiper";
-@import "general/modals";
+// @import "general/modals";
 @import "general/lightbox";
 @import "general/select";
 @import "general/npm-styles";
@@ -20,5 +20,8 @@
 @import "general/custom-icon";
 @import "general/typography";
 @import "general/blocks";
+
+// -----------------------------
+@import "general/modals";
 
 

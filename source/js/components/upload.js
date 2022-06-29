@@ -59,8 +59,8 @@ export function upload(selector, options = {}) {
     preview.innerHTML = '';
 
 
-    for ( let i = 0; i < files.length; i++) {
-      if (!files[i].type.match('pdf')) {
+    files.forEach(file => {
+      if (!file.type.match('pdf')) {
         return
       }
 
@@ -68,14 +68,13 @@ export function upload(selector, options = {}) {
 
       reader.onload = ev => {
         const src = ev.target.result
-
         preview.insertAdjacentHTML('afterbegin', `
           <div class="preview-image">
-            <div class="preview-remove" data-name="${files[i].name}">&times;</div>
-            <img src="${src}" alt="${files[i].name}" />
+            <div class="preview-remove" data-name="${file.name}">&times;</div>
+            <img src="${src}" alt="${file.name}" />
             <div class="preview-info">
-              <span>${files[i].name}</span>
-              ${bytesToSize(files[i].size)}
+              <span>${file.name}</span>
+              ${bytesToSize(file.size)}
             </div>
           </div>
         `);
@@ -83,36 +82,8 @@ export function upload(selector, options = {}) {
         previewParrent.classList.add('active');
       }
 
-      reader.readAsDataURL(files[i])
-    }
-
-
-
-    // files.forEach(file => {
-    //   if (!file.type.match('pdf')) {
-    //     return
-    //   }
-
-    //   const reader = new FileReader()
-
-    //   reader.onload = ev => {
-    //     const src = ev.target.result
-    //     preview.insertAdjacentHTML('afterbegin', `
-    //       <div class="preview-image">
-    //         <div class="preview-remove" data-name="${file.name}">&times;</div>
-    //         <img src="${src}" alt="${file.name}" />
-    //         <div class="preview-info">
-    //           <span>${file.name}</span>
-    //           ${bytesToSize(file.size)}
-    //         </div>
-    //       </div>
-    //     `);
-    //     formParrent.classList.add('has-file');
-    //     previewParrent.classList.add('active');
-    //   }
-
-    //   reader.readAsDataURL(file)
-    // })
+      reader.readAsDataURL(file)
+    })
   }
 
   const removeHandler = event => {
@@ -159,26 +130,26 @@ export function upload(selector, options = {}) {
 
 
 
-upload('#file', {
-  multi: true,
-  accept: ['.pdf'],
-  onUpload(files, blocks) {
-    files.forEach((file, index) => {
-      const ref = storage.ref(`images/${file.name}`)
-      const task = ref.put(file)
+// upload('#file', {
+//   multi: true,
+//   accept: ['.pdf'],
+//   onUpload(files, blocks) {
+//     files.forEach((file, index) => {
+//       const ref = storage.ref(`images/${file.name}`)
+//       const task = ref.put(file)
 
-      task.on('state_changed', snapshot => {
-        const percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0) + '%'
-        const block = blocks[index].querySelector('.preview-info-progress')
-        block.textContent = percentage
-        block.style.width = percentage
-      }, error => {
-        console.log(error)
-      }, () => {
-        task.snapshot.ref.getDownloadURL().then(url => {
-          console.log('Download URL', url)
-        })
-      })
-    })
-  }
-})
+//       task.on('state_changed', snapshot => {
+//         const percentage = ((snapshot.bytesTransferred / snapshot.totalBytes) * 100).toFixed(0) + '%'
+//         const block = blocks[index].querySelector('.preview-info-progress')
+//         block.textContent = percentage
+//         block.style.width = percentage
+//       }, error => {
+//         console.log(error)
+//       }, () => {
+//         task.snapshot.ref.getDownloadURL().then(url => {
+//           console.log('Download URL', url)
+//         })
+//       })
+//     })
+//   }
+// })

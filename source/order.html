@@ -240,14 +240,6 @@
 
                                                             <ul class="payment__crypto">
                                                                 <li class="payment__crypto-item">
-                                                                    <!-- <label class="payment__crypto-label" for="btc">
-                                                                        <svg width='38' height='38'>
-                                                                            <use href='img/sprite/sprite.svg#phone'></use>
-                                                                        </svg>
-                                                                        <input class="payment__crypto-radio" type="radio" name="crypto" id="btc">
-                                                                        <span class="payment__crypto-name agreements-text">Bitcoin</span>
-                                                                    </label> -->
-
                                                                     <label class="payment__crypto-label" for="btc">
                                                                         <input class="payment__crypto-radio" type="radio" name="crypto" id="btc">
                                                                         <span class="payment__crypto-info">
@@ -572,7 +564,7 @@
                         </div>
 
                         <div class="basket__calculation-btns">
-                            <a class="basket__btn btn button-1" href="#">Confirm and Pay</a>
+                            <button class="basket__btn btn button-1" data-animation="fade" data-speed="300" data-path="payments">Confirm and Pay</button>
 
                             <div class="basket__btn-confirm">
                                 Ön Bilgilendirme Formu ve Mesafeli Satış Sözleşmesini okudum, and onaylıyorum.
@@ -585,6 +577,8 @@
             </div>
         </section>
     </main>
+
+    @include('partials/modals.html',{})
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>
