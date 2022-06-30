@@ -35,9 +35,9 @@
       display: inline-block;
       width: fit-content;
 
-      // @media screen and (max-width: 1240px) {
-      //   width: 90%;
-      // }
+      @media screen and (max-width: 1240px) {
+        height: 100%;
+      }
     }
   }
 
@@ -86,7 +86,7 @@
 
     &--full {
       max-width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       border-radius: 0;
@@ -98,6 +98,7 @@
 
       @media screen and (max-width: 1240px) {
         width: 100vw;
+        grid-gap: 21px;
       }
     }
   }
@@ -639,7 +640,7 @@
 
 .disable-scroll {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   height: 100vh;
   position: fixed;
   left: 0;
