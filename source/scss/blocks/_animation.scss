@@ -12,12 +12,40 @@
         left: 50%;
         transform: translateX(-50%);
         bottom: 20px;
+
+        @media (max-width: 768px) {
+          left: 5%;
+          transform: initial;
+        }
+
+        @media (max-width: 576px) {
+          left: 50%;
+          transform: translateX(-50%);
+        }
     }
 
     &__message-list {
         position: absolute;
         right: -30px;
         top: 30px;
+
+        @media (max-width: 576px) {
+          left: 50%;
+          right: initial;
+          transform: translateX(-50%);
+        }
+    }
+
+    @media (max-width: 1440px) {
+      height: 451px;
+    }
+
+    @media (max-width: 1024px) {
+      height: 333px;
+    }
+
+    @media (max-width: 768px) {
+      height: 307px;
     }
 
 }

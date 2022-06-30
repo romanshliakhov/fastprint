@@ -5,11 +5,11 @@
   &__info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: clamp(30px, 5.729vw, 110px);
+    grid-gap: clamp(20px, 5.729vw, 110px);
 
     @media all and (max-width: 768px) {
       grid-template-columns: 100%;
-      grid-gap: clamp(60pxpx, 10.417vw, 80px);
+      grid-gap: clamp(60px, 10.417vw, 80px);
     }
   }
 
@@ -19,6 +19,18 @@
 
     @media all and (max-width: 1440px) {
       flex-direction: column;
+    }
+  }
+
+  &__item-title {
+    // white-space: nowrap;
+
+    @media all and (max-width: 1240px) {
+      min-height: 56px;
+    }
+
+    @media all and (max-width: 768px) {
+      min-height: auto;
     }
   }
 

@@ -6,6 +6,20 @@
     position: absolute;
     animation: animation-phone 10s cubic-bezier(.17,.67,.83,.67) infinite;
     will-change: transform;
+
+    @media (max-width: 1440px) {
+      width: 300px;
+      height: 506px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 221px;
+      height: 374px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   @keyframes animation-phone {
@@ -32,5 +46,4 @@
     100% {
       transform: translate(0%, 0%);
     }
-
   }
