@@ -88,6 +88,12 @@
         padding: 10px 40px;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+
+        @media (max-width: 992px) {
+          flex-direction: column;
+          grid-gap: 20px;
+          padding: 20px;
+        }
     }
 
     &__order-total {
@@ -134,7 +140,15 @@
             justify-content: space-between;
             width: 100%;
             grid-gap: initial;
+
+            @media (max-width: 992px) {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+              grid-gap: 20px;
+            }
         }
+
+
     }
 
     &__order-list {
@@ -153,6 +167,7 @@
         border-left: 1px solid var(--blue-6);
         background-color: var(--system-6);
         transition: all 0.5s ease-in;
+        grid-gap: 20px;
 
         &:first-child {
             border-top-left-radius: 8px;
@@ -191,6 +206,10 @@
                 }
             }
         }
+
+        @media (max-width: 1240px) {
+          flex-wrap: wrap;
+        }
     }
 
     &__order-file {
@@ -217,7 +236,9 @@
     &__order-choosed {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         grid-gap: 6px;
+        max-width: 505px;
     }
 
     &__choosed-list {
@@ -237,7 +258,7 @@
     &__order-price {
         display: flex;
         align-items: center;
-        grid-gap: 60px;
+        grid-gap: clamp(30px, 3.125vw, 60px);
     }
 
     &__order-count {
@@ -253,6 +274,7 @@
     }
 
     &__count-price {
+      min-width: 100px;
         color: var(--blue-6);
     }
 
