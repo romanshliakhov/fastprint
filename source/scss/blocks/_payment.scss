@@ -6,6 +6,15 @@
     background-color: var(--system-6);
     border-radius: 6px;
 
+    @media all and (max-width: 768px) {
+      padding: 20px 30px;
+
+    }
+
+    @media all and (max-width: 576px) {
+      padding: 16px 12px;
+    }
+
     &__tabs {
         display: flex;
         flex-direction: column;
@@ -17,6 +26,16 @@
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
         grid-gap: clamp(15px, 1.563vw, 30px);
+
+        @media all and (max-width: 768px) {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+        }
+
+        @media all and (max-width: 576px) {
+          grid-template-columns: 1fr;
+          grid-gap: 20px;
+        }
     }
 
     &__item {
@@ -81,6 +100,10 @@
         &--red {
             background-color: #FFEDEF;
         }
+
+        @media all and (max-width: 576px) {
+          width: 100%;
+        }
     }
 
     &__content-alert {
@@ -106,6 +129,11 @@
         padding: 40px 30px;
         display: flex;
         grid-gap: 60px;
+
+        @media all and (max-width: 768px) {
+          flex-direction: column;
+          padding: 0;
+        }
     }
 
     &__cardpay-info {
@@ -150,12 +178,31 @@
         flex-direction: column;
         grid-gap: 30px;
         margin: 0 auto;
+
+        @media all and (max-width: 576px) {
+          width: 100%;
+        }
+    }
+
+    &__wallet-head {
+      @media all and (max-width: 576px) {
+        width: 100%;
+
+        svg {
+          transform: rotate(90deg);
+        }
+      }
     }
 
     &__wallet-bot {
         display: flex;
         align-items: center;
         grid-gap: 30px;
+
+        @media all and (max-width: 768px) {
+          width: 100%;
+          flex-direction: column;
+        }
     }
 
     &__wallet-balance {
@@ -163,6 +210,11 @@
         align-items: center;
         justify-content: center;
         grid-gap: 50px;
+
+        @media all and (max-width: 576px) {
+          flex-direction: column;
+          grid-gap: 20px;
+        }
     }
 
     &__cardpay-total--minus {
@@ -252,6 +304,10 @@
         display: flex;
         flex-wrap: wrap;
         grid-gap: 30px;
+
+        @media all and (max-width: 768px) {
+          justify-content: center;
+        }
     }
 
     &__crypto-label {

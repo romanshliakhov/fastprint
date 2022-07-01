@@ -6,6 +6,16 @@
         align-items: flex-start;
         grid-template-columns: 1fr clamp(380px, 24.479vw, 470px);
         grid-gap: Min(4.167vw, 80px);
+
+        @media (max-width: 1240px) {
+          display: flex;
+          flex-direction: column;
+          // grid-gap: 80px;
+        }
+
+        @media (max-width: 576px) {
+          padding: 0 10px;
+        }
     }
 
     &__inner {
@@ -89,10 +99,8 @@
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
 
-        @media (max-width: 992px) {
-          flex-direction: column;
-          grid-gap: 20px;
-          padding: 20px;
+        @media (max-width: 576px) {
+          padding: 8px 16px;
         }
     }
 
@@ -119,6 +127,18 @@
             border: 1px solid transparent;
             background-color: var(--error-2);
         }
+
+        @media (max-width: 576px) {
+          padding: 10px;
+
+          span {
+            display: none;
+          }
+
+          svg {
+            margin-right: 0;
+          }
+        }
     }
 
     &__order-details {
@@ -126,6 +146,10 @@
         flex-direction: column;
         grid-gap: 26px;
         padding: 28px 40px 40px;
+
+        @media (max-width: 576px) {
+          padding: 26px 16px;
+        }
     }
 
     &__details-top {
@@ -141,10 +165,8 @@
             width: 100%;
             grid-gap: initial;
 
-            @media (max-width: 992px) {
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
-              grid-gap: 20px;
+            @media (max-width: 576px) {
+              grid-gap: 20px 22px;
             }
         }
 
@@ -209,6 +231,19 @@
 
         @media (max-width: 1240px) {
           flex-wrap: wrap;
+        }
+
+        @media (max-width: 1024px) {
+          flex-wrap: nowrap;
+        }
+
+        @media (max-width: 880px) {
+          flex-wrap: wrap;
+        }
+
+        @media (max-width: 576px) {
+          flex-direction: column;
+          padding: 20px 16px;
         }
     }
 
@@ -307,6 +342,11 @@
         display: flex;
         align-items: center;
         grid-gap: 30px;
+
+        @media (max-width: 576px) {
+          width: 100%;
+          justify-content: space-evenly;
+        }
     }
 
     &__settings {
@@ -356,6 +396,17 @@
         background-color: var(--system-5);
         border-radius: 8px;
         flex-shrink: 0;
+
+        @media (max-width: 1240px) {
+          position: relative;
+          max-width: 100%;
+          top: 0;
+          margin-top: 40px;
+        }
+
+        @media (max-width: 576px) {
+          padding: 20px 16px;
+        }
     }
 
     &__calculation-head {
@@ -368,6 +419,18 @@
         display: flex;
         flex-direction: column;
         grid-gap: 30px;
+
+        @media (max-width: 1240px) {
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        @media (max-width: 576px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px 22px;
+        }
     }
 
     &__calculation-item {
