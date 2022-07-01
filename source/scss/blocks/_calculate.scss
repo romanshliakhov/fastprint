@@ -124,6 +124,7 @@
       @media (max-width: 768px) {
         max-width: 100%;
         grid-column: span 2;
+        order: 1;
       }
     }
 
@@ -151,6 +152,7 @@
       @media (max-width: 1240px) {
         max-width: 100%;
         grid-column: span 2;
+        order: 1;
       }
     }
   }
@@ -468,7 +470,7 @@
     }
 
     @media all and (max-width: 768px) {
-      grid-gap: 20px;
+      grid-gap: 10px;
     }
 
   }
@@ -488,6 +490,7 @@
     @media all and (max-width: 1240px) {
       order: 1;
       max-width: 285px;
+      width: 100%;
     }
 
     @media all and (max-width: 768px) {
@@ -529,7 +532,7 @@
     }
 
     @media all and (max-width: 768px) {
-      max-width: 150px;
+      min-width: 130px;
     }
   }
 
@@ -539,6 +542,8 @@
       line-height: 139%;
       font-weight: 600;
     }
+
+
   }
 
   &__files-head {
