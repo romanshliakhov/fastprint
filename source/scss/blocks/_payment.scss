@@ -99,6 +99,7 @@
 
         &--red {
             background-color: #FFEDEF;
+            // width: 100%;
         }
 
         @media all and (max-width: 576px) {
@@ -179,7 +180,7 @@
         grid-gap: 30px;
         margin: 0 auto;
 
-        @media all and (max-width: 576px) {
+        @media all and (max-width: 768px) {
           width: 100%;
         }
     }

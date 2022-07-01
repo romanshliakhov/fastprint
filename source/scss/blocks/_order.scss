@@ -199,10 +199,7 @@
         align-items: center;
         grid-gap: 200px;
         padding-left: 40px;
-
-        @media all and (max-width: 1240px) {
-          order: 1;
-        }
+        order: 1;
 
         @media all and (max-width: 576px) {
           flex-direction: column;
