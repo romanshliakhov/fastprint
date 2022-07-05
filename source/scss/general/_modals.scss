@@ -1,6 +1,6 @@
 .modal {
   --transition-time: 0.3s;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
@@ -19,6 +19,7 @@
   transition: opacity var(--transition-time), visibility var(--transition-time);
 
   &.is-open {
+    position: fixed;
     opacity: 1;
     visibility: visible;
     transition: opacity var(--transition-time), visibility var(--transition-time);
