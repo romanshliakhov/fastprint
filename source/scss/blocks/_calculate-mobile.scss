@@ -29,8 +29,83 @@
   }
 
   .calculate__box--left {
+    position: relative;
     padding: 0;
   }
+
+  .calculate__shipping {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    grid-gap: 14px;
+    position: fixed;
+    top: 50%;
+    z-index: 30;
+    min-height: 104px;
+    background-color: #0047FE;
+    border-radius: 0;
+    transform: translateY(-50%) translateX(0);
+    transition: all 3s;
+    transition-delay: 0.2s;
+
+    &.hide {
+      transform: translateY(-50%) translateX(100vw);
+    }
+  }
+
+  .calculate__shipping-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 34px;
+    width: 34px;
+    cursor: pointer;
+
+    svg {
+      stroke: #fff;
+    }
+  }
+
+  .timer__count-content {
+    grid-gap: 4px;
+  }
+
+  .timer__count-item {
+    width: 32px;
+    height: 32px;
+    background-color: #EDF4FF;
+  }
+
+  .timer__count-val {
+    color: #0047FE;
+  }
+
+  .timer__count-separator {
+    color: #EDF4FF;
+  }
+
+  .calculate__timer-description {
+    flex-direction: row-reverse;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .calculate__shipping-text {
+    max-width: 100%;
+    color: #fff;
+  }
+
+  .calculate__shipping-details {
+    height: 24px;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+
 
   .calculate__upload-first {
     grid-gap: 14px;
@@ -47,9 +122,9 @@
     }
   }
 
-  .calculate__steps {
-    flex-direction: column-reverse;
-  }
+  // .calculate__steps {
+  //   flex-direction: column-reverse;
+  // }
 
   .calculate__steps-btns {
     grid-gap: 50px;

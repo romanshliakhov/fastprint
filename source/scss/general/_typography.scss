@@ -118,6 +118,11 @@
         font-size: 14px;
         line-height: 143%;
     }
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+      line-height: 150%;
+     }
 }
 
 .menu-text {
@@ -255,6 +260,11 @@
     font-weight: 700;
     font-style: normal;
     color: var(--system-1);
+
+    @media (max-width: 576px) {
+      font-size: 14px;
+      line-height: 125%;
+     }
 }
 
 .text-calc-descr {

@@ -73,6 +73,10 @@
         z-index: 5;
         cursor: pointer;
 
+        svg {
+          stroke: #181818;
+        }
+
         @media screen and (min-width: 1024px) {
             display: none;
         }

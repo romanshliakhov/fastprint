@@ -51,6 +51,11 @@
         opacity: 1;
         overflow: visible;
         z-index: 5;
+
+        // @media (max-width: 768px) {
+        //   left: initial;
+        //   right: -295px;
+        // }
       }
     }
   }
@@ -68,6 +73,12 @@
     overflow: hidden;
     opacity: 0;
     transition: all 0.4s ease-in;
+    pointer-events: none;
+
+    @media (max-width: 768px) {
+      left: initial;
+      right: -295px;
+    }
   }
 
   &__wrapper {

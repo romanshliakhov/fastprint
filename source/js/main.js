@@ -282,6 +282,19 @@ if (bannerItem) {
     addClassHide(closeBtn, bannerItem);
 }
 
+// Close timer
+const closeBtnTimer = document.querySelector('.calculate__shipping-close');
+const timerItem = document.querySelector('.calculate__shipping');
+
+const addClassHideTimer = function(button, body) {
+    button.onclick = () => body.classList.add('hide');
+}
+
+if (timerItem) {
+  addClassHideTimer(closeBtnTimer, timerItem);
+}
+
+
 // dropdown
 document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
     const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
