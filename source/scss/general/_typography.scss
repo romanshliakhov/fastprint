@@ -264,6 +264,11 @@
     font-weight: 500;
     font-style: normal;
     color: var(--system-1);
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+      line-height: 167%;
+  }
 }
 
 .text-calc-other {
