@@ -178,7 +178,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  // background-color: rgba(0, 0, 0, 0.45);
 }
 
 .lg-toolbar .lg-icon {
@@ -237,14 +237,14 @@
   margin: 5px 0 0;
 }
 
-#lg-counter {
-  color: #999;
-  display: inline-block;
-  font-size: 16px;
-  padding-left: 20px;
-  padding-top: 12px;
-  vertical-align: middle;
-}
+// #lg-counter {
+//   color: #999;
+//   display: inline-block;
+//   font-size: 16px;
+//   padding-left: 20px;
+//   padding-top: 12px;
+//   vertical-align: middle;
+// }
 
 .lg-toolbar, .lg-prev, .lg-next {
   opacity: 1;
@@ -416,7 +416,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-video-cont {
   display: inline-block;
   vertical-align: middle;
-  max-width: 1140px;
+  max-width: 90%;
   max-height: 100%;
   width: 100%;
   padding: 0 5px;

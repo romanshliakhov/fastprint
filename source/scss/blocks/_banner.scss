@@ -13,10 +13,13 @@
     grid-gap: 30px;
     flex-shrink: 0;
 
+    @media (max-width: 1440px) {
+      max-width: 330px;
+    }
+
     @media (max-width: 1024px) {
         transform: translateX(-100%);
-        transition: all 3s;
-        transition-delay: .2s;
+        transition: all 1.5s;
     }
 
     @media (max-width: 576px) {
@@ -77,7 +80,7 @@
           stroke: #181818;
         }
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 1025px) {
             display: none;
         }
 

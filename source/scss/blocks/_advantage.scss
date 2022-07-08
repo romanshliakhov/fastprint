@@ -22,6 +22,10 @@
     }
   }
 
+  &__item-info {
+    max-width: 320px;
+  }
+
   &__item-title {
     @media all and (max-width: 1240px) {
       min-height: 56px;

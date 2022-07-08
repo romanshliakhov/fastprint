@@ -10,6 +10,17 @@ let sliderDynamicRow = new Swiper(".sale__slider", {
   autoplay: {
       delay: 0,
   },
+  breakpoints: {
+    320: {
+      spaceBetween: 15,
+    },
+    576: {
+      spaceBetween: 15,
+    },
+    769: {
+      spaceBetween: 60,
+    }
+}
 });
 
 
@@ -19,8 +30,8 @@ let sliderArticle = new Swiper(".more__slider", {
   spaceBetween: 40,
   loop: true,
   navigation: {
-      nextEl: ".more__arrow--prev",
-      prevEl: ".more__arrow--next",
+      nextEl: ".more__arrow--next",
+      prevEl: ".more__arrow--prev",
       clickable: true,
   },
   breakpoints: {

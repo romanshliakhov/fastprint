@@ -22,6 +22,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 769px) {
+          justify-content: flex-start;
+          max-width: 335px;
+        }
     }
 
     &__slide-item {
@@ -41,5 +46,9 @@
         height: 10px;
         background-color: var(--blue-3);
         border-radius: 3px;
+
+        // @media (max-width: 769px) {
+        //   margin-left: 75px;
+        // }
     }
 }

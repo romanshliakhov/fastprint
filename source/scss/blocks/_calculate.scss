@@ -24,7 +24,7 @@
     background-color: var(--system-6);
     border-radius: 8px;
 
-    @media (max-width: 575px) {
+    @media (max-width: 576px) {
       width: 100%;
       flex-direction: column;
       align-items: flex-start;
@@ -36,26 +36,29 @@
     display: flex;
     align-items: center;
     grid-gap: 10px;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
 
   &__shipping-text {
     max-width: 300px;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
   }
 
   &__shipping-details {
     position: relative;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.2s ease;
 
     &:hover {
       .calculate__details-hover {
         opacity: 1;
         overflow: visible;
         z-index: 5;
-
-        // @media (max-width: 768px) {
-        //   left: initial;
-        //   right: -295px;
-        // }
       }
     }
   }
@@ -72,12 +75,11 @@
     z-index: -1;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.4s ease-in;
+    transition: all 0.1s ease-in;
     pointer-events: none;
 
-    @media (max-width: 768px) {
-      left: initial;
-      right: -295px;
+    @media (max-width: 576px) {
+      left: -245px;
     }
   }
 
@@ -110,7 +112,13 @@
     padding: 30px 30px 20px;
     background-color: var(--system-6);
     border-radius: 6px;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid #fff;
+
+    &:hover {
+      border-bottom: 2px solid #0047FE;
+      border-radius: 0px 0px 6px 6px;
+    }
 
 
     @media (max-width: 1440px) {
@@ -125,12 +133,6 @@
       max-width: 600px;
       width: 100%;
       grid-gap: 30px;
-      border-bottom: 2px solid #fff;
-
-      &:hover {
-        border-bottom: 2px solid #0047FE;
-        border-radius: 0px 0px 6px 6px;
-      }
 
       @media (max-width: 768px) {
         max-width: 100%;
@@ -141,12 +143,6 @@
 
     &--mid {
       width: 100%;
-      border-bottom: 2px solid #fff;
-
-      &:hover {
-        border-bottom: 2px solid #0047FE;
-        border-radius: 0px 0px 6px 6px;
-      }
 
       @media (max-width: 768px) {
         min-height: 463px;
@@ -181,7 +177,7 @@
     margin-top: 10px;
     background-color: var(--blue-6);
     color: var(--system-6);
-    transition: all 0.5s ease-in;
+    transition: all 0.2s ease-in;
 
     &:hover {
       filter: drop-shadow(0px 0px 32px rgba(0, 71, 254, 0.3));
@@ -213,18 +209,20 @@
   }
 
   &__steps-all {
+    display: none;
     position: absolute;
     height: 100%;
     top: 0;
     z-index: 20;
-    transform: translateX(-100%);
-    transition: all .4s;
-    opacity: 0;
+    // transform: translateX(-100%);
+    // transition: all .4s;
+    // opacity: 0;
 
     &.show {
       background-color: #fff;
-      transform: translateX(0%);
-      opacity: 1;
+      // transform: translateX(0%);
+      // opacity: 1;
+      display: block;
     }
   }
 
@@ -237,7 +235,7 @@
   &__steps-btns {
     display: flex;
     align-items: center;
-    grid-gap: 80px;
+    grid-gap: 50px;
   }
 
   &__steps-btn {
@@ -249,7 +247,7 @@
 
     &--back {
       svg {
-        stroke: #181818;
+        stroke: #0047FE;
       }
     }
 
@@ -276,7 +274,7 @@
     &--add {
       background-color: #0047FE;
       width: 226px;
-      transition: all 0.5s ease;
+      transition: all 0.2s ease;
 
       span {
         color: #fff;
@@ -304,7 +302,7 @@
 
   &__upload-add {
     position: relative;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
     cursor: pointer;
 
     &:hover {
@@ -384,11 +382,11 @@
     background-color: #EDF4FF;
     border-radius: 6px;
     cursor: pointer;
-    transition: all 0.4s;
+    transition: all 0.2s;
 
     &:hover {
       background-color: #CBE0FE;
-      transition: all 0.4s;
+      transition: all 0.2s;
 
       .payment__crypto-name::before {
         border: 1px solid #0047FE;
@@ -629,7 +627,7 @@
     grid-gap: 7px;
     background-color: rgba(240, 240, 240, 0.5);
     border-radius: 6px;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
     cursor: pointer;
 
     &:hover {
@@ -665,14 +663,14 @@
   }
 
   &__types-name {
-    transition: all 0.5s ease-in;
+    transition: all 0.1s;
   }
 
   &__types-descr {
     max-width: 300px;
     width: 100%;
     color: #696E72;
-    transition: all 0.5s ease-in;
+    transition: all 0.2s;
 
     @media all and (max-width: 1440px) {
       overflow: hidden;
@@ -784,7 +782,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateX(-100%);
-    transition: all .4s;
+    transition: all .2s;
     overflow-y: auto;
 
     &.active {
@@ -805,7 +803,17 @@
     }
 
     .has-file__delete {
+      width: 120px;
       display: flex;
+
+      span {
+        white-space: nowrap;
+        color: #D5061A;
+      }
+
+      svg {
+        stroke: #D5061A;
+      }
     }
 
     .hiden-text {
@@ -870,7 +878,7 @@
     background-color: #EDF4FF;
     border-radius: 24px;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 
     &:hover,
     &:active {
@@ -882,7 +890,7 @@
     }
 
     svg {
-      transition: all 0.5s ease;
+      transition: all 0.2s ease;
       fill: #0047FE;
     }
 

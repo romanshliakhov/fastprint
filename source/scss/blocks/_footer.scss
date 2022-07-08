@@ -27,7 +27,7 @@ footer {
             grid-template-columns: clamp(315px, 35.156vw, 360px) 1fr;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 576px) {
             grid-template-columns: 100%;
             grid-template-areas:
             "video"
@@ -67,6 +67,11 @@ footer {
 
     &__nav-link {
         color: var(--system-6);
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--blue-6);
+      }
     }
 
     &__info {
@@ -123,6 +128,7 @@ footer {
 
         @media (max-width: 1240px) {
             max-width: 100%;
+            flex-wrap: wrap;
         }
 
     }
@@ -150,6 +156,7 @@ footer {
     &__policy {
         display: flex;
         align-items: center;
+        grid-gap: 60px;
 
         @media (max-width: 576px) {
             justify-content: space-evenly;
@@ -187,6 +194,36 @@ footer {
         svg {
             height: 33px;
             width: 33px;
+        }
+
+        @media (max-width: 1440px) {
+          width: 73px;
+          height: 73px;
+
+          svg {
+              height: 29px;
+              width: 27px;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          width: 80px;
+          height: 80px;
+
+          svg {
+              height: 32px;
+              width: 30px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          width: 70px;
+          height: 70px;
+
+          svg {
+              height: 28px;
+              width: 26px;
+          }
         }
     }
 }
