@@ -66,6 +66,14 @@
         margin-right: 22px;
     }
 
+    &__videos-list {
+      @media (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        grid: gap 16px;
+      }
+    }
+
     &__list {
         border-bottom: 1px solid var(--system-4);
         padding: 20px;
@@ -81,6 +89,7 @@
         justify-content: space-between;
         position: relative;
         padding-left: 36px;
+        cursor: pointer;
 
         @media (max-width: 576px) {
             flex-direction: column;
@@ -123,6 +132,18 @@
     &__block {
         padding-left: calc((100% - 1526px) / 2 );
         grid-gap: 100px;
+
+        @media (max-width: 1024px) {
+          grid-gap: 80px;
+        }
+
+        @media (max-width: 1024px) {
+          grid-gap: 60px;
+        }
+
+        @media (max-width: 1024px) {
+          grid-gap: 40px;
+        }
     }
 
     &__block-inner {
