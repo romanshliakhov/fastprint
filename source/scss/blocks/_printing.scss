@@ -30,7 +30,6 @@
     object-fit: cover;
     object-position: bottom;
     animation: paper_2 6s infinite;
-    // animation-delay: 0;
     filter: drop-shadow(0px 4px 52px rgba(0, 0, 0, 0.14));
     will-change: transform;
 
@@ -87,7 +86,6 @@
     bottom: 10%;
     opacity: 0;
     animation: paper_1 6s infinite;
-    // animation-delay: 0;
     will-change: transform;
 
     @media (max-width: 1440px) {
@@ -123,7 +121,6 @@
 .layer-image {
     position: absolute;
     display: flex;
-
 }
 
 .layer_1 {

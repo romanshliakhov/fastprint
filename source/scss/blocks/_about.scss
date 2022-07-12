@@ -14,12 +14,14 @@
   }
 
   &__partners-item {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 250px;
     height: 75px;
     transition: 0.2s all ease-in;
+    opacity: 0.6;
 
     @media all and (max-width: 1024px) {
       width: 160px;
@@ -36,6 +38,8 @@
     }
 
     &:hover {
+      opacity: 1;
+
       img {
         filter: grayscale(0);
       }
