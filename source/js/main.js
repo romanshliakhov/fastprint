@@ -91,22 +91,18 @@ stepsBtns.map(function(stepsBtn) {
 })
 
 // burger
-let menuBtnOpen = document.querySelector('.mobile__header-btn--open');
-let menuBtnClose = document.querySelector('.mobile__header-btn--close');
+let menuBtn = document.querySelector('.mobile__header-btn');
+let menuBurgerBtn = document.querySelector('.burger-menu');
 let menu = document.querySelector('.mobile__menu');
 let disableScroll = document.querySelector('body');
 
-menuBtnOpen.addEventListener('click', function () {
-    menuBtnOpen.classList.add('active');
-    menu.classList.add('active');
-    disableScroll.classList.add('body-scroll');
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menuBurgerBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+  disableScroll.classList.toggle('body-scroll');
 });
 
-menuBtnClose.addEventListener('click', function () {
-    menuBtnOpen.classList.remove('active');
-    menu.classList.remove('active');
-    disableScroll.classList.remove('body-scroll');
-});
 
 
 // SPOLLERS
@@ -283,16 +279,16 @@ if (bannerItem) {
 }
 
 // Close timer
-// const closeBtnTimer = document.querySelector('.calculate__shipping-close');
-// const timerItem = document.querySelector('.calculate__shipping');
+const closeBtnTimer = document.querySelector('.calculate__shipping-close');
+const timerItem = document.querySelector('.calculate__shipping');
 
-// const addClassHideTimer = function(button, body) {
-//     button.onclick = () => body.classList.add('hide');
-// }
+const addClassHideTimer = function(button, body) {
+    button.onclick = () => body.classList.add('hide');
+}
 
-// if (timerItem) {
-//   addClassHideTimer(closeBtnTimer, timerItem);
-// }
+if (timerItem) {
+  addClassHideTimer(closeBtnTimer, timerItem);
+}
 
 
 // dropdown

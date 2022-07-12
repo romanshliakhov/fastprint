@@ -12,11 +12,11 @@
     }
 
     @media (max-width: 576px) {
-        padding: 80px 10px 200px;
+        padding: 80px 30px 200px;
     }
 
     &__download {
-        padding: 230px 0;
+        padding: 230px 40px;
 
         @media (max-width: 1440px) {
             padding: 140px 40px 130px;
@@ -34,7 +34,7 @@
     &__download-wrapp {
         display: flex;
         justify-content: center;
-        grid-gap: 42px;
+        grid-gap: clamp(30px, 6.25vw, 120px);
 
         @media (max-width: 1240px) {
             flex-direction: column;
@@ -43,9 +43,12 @@
     }
 
     &__download-image {
+      width: clamp(695px, 38.542vw, 740px);
+      height: clamp(630px, 38.542vw, 740px);
+
       @media (max-width: 1240px) {
-        max-width: 640px;
-        max-height: 580px;
+        width: clamp(320px, 51.613vw, 640px);
+        height: clamp(290px, 46.774vw, 580px);
       }
     }
 

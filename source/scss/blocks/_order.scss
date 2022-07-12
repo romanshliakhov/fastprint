@@ -51,10 +51,11 @@
             height: 24px;
             right: 0;
             transition: transform 0.3s ease 0s;
+            transform: rotate(-180deg);
         }
 
         &._active::before {
-            transform: rotate(-180deg);
+            transform: rotate(0deg);
           }
     }
 
@@ -99,15 +100,6 @@
         padding: 14px 20px;
         border-radius: 6px;
     }
-
-
-
-
-
-
-
-
-
 
     &__coupon {
         display: flex;
