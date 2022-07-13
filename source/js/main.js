@@ -592,54 +592,78 @@ window.addEventListener("resize", () => {
 
 
 // Parallax phone
-const parallax = document.querySelector('.animation__phone');
+// const parallax = document.querySelector('.animation__phone');
 
-if (parallax) {
-  // const content = document.querySelector('.animation__phone');
-  const phone = document.querySelector('.animation__phone-img');
+// if (parallax) {
+//   // const content = document.querySelector('.animation__phone');
+//   const phone = document.querySelector('.animation__phone-img');
 
-  // Коэффициенты
-  const forPhone = 1;
+//   // Коэффициенты
+//   const forPhone = 1;
 
-  // Скорость
-  const speed = 0.01;
+//   // Скорость
+//   const speed = 0.01;
 
-  // Обьявление переменных
-  let positionX = 0, positionY = 0;
-  let coordXprocent = 0, coordYprocent = 0;
+//   // Обьявление переменных
+//   let positionX = 0, positionY = 0;
+//   let coordXprocent = 0, coordYprocent = 0;
 
-  function setMouseParallaxStyle() {
-    const distX = coordXprocent - positionX;
-    const distY = coordYprocent - positionY;
+//   function setMouseParallaxStyle() {
+//     const distX = coordXprocent - positionX;
+//     const distY = coordYprocent - positionY;
 
-    positionX = positionX + (distX * speed);
-    positionY = positionY + (distY * speed);
+//     positionX = positionX + (distX * speed);
+//     positionY = positionY + (distY * speed);
 
-    // Передаем стили
-    phone.style.cssText = `transform: translate(${positionX / forPhone}%, ${positionY / forPhone}%);`;
+//     // Передаем стили
+//     phone.style.cssText = `transform: translate(${positionX / forPhone}%, ${positionY / forPhone}%);`;
 
-    requestAnimationFrame(setMouseParallaxStyle);
-  }
+//     requestAnimationFrame(setMouseParallaxStyle);
+//   }
 
-  setMouseParallaxStyle();
+//   setMouseParallaxStyle();
 
-  parallax.addEventListener("mousemove", function (e) {
-    // Получение ширины и высоты блока
-    const parallaxWidth = parallax.offsetWidth;
-    const parallaxHeight = parallax.offsetHeight;
+//   parallax.addEventListener("mousemove", function (e) {
+//     // Получение ширины и высоты блока
+//     const parallaxWidth = parallax.getBoundingClientRect().width;
+//     const parallaxHeight = parallax.getBoundingClientRect().height;
 
-    // Ноль на середине
-    const coordX = e.pageX - parallaxWidth / 2;
-    const coordY = e.pageY - parallaxHeight / 2;
+//     // Ноль на середине
+//     const coordX = e.pageX - parallaxWidth / 2;
+//     const coordY = e.pageY - parallaxHeight / 2;
 
-    // Получаем проценты
-    coordXprocent = coordX / parallaxWidth * 100;
-    coordYprocent = coordY / parallaxHeight * 100;
+//     // Получаем проценты
+//     coordXprocent = coordX / parallaxWidth * 100;
+//     coordYprocent = coordY / parallaxHeight * 100;
+//   });
+// }
 
 
+// Parallax phone
+const boxer = boxercontainer.querySelector("img"),
+      maxMove = boxercontainer.offsetWidth / 30,
+      boxerCenterX = boxer.offsetLeft + (boxer.offsetWidth / 2),
+      boxerCenterY = boxer.offsetTop + (boxer.offsetHeight / 2),
+      fluidboxer = window.matchMedia("(min-width: 726px)");
 
-  });
+function getMousePos(xRef, yRef) {
+
+  let panelRect = boxercontainer.getBoundingClientRect();
+  return {
+	  x: Math.floor(xRef - panelRect.left) /(panelRect.right-panelRect.left)*boxercontainer.offsetWidth,
+	  y: Math.floor(yRef - panelRect.top) / (panelRect.bottom -panelRect.top) * boxercontainer.offsetHeight
+    };
 }
+
+document.body.addEventListener("mousemove", function(e) {
+  let mousePos = getMousePos(e.clientX, e.clientY),
+  distX = mousePos.x - boxerCenterX,
+  distY = mousePos.y - boxerCenterY;
+  if (Math.abs(distX) < 500 && distY < 200 && fluidboxer.matches) {
+  boxer.style.transform = "translate("+(-1*distX)/12+"px,"+(-1*distY)/12+"px)";
+    boxercontainer.style.backgroundPosition = `calc(50% + ${distX/50}px) calc(50% + ${distY/50}px)`;
+  }
+})
 
 
 
