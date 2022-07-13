@@ -1,15 +1,16 @@
 .animation-phone {
     top: -12%;
-    left: 0;
+    left: 40px;
     width: 380px;
     height: 640px;
-    position: absolute;
-    animation: animation-phone 10s cubic-bezier(.17,.67,.83,.67) infinite;
-    will-change: transform;
+    position: fixed;
+    // animation: animation-phone 10s cubic-bezier(.17,.67,.83,.67) infinite;
+    // will-change: transform;
 
     @media (max-width: 1440px) {
       width: 300px;
       height: 506px;
+      top: -5%;
     }
 
     @media (max-width: 1024px) {
@@ -22,28 +23,28 @@
     }
   }
 
-  @keyframes animation-phone {
-    0% {
-      transform: translate(0, 0);
-    }
+  // @keyframes animation-phone {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
 
-    20% {
-      transform: translate(1%, 2%);
-    }
+  //   20% {
+  //     transform: translate(1%, 2%);
+  //   }
 
-    40% {
-      transform: translate(3%, 5%);
-    }
+  //   40% {
+  //     transform: translate(3%, 5%);
+  //   }
 
-    60% {
-      transform: translate(3%, 0%);
-    }
+  //   60% {
+  //     transform: translate(3%, 0%);
+  //   }
 
-    80% {
-      transform: translate(-3%, -5%);
-    }
+  //   80% {
+  //     transform: translate(-3%, -5%);
+  //   }
 
-    100% {
-      transform: translate(0%, 0%);
-    }
-  }
+  //   100% {
+  //     transform: translate(0%, 0%);
+  //   }
+  // }

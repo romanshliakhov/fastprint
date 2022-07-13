@@ -48,6 +48,26 @@
       height: 307px;
     }
 
+    &__phone-img {
+      position: absolute;
+      width: 300px;
+      height: 566px;
+      top: 25px;
+
+      @media (max-width: 1440px) {
+        width: 243px;
+        height: 448px;
+      }
+
+      @media (max-width: 1024px) {
+        height: 315px;
+        width: 170px;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
 }
 
 

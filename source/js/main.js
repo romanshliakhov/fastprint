@@ -279,16 +279,16 @@ if (bannerItem) {
 }
 
 // Close timer
-const closeBtnTimer = document.querySelector('.calculate__shipping-close');
-const timerItem = document.querySelector('.calculate__shipping');
+// const closeBtnTimer = document.querySelector('.calculate__shipping-close');
+// const timerItem = document.querySelector('.calculate__shipping');
 
-const addClassHideTimer = function(button, body) {
-    button.onclick = () => body.classList.add('hide');
-}
+// const addClassHideTimer = function(button, body) {
+//     button.onclick = () => body.classList.add('hide');
+// }
 
-if (timerItem) {
-  addClassHideTimer(closeBtnTimer, timerItem);
-}
+// if (timerItem) {
+//   addClassHideTimer(closeBtnTimer, timerItem);
+// }
 
 
 // dropdown
@@ -591,6 +591,55 @@ window.addEventListener("resize", () => {
 });
 
 
+// Parallax phone
+const parallax = document.querySelector('.animation__phone');
+
+if (parallax) {
+  // const content = document.querySelector('.animation__phone');
+  const phone = document.querySelector('.animation__phone-img');
+
+  // Коэффициенты
+  const forPhone = 1;
+
+  // Скорость
+  const speed = 0.01;
+
+  // Обьявление переменных
+  let positionX = 0, positionY = 0;
+  let coordXprocent = 0, coordYprocent = 0;
+
+  function setMouseParallaxStyle() {
+    const distX = coordXprocent - positionX;
+    const distY = coordYprocent - positionY;
+
+    positionX = positionX + (distX * speed);
+    positionY = positionY + (distY * speed);
+
+    // Передаем стили
+    phone.style.cssText = `transform: translate(${positionX / forPhone}%, ${positionY / forPhone}%);`;
+
+    requestAnimationFrame(setMouseParallaxStyle);
+  }
+
+  setMouseParallaxStyle();
+
+  parallax.addEventListener("mousemove", function (e) {
+    // Получение ширины и высоты блока
+    const parallaxWidth = parallax.offsetWidth;
+    const parallaxHeight = parallax.offsetHeight;
+
+    // Ноль на середине
+    const coordX = e.pageX - parallaxWidth / 2;
+    const coordY = e.pageY - parallaxHeight / 2;
+
+    // Получаем проценты
+    coordXprocent = coordX / parallaxWidth * 100;
+    coordYprocent = coordY / parallaxHeight * 100;
+
+
+
+  });
+}
 
 
 
