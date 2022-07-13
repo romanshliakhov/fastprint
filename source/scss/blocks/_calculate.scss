@@ -348,6 +348,8 @@
     &:hover {
       .calculate__hover-info {
         display: block;
+        transform: translateX(-100%);
+        z-index: 3;
       }
     }
   }

@@ -96,12 +96,16 @@ let menuBurgerBtn = document.querySelector('.burger-menu');
 let menu = document.querySelector('.mobile__menu');
 let disableScroll = document.querySelector('body');
 
-menuBtn.addEventListener('click', function(){
-	menuBtn.classList.toggle('active');
-	menuBurgerBtn.classList.toggle('active');
-	menu.classList.toggle('active');
-  disableScroll.classList.toggle('body-scroll');
-});
+if (menuBtn) {
+  menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('active');
+    menuBurgerBtn.classList.toggle('active');
+    menu.classList.toggle('active');
+    disableScroll.classList.toggle('body-scroll');
+  });
+}
+
+
 
 
 
@@ -592,54 +596,6 @@ window.addEventListener("resize", () => {
 
 
 // Parallax phone
-// const parallax = document.querySelector('.animation__phone');
-
-// if (parallax) {
-//   // const content = document.querySelector('.animation__phone');
-//   const phone = document.querySelector('.animation__phone-img');
-
-//   // Коэффициенты
-//   const forPhone = 1;
-
-//   // Скорость
-//   const speed = 0.01;
-
-//   // Обьявление переменных
-//   let positionX = 0, positionY = 0;
-//   let coordXprocent = 0, coordYprocent = 0;
-
-//   function setMouseParallaxStyle() {
-//     const distX = coordXprocent - positionX;
-//     const distY = coordYprocent - positionY;
-
-//     positionX = positionX + (distX * speed);
-//     positionY = positionY + (distY * speed);
-
-//     // Передаем стили
-//     phone.style.cssText = `transform: translate(${positionX / forPhone}%, ${positionY / forPhone}%);`;
-
-//     requestAnimationFrame(setMouseParallaxStyle);
-//   }
-
-//   setMouseParallaxStyle();
-
-//   parallax.addEventListener("mousemove", function (e) {
-//     // Получение ширины и высоты блока
-//     const parallaxWidth = parallax.getBoundingClientRect().width;
-//     const parallaxHeight = parallax.getBoundingClientRect().height;
-
-//     // Ноль на середине
-//     const coordX = e.pageX - parallaxWidth / 2;
-//     const coordY = e.pageY - parallaxHeight / 2;
-
-//     // Получаем проценты
-//     coordXprocent = coordX / parallaxWidth * 100;
-//     coordYprocent = coordY / parallaxHeight * 100;
-//   });
-// }
-
-
-// Parallax phone
 const boxer = boxercontainer.querySelector("img"),
       maxMove = boxercontainer.offsetWidth / 30,
       boxerCenterX = boxer.offsetLeft + (boxer.offsetWidth / 2),
@@ -650,7 +606,7 @@ function getMousePos(xRef, yRef) {
 
   let panelRect = boxercontainer.getBoundingClientRect();
   return {
-	  x: Math.floor(xRef - panelRect.left) /(panelRect.right-panelRect.left)*boxercontainer.offsetWidth,
+	  x: Math.floor(xRef - panelRect.left) / (panelRect.right-panelRect.left) * boxercontainer.offsetWidth,
 	  y: Math.floor(yRef - panelRect.top) / (panelRect.bottom -panelRect.top) * boxercontainer.offsetHeight
     };
 }

@@ -3,45 +3,171 @@
 @include('partials/head.html',{})
 
 <body>
-    @include('partials/header.html',{})
+	<section class="authorization line">
+    <div class="authorization__wrapper">
+      <img width='80' height='80' src="img/sprite/p-logo.svg" alt="logo">
 
-    <main class="main">
-      <h1>Typography</h1>
+      <div class="authorization__tabs tabs">
+        <ul class="authorization__tabs-list">
+          <li class="authorization__tabs-item authorization__tabs-item--mobile tablinks" tabs-btn="log-in">
+            <button class="authorization__tabs-btn tabs__btn reviews-text">
+              <span>Log in</span>
+            </button>
+            <button class="authorization__tabs-btn authorization__tabs-btn--mobile tabs__btn reviews-text">
+              <span>Create new account</span>
+            </button>
+          </li>
+          <li class="authorization__tabs-item authorization__tabs-item--mobile tablinks active" tabs-btn="sign-up">
+            <button class="authorization__tabs-btn tabs__btn reviews-text">
+              <span>Sign in</span>
+            </button>
+            <button class="authorization__tabs-btn authorization__tabs-btn--mobile tabs__btn reviews-text">
+              <span>I have account</span>
+            </button>
+          </li>
+        </ul>
 
-      <p class="title-1">LargeTitle</p>
-      <p class="title-2">Title1</p>
-      <p class="title-3">Title2</p>
-      <p class="title-4">Title3</p>
-      <p class="title-5">Title4</p>
+        <div class="authorization__tabs-content tabcontent" tabs-content="log-in">
+          <form class="authorization__form authorization__form--login form">
+            <fieldset class="form__fieldset form__fieldset--email">
+              <div class="form__fieldset-title text-calc-name">Email</div>
+              <label class="form__label">
+                <input class="form__input text-body" type="email" name="email" placeholder="Enter your email" required>
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--password">
+              <div class="form__fieldset-title text-calc-name">Password</div>
+              <label class="form__label">
+                <input class="form__input text-body" type="text" name="name" placeholder="Enter text" required>
+              </label>
+              <label class="authorization__profile-label">
+                <input type="checkbox" name="nationality">
+                <span class="authorization__profile-checkbox agreements-text">Keep me logged in</span>
+                <a class="remind-password agreements-text" href="#">Forgot password</a>
+              </label>
+            </fieldset>
+          </form>
 
-      <p class="sale-text">Sale-text</p>
-      <p class="headline-text">Headline</p>
-      <p class="menu-text">Menu</p>
-      <p class="text">Text</p>
-      <p class="text-body">Body</p>
+          <div class="authorization__full-btns">
+            <button class="authorization__full-btn btn">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#log-in'></use>
+              </svg>
+              <span class="button-1">Log in</span>
+            </button>
+            <button class="authorization__full-btn btn">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#facebook'></use>
+              </svg>
+              <span class="button-footer">Login with Facebook</span>
+            </button>
+            <button class="authorization__full-btn btn">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#google'></use>
+              </svg>
+              <span class="button-footer">Login with Google</span>
+            </button>
+          </div>
 
-      <p class="button-1">Button 1</p>
-      <p class="button-2">Button 2</p>
-      <p class="button-filtr">Button Filtr</p>
+          <div class="authorization__bottom-text button-footer">By signing in, you agree to our <a href="#">Terms</a> & <a
+              href="#">Privacy Policy</a>.
+          </div>
+        </div>
 
-      <p class="text-detail">Detail 1</p>
-      <p class="text-decor">Text_Decor</p>
+        <div class="authorization__tabs-content tabcontent active" tabs-content="sign-up">
+          <form class="authorization__form authorization__form--sign form">
+            <fieldset class="form__fieldset form__fieldset--name">
+              <div class="form__fieldset-title text-calc-name">First Name</div>
+              <label class="form__label">
+                <input class="form__input text-body" type="text" name="name" placeholder="Enter your name" required>
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--surname">
+              <div class="form__fieldset-title text-calc-name">Last Name</div>
+              <label class="form__label">
+                <input class="form__input text-body" type="text" name="surname" placeholder="If you want" required>
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--phone">
+              <div class="form__fieldset-title text-calc-name">Phone</div>
+              <label class="form__label">
+                <input class="form__input text-body" type="tel" name="phone" placeholder="+________________" required>
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--email">
+              <div class="form__fieldset-title text-calc-name">Email</div>
+              <label class="form__label">
+                <input class="form__input text-body" type="email" name="email" placeholder="______________@mail"
+                  required>
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--password">
+              <div class="form__fieldset-title text-calc-name">Password</div>
+              <label class="form__label">
+                <input class="form__input text-body" type="password" name="password" placeholder="********************"
+                  required>
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--password">
+              <div class="form__fieldset-title text-calc-name">Repeat Password</div>
+              <label class="form__label">
+                <input class="form__input text-body" type="password" name="password" placeholder="********************"
+                  required>
+              </label>
+            </fieldset>
+          </form>
 
-      <p class="button-footer">Button_Footer</p>
+          <div class="authorization__full-btns">
+            <button class="authorization__full-btn btn">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#sign-up'></use>
+              </svg>
+              <span class="button-1">Sign Up</span>
+            </button>
+            <button class="authorization__full-btn btn">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#facebook'></use>
+              </svg>
+              <span class="button-footer">Login with Facebook</span>
+            </button>
+            <button class="authorization__full-btn btn">
+              <svg width='24' height='24'>
+                <use href='img/sprite/sprite.svg#google'></use>
+              </svg>
+              <span class="button-footer">Login with Google</span>
+            </button>
+          </div>
 
-      <p class="text-calc-name">Name</p>
-      <p class="text-calc-descr">Descriptor Calculator</p>
-      <p class="text-calc-other">Number_Other</p>
-      <p class="text-calc-btn">Button Calculator 1</p>
-      <p class="text-calc-total">Number_Total</p>
+          <div class="authorization__confirm">
+            <label class="authorization__profile-label">
+              <input type="checkbox" name="terms" checked>
+              <span class="authorization__profile-checkbox button-footer">I agree with <a
+                  href="#">Terms</a></span>
+            </label>
+            <label class="authorization__profile-label">
+              <input type="checkbox" name="policy" checked>
+              <span class="authorization__profile-checkbox button-footer">I agree with <a href="#">Privacy
+                  Policy</a></span>
+            </label>
+            <label class="authorization__profile-label">
+              <input type="checkbox" name="policy" checked>
+              <span class="authorization__profile-checkbox button-footer">I agree with <a href="#">Privacy
+                  Policy</a></span>
+            </label>
+          </div>
+        </div>
+      </div>
 
-      <p class="text-basket">Name_Position_Basket</p>
+      <a class="authorization__back" href="./">
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#arrow-prev'></use>
+        </svg>
+        <span class="button-1">Back</span>
+      </a>
+    </div>
+  </section>
 
-    </main>
-
-    @include('partials/footer.html',{})
-
-    <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
