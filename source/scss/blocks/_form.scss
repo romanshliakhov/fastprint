@@ -76,4 +76,23 @@
             border: 1px solid var(--blue-6);
         }
     }
+
+    &__show-password {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.2s;
+      cursor: pointer;
+
+      svg {
+        stroke: #181818;
+      }
+
+      &:hover {
+        svg {
+          stroke: #0047FE;
+        }
+      }
+    }
 }

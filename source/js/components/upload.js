@@ -1,14 +1,14 @@
 const formParrent = document.querySelector('.calculate__box--mid');
 const previewParrent = document.querySelector('.calculate__upload-files');
 
-function bytesToSize(bytes) {
-  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']
-  if (!bytes) {
-    return '0 Byte'
-  }
-  const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)))
-  return Math.round(bytes / Math.pow(1024, i)) + ' ' + sizes[i]
-}
+// function bytesToSize(bytes) {
+//   const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']
+//   if (!bytes) {
+//     return '0 Byte'
+//   }
+//   const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)))
+//   return Math.round(bytes / Math.pow(1024, i)) + ' ' + sizes[i]
+// }
 
 const element = (tag, classes = [], content) => {
   const node = document.createElement(tag)
@@ -64,13 +64,96 @@ export function upload(selector, options = {}) {
       reader.onload = ev => {
         const src = ev.target.result
         preview.insertAdjacentHTML('afterbegin', `
-          <div class="preview-image">
-            <div class="preview-remove" data-name="${file.name}">&times;</div>
-            <img src="${src}" alt="${file.name}" />
-            <div class="preview-info">
-              <span>${file.name}</span>
-              ${bytesToSize(file.size)}
-            </div>
+            <div class="preview__card">
+              <div class="preview__print-type basket-choosed">Standart</div>
+              <div class="preview__card-details">
+                <div class="preview__details-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/preview.webp'>
+                    <img width='110' height='140' src='img/preview.png' alt='preview'>
+                  </picture>
+                </div>
+                <div class="preview__details-info">
+                  <div class="preview__details-title basket-tabs-content">My file about new design on my website.pdf</div>
+
+                  <div class="preview__order-price">
+                    <div class="basket__order-count">
+                        <span class="basket__count-btn basket__count-btn--minus">
+                            <svg width='9' height='9'>
+                                <use href='img/sprite/sprite.svg#basket-minus'></use>
+                            </svg>
+                        </span>
+                        <span class="basket__count basket-count">1</span>
+                        <span class="basket__count-btn basket__count-btn--plus">
+                            <svg width='9' height='9'>
+                                <use href='img/sprite/sprite.svg#basket-plus'></use>
+                            </svg>
+                        </span>
+                      </div>
+                      <div class="basket__count-price text-basket">0,45 €</div>
+                    </div>
+
+                    <ul class="preview__details-list">
+                      <li class="preview__details-item">
+                        <svg width='14' height='14'>
+                          <use href='img/sprite/sprite.svg#color'></use>
+                        </svg>
+                        <span class="basket-choosed">BN</span>
+                      </li>
+                      <li class="preview__details-item">
+                        <svg width='14' height='14'>
+                          <use href='img/sprite/sprite.svg#size'></use>
+                        </svg>
+                        <span class="basket-choosed">A4</span>
+                      </li>
+                      <li class="preview__details-item">
+                        <svg width='14' height='14'>
+                          <use href='img/sprite/sprite.svg#thickness'></use>
+                        </svg>
+                        <span class="basket-choosed">80 GR</span>
+                      </li>
+                      <li class="preview__details-item">
+                        <svg width='14' height='14'>
+                          <use href='img/sprite/sprite.svg#per-slide'></use>
+                        </svg>
+                        <span class="basket-choosed">Normal</span>
+                      </li>
+                      <li class="preview__details-item">
+                        <svg width='14' height='14'>
+                          <use href='img/sprite/sprite.svg#orientation'></use>
+                        </svg>
+                        <span class="basket-choosed">Automatic</span>
+                      </li>
+                      <li class="preview__details-item">
+                        <svg width='14' height='14'>
+                          <use href='img/sprite/sprite.svg#quality'></use>
+                        </svg>
+                        <span class="basket-choosed">Inkjet</span>
+                      </li>
+                      <li class="preview__details-item">
+                        <svg width='14' height='14'>
+                          <use href='img/sprite/sprite.svg#binding'></use>
+                        </svg>
+                        <span class="basket-choosed">Unfinished</span>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="preview__btns">
+                <button class="preview__btn-delete btn button-1">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#delete'></use>
+                  </svg>
+                  <span>Delete</span>
+                </button>
+                <button class="preview__btn-test btn button-1" data-path="test">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#order'></use>
+                  </svg>
+                  <span>Test print online</span>
+                </button>
+              </div>
           </div>
         `);
         formParrent.classList.add('has-file');
@@ -105,6 +188,7 @@ export function upload(selector, options = {}) {
       e.remove()
       console.log(e)
     } )
+
     const previewInfo = preview.querySelectorAll('.preview-info')
     previewInfo.forEach(clearPreview)
   }
