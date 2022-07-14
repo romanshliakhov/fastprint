@@ -3,7 +3,7 @@ let currentLinkUrl = document.querySelector('.first__wrapp-order'); // клас�
 const breakpoint = 576;
 
 let changeLinkToAnchor = function () {
-  currentLinkUrl.setAttribute("onclick", "location.href='./calculate-mobile.html'");
+  currentLinkUrl?.setAttribute("onclick", "location.href='./calculate-mobile.html'");
 }
 
 const mobileChangeAnchor = () => {
