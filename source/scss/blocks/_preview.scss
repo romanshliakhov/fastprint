@@ -1,11 +1,10 @@
 .preview {
-  display: flex;
-  // align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-gap: 30px 20px;
 
   &__card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;

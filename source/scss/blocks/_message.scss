@@ -18,19 +18,19 @@
     &--first {
       animation-name: letter-first;
       animation-duration: 10s;
-      animation-delay: 0.5s;
+      // animation-delay: 0.5s;
     }
 
     &--second {
       animation-name: letter-second;
       animation-duration: 10s;
-      animation-delay: 2s;
+      // animation-delay: 2s;
     }
 
     &--third {
       animation-name: letter-third;
       animation-duration: 10s;
-      animation-delay: 3s;
+      // animation-delay: 3s;
     }
 
     @media (max-width: 1440px) {
@@ -46,7 +46,7 @@
 @keyframes letter-first {
   0% {
     opacity: 0;
-    transform: translateY(570%);
+    transform: translateY(500%);
   }
 
   10% {
@@ -73,7 +73,7 @@
     transform: translateY(500%);
   }
 
-  25% {
+  35% {
     opacity: 1;
   }
 
@@ -87,6 +87,7 @@
 
   100% {
     opacity: 0;
+    // transform: translateY(-100%);
     transform: translateY(0);
   }
 }
@@ -97,11 +98,11 @@
     transform: translateY(150%);
   }
 
-  10% {
-    opacity: 1;
+  60% {
+    opacity: 0;
   }
 
-  50% {
+  75% {
     opacity: 1;
   }
 
@@ -115,6 +116,7 @@
 
   100% {
     opacity: 0;
+    // transform: translateY(-80%);
     transform: translateY(0);
   }
 }

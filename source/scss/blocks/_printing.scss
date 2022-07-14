@@ -43,32 +43,57 @@
 
     @media (max-width: 576px) {
       width: 137px;
+
+      animation: paper_2mob 6s infinite;
     }
 }
 
 @keyframes paper_2 {
-0% {
+  0% {
+      opacity: 0;
+      top: 10%;
+  }
+
+  10% {
+      opacity: 1;
+  }
+
+  90% {
+      top: 30%;
+      height: 310px;
+      opacity: 1;
+  }
+
+  100% {
+      top: 35%;
+      height: 310px;
+      opacity: 0;
+  }
+}
+
+@keyframes paper_2mob {
+  0% {
     opacity: 0;
     top: 10%;
-}
+  }
 
-10% {
-    opacity: 1;
-}
+  10% {
+      opacity: 1;
+  }
 
-90% {
-    top: 30%;
-    height: 310px;
-    // height: 20%;
-    opacity: 1;
-}
+  90% {
+      top: 30%;
+      // height: 310px;
+      height: 150px;
+      opacity: 1;
+  }
 
-100% {
-    top: 35%;
-    height: 310px;
-    // height: 20%;
-    opacity: 0;
-}
+  100% {
+      top: 35%;
+      // height: 310px;
+      height: 150px;
+      opacity: 0;
+  }
 }
 
 
