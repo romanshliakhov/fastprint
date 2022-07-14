@@ -7,6 +7,16 @@
     border-radius: 20px;
     transform: translateY(50%);
 
+    &__list {
+      height: 100%;
+    }
+
+    &__messages {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+
     &__printing {
         position: absolute;
         left: 50%;
@@ -67,12 +77,6 @@
       @media (max-width: 768px) {
         display: none;
       }
-    }
-
-    &__message {
-      position: relative;
-      height: 100%;
-      width: 100%;
     }
 }
 
