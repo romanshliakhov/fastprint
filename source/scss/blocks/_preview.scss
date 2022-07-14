@@ -1,6 +1,6 @@
 .preview {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   grid-gap: 30px 20px;
@@ -17,6 +17,40 @@
     background-color: #fff;
     box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.1);
     border-radius: 9px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+
+
+    &:hover {
+      border: 1px solid #0047FE;
+
+      .preview__card-select {
+        display: block;
+      }
+
+      .preview__print-type {
+        background-color: #0047FE;
+      }
+
+      .preview__btns {
+        display: flex;
+        // opacity: 1;
+        // visibility: visible;
+      }
+    }
+  }
+
+  &__card-select {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #0047FE;
+    background-color: #EDF4FF;
+    cursor: pointer;
   }
 
   &__print-type {
@@ -27,6 +61,7 @@
     background-color: #ADB4B8;
     color: #fff;
     border-radius: 0px 9px 0px 4px;
+    transition: all 0.2s;
   }
 
   &__card-details {
@@ -93,9 +128,12 @@
   }
 
   &__btns {
-    display: flex;
+    display: none;
+    // display: flex;
     align-items: center;
     grid-gap: 55px;
+    // opacity: 0;
+    // visibility: hidden;
   }
 
   &__btn-delete {

@@ -65,6 +65,7 @@ export function upload(selector, options = {}) {
         const src = ev.target.result
         preview.insertAdjacentHTML('afterbegin', `
             <div class="preview__card">
+              <div class="preview__card-select basket-choosed"></div>
               <div class="preview__print-type basket-choosed">Standart</div>
               <div class="preview__card-details">
                 <div class="preview__details-image">
