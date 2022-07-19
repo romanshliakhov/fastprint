@@ -158,32 +158,32 @@
   &__all-comments {
     position: relative;
 
-    &::before {
-      content: '';
-      position: absolute;
-      height: 72px;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-      border-top-left-radius: 14px;
-      border-top-right-radius: 14px;
-      pointer-events: none;
-    }
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   height: 72px;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    //   border-top-left-radius: 14px;
+    //   border-top-right-radius: 14px;
+    //   pointer-events: none;
+    // }
 
-    &::after {
-      content: '';
-      position: absolute;
-      height: 72px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-      transform: rotate(-180deg);
-      border-bottom-left-radius: 14px;
-      border-bottom-right-radius: 14px;
-      pointer-events: none;
-    }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   height: 72px;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    //   transform: rotate(-180deg);
+    //   border-bottom-left-radius: 14px;
+    //   border-bottom-right-radius: 14px;
+    //   pointer-events: none;
+    // }
   }
 
   &__comments {

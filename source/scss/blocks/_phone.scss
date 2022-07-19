@@ -4,8 +4,6 @@
     width: 380px;
     height: 640px;
     position: fixed;
-    // animation: animation-phone 10s cubic-bezier(.17,.67,.83,.67) infinite;
-    // will-change: transform;
 
     @media (max-width: 1440px) {
       width: 300px;
@@ -23,28 +21,4 @@
     }
   }
 
-  // @keyframes animation-phone {
-  //   0% {
-  //     transform: translate(0, 0);
-  //   }
 
-  //   20% {
-  //     transform: translate(1%, 2%);
-  //   }
-
-  //   40% {
-  //     transform: translate(3%, 5%);
-  //   }
-
-  //   60% {
-  //     transform: translate(3%, 0%);
-  //   }
-
-  //   80% {
-  //     transform: translate(-3%, -5%);
-  //   }
-
-  //   100% {
-  //     transform: translate(0%, 0%);
-  //   }
-  // }

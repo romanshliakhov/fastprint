@@ -51,9 +51,10 @@
 
     &__phone-img {
       position: absolute;
-      width: 300px;
+      width: 310px;
       height: 566px;
       top: 25px;
+      left: 35px;
 
       @media (max-width: 1440px) {
         width: 243px;

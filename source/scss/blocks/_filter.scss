@@ -15,7 +15,6 @@
             position: relative;
             z-index: 10;
             border-radius: 8px;
-            background-color:  var(--system-6);
             border: 1px solid var(--system-3);
 
             .filter__name--active {
@@ -64,7 +63,7 @@
 
             .filter__name--active {
                 color: var(--system-1);
-                background-color: var(--blue-1);
+                background-color:  var(--system-6);
 
 
                 svg {
@@ -135,6 +134,7 @@
         @media (max-width: 576px) {
             padding: 0 20px;
             border-radius: 0;
+            background-color:  var(--system-6);
         }
     }
 }
