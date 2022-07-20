@@ -14,27 +14,25 @@
     box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.15);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-duration: 10s;
 
     &--first {
       animation-name: letter-first;
-      animation-duration: 10s;
     }
 
     &--second {
       animation-name: letter-second;
-      animation-duration: 10s;
     }
 
     &--third {
       animation-name: letter-third;
-      animation-duration: 10s;
     }
 
     @media (max-width: 1440px) {
       width: 308px;
     }
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1024px) {
       width: 228px;
     }
   }
