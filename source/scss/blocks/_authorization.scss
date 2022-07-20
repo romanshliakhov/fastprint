@@ -248,6 +248,10 @@
       bottom: 0;
       text-align: right;
     }
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__confirm {
@@ -265,8 +269,11 @@
       margin-top: 50px;
     }
 
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+
     @media (max-width: 576px) {
-      margin-top: 40px;
       flex-direction: column;
       width: 100%;
       align-items: flex-start;
