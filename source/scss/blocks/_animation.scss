@@ -25,21 +25,21 @@
         }
     }
 
-    &__message-list {
-        position: absolute;
-        right: -30px;
-        top: 30px;
+    // &__message-list {
+    //     position: absolute;
+    //     right: -30px;
+    //     top: 30px;
 
-        @media (max-width: 1024px) {
-          right: -5px;
-        }
+    //     @media (max-width: 1024px) {
+    //       right: -5px;
+    //     }
 
-        @media (max-width: 576px) {
-          left: 50%;
-          right: initial;
-          transform: translateX(-50%);
-        }
-    }
+    //     @media (max-width: 576px) {
+    //       left: 50%;
+    //       right: initial;
+    //       transform: translateX(-50%);
+    //     }
+    // }
 
     @media (max-width: 1440px) {
       height: 451px;
