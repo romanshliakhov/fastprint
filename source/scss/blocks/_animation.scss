@@ -30,6 +30,10 @@
         right: -30px;
         top: 30px;
 
+        @media (max-width: 1024px) {
+          right: -5px;
+        }
+
         @media (max-width: 576px) {
           left: 50%;
           right: initial;
