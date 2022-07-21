@@ -10,11 +10,11 @@
     right: -5px;
   }
 
-  // @media (max-width: 576px) {
-  //   left: 50%;
-  //   right: initial;
-  //   transform: translateX(-50%);
-  // }
+  @media (max-width: 576px) {
+    left: 50%;
+    right: initial;
+    transform: translateX(-50%);
+  }
 
   img {
     display: flex;
