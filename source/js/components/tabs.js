@@ -1,5 +1,4 @@
 // tabs
-
 function tabsInit() {
   const tabsParrents = [...document.querySelectorAll('.tabs')];
 

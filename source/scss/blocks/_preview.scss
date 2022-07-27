@@ -3,21 +3,28 @@
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-gap: 30px 20px;
 
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+
   &__card {
     position: relative;
     max-width: 380px;
     width: 100%;
     min-height: 200px;
-    // box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.1);
     border-radius: 9px;
     border: 1px solid transparent;
     transition: all 0.2s;
     z-index: 1;
 
+    @media (max-width: 576px) {
+      min-height: 150px;
+    }
+
 
     &:hover {
       z-index: 5;
-      // border: 1px solid #0047FE;
 
       .preview__card-inner {
         height: calc(100% + 52px);
@@ -37,6 +44,12 @@
 
       .preview__btns {
         display: flex;
+
+        @media (max-width: 576px) {
+          width: 100%;
+          justify-content: space-between;
+          grid-gap: 5px;
+        }
       }
     }
   }
@@ -61,7 +74,10 @@
     box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.1);
     border-radius: 9px;
     border: 1px solid transparent;
-    // overflow: hidden;
+
+    @media (max-width: 576px) {
+      padding: 14px;
+    }
   }
 
   &__card-select {
@@ -103,8 +119,8 @@
     justify-content: center;
     padding: 20px 27px;
 
-    @media screen and (max-width: 576px) {
-
+    @media (max-width: 576px) {
+      display: none;
     }
   }
 
@@ -119,6 +135,10 @@
     text-overflow: ellipsis;
     white-space: pre;
     margin-bottom: 8px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 16px;
+    }
   }
 
   &__details-list {
@@ -153,7 +173,6 @@
 
   &__btns {
     display: none;
-    // display: flex;
     align-items: center;
     grid-gap: 55px;
   }
